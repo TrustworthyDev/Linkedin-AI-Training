@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://ya2yxnrarqyazjh.c.msft.feather-prod.azure.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b100e">
+  <meta name="description" content="Explore a rotating, interactive view of iPhone 11 Pro in four finishes.">
+  <title>iPhone 11 Pro | A Closer Look</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --phone-w: min(286px, 24vw, calc((100svh - 202px) * 0.485));
+      --phone-radius: calc(var(--phone-w) * 0.145);
+      --body: #687c6d;
+      --body-light: #a3b4a3;
+      --body-dark: #33493b;
+      --rim: #8da18e;
+      --side: #69816f;
+      --side-light: #b2c2af;
+      --side-dark: #2c4435;
+      --camera: #748978;
+      --logo: #b4c3b1;
+      --glow-rgb: 81, 136, 99;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-width: 320px;
+      background: #0b100e;
+      color: #f1f3ed;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button { font: inherit; }
+
+    button:focus-visible, a:focus-visible, .stage:focus-visible {
+      outline: 2px solid #d9e8d7;
+      outline-offset: 5px;
+    }
+
+    .page {
+      min-height: 100svh;
+      overflow: hidden;
+      isolation: isolate;
+      background:
+        radial-gradient(ellipse 54% 79% at 77% 50%, rgba(37, 64, 46, 0.37), transparent 77%),
+        radial-gradient(ellipse 65% 80% at 9% 108%, rgba(25, 44, 32, 0.3), transparent 73%),
+        #0b100e;
+    }
+
+    .site-header {
+      height: 82px;
+      padding: 0 clamp(26px, 5.6vw, 100px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid rgba(231, 242, 231, 0.11);
+      position: relative;
+      z-index: 5;
+    }
+
+    .wordmark {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: #f2f4ef;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: -0.04em;
+    }
+
+    .apple-mark { width: 19px; height: 23px; fill: currentColor; }
+
+    .header-index {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: #b4c0b5;
+      font-size: 10px;
+      font-weight: 650;
+      letter-spacing: 0.22em;
+      white-space: nowrap;
+    }
+
+    .header-index::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #aac4a8;
+      box-shadow: 0 0 12px rgba(174, 209, 170, 0.7);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 0.93fr) minmax(0, 1.07fr);
+      max-width: 1600px;
+      min-height: calc(100svh - 82px);
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      padding: 40px 0 75px clamp(26px, 5.6vw, 100px);
+      position: relative;
+      z-index: 2;
+    }
+
+    .intro-inner { width: 100%; }
+
+    .kicker {
+      margin: 0 0 31px;
+      color: #a7b8a8;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.26em;
+      line-height: 1.5;
+    }
+
+    .kicker::before {
+      content: "";
+      display: inline-block;
+      width: 25px;
+      height: 1px;
+      margin-right: 13px;
+      vertical-align: 4px;
+      background: #95aa96;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(76px, 8.4vw, 138px);
+      font-weight: 680;
+      letter-spacing: -0.09em;
+      line-height: 0.93;
+      white-space: nowrap;
+      animation: rise-in 850ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    h1 span { color: #d5e1d4; }
+
+    .intro-copy {
+      max-width: 345px;
+      margin: 32px 0 0;
+      color: #aebbb0;
+      font-size: clamp(15px, 1.2vw, 17px);
+      font-weight: 400;
+      line-height: 1.65;
+      animation: rise-in 850ms 130ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    .finish-selector {
+      margin-top: 62px;
+      animation: rise-in 850ms 240ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    .finish-meta {
+      display: flex;
+      align-items: baseline;
+      gap: 17px;
+      margin-bottom: 15px;
+    }
+
+    .finish-meta span {
+      color: #8e9e91;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+    }
+
+    .finish-meta strong {
+      color: #e7ece5;
+      font-size: 14px;
+      font-weight: 550;
+      letter-spacing: -0.02em;
+    }
+
+    .swatches { display: flex; align-items: center; gap: 9px; }
+
+    .swatch {
+      display: grid;
+      place-items: center;
+      width: 35px;
+      height: 35px;
+      padding: 5px;
+      border: 1px solid transparent;
+      border-radius: 50%;
+      background: none;
+      cursor: pointer;
+      transition: border-color 220ms ease, transform 220ms ease;
+    }
+
+    .swatch:hover { transform: translateY(-3px); }
+    .swatch[aria-pressed="true"] { border-color: #d9e6d8; }
+
+    .swatch span {
+      width: 23px;
+      height: 23px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      border-radius: 50%;
+      background: var(--swatch);
+      box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.21), inset 3px 3px 6px rgba(255, 255, 255, 0.13);
+    }
+
+    .viewer {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      min-height: calc(100svh - 82px);
+      padding-right: clamp(26px, 5.6vw, 100px);
+      position: relative;
+    }
+
+    .viewer-aura {
+      position: absolute;
+      top: 44%;
+      left: 48%;
+      width: min(680px, 91%);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(var(--glow-rgb), 0.27) 0%, rgba(var(--glow-rgb), 0.1) 34%, transparent 69%);
+      filter: blur(5px);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: background 600ms ease;
+    }
+
+    .stage {
+      flex: 1;
+      min-height: 520px;
+      position: relative;
+      z-index: 1;
+      cursor: grab;
+      perspective: 1100px;
+      perspective-origin: 50% 48%;
+      touch-action: none;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    .stage.is-dragging { cursor: grabbing; }
+
+    .float-wrap {
+      position: absolute;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transform-style: preserve-3d;
+      animation: levitate 5.5s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .floor-shadow {
+      position: absolute;
+      bottom: 7%;
+      left: 50%;
+      width: min(285px, 55%);
+      height: 35px;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.63);
+      filter: blur(21px);
+      transform: translateX(-50%);
+      pointer-events: none;
+      animation: shadow-breathe 5.5s ease-in-out infinite;
+    }
+
+    /* The two faces and four narrow edges form a rotatable phone body. */
+    .phone {
+      width: var(--phone-w);
+      aspect-ratio: 0.49;
+      position: relative;
+      border-radius: var(--phone-radius);
+      transform-style: preserve-3d;
+      transform: rotateX(-8deg) rotateY(151deg);
+      will-change: transform;
+    }
+
+    .core {
+      position: absolute;
+      inset: 0;
+      border-radius: var(--phone-radius);
+      background: var(--side-dark);
+      transform: translateZ(0);
+    }
+
+    .face {
+      position: absolute;
+      inset: 0;
+      border-radius: var(--phone-radius);
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+    }
+
+    .front {
+      padding: 6px;
+      border: 2px solid var(--rim);
+      background: linear-gradient(115deg, var(--side-light), #27332b 14%, #111713 48%, var(--side-dark) 89%, var(--side-light));
+      box-shadow: inset 0 0 0 2px rgba(213, 233, 213, 0.2), 0 0 4px rgba(0, 0, 0, 0.5);
+      transform: translateZ(10px);
+    }
+
+    .display {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid #020504;
+      border-radius: calc(var(--phone-radius) - 8px);
+      background: #03100e;
+    }
+
+    .wallpaper {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse 90% 48% at 110% 27%, rgba(164, 191, 125, 0.83), transparent 67%),
+        radial-gradient(ellipse 120% 55% at -20% 79%, rgba(83, 138, 106, 0.72), transparent 66%),
+        linear-gradient(155deg, #061c21 4%, #175549 39%, #071b18 65%, #010705 100%);
+    }
+
+    .wallpaper::before, .wallpaper::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+    }
+
+    .wallpaper::before {
+      top: 24%;
+      left: -37%;
+      width: 139%;
+      height: 49%;
+      border: 32px solid transparent;
+      border-top-color: rgba(181, 202, 146, 0.89);
+      border-right-color: rgba(58, 110, 82, 0.93);
+      border-bottom-color: rgba(5, 37, 32, 0.94);
+      box-shadow: 0 -15px 25px rgba(124, 178, 124, 0.38), inset 0 13px 28px rgba(5, 24, 19, 0.85);
+      filter: blur(12px);
+      transform: rotate(-31deg);
+    }
+
+    .wallpaper::after {
+      top: 51%;
+      left: 17%;
+      width: 102%;
+      height: 32%;
+      border: 22px solid transparent;
+      border-top-color: rgba(130, 178, 128, 0.43);
+      border-left-color: rgba(12, 69, 58, 0.82);
+      filter: blur(13px);
+      transform: rotate(35deg);
+    }
+
+    .notch {
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      z-index: 3;
+      width: 52%;
+      height: 5.2%;
+      min-height: 19px;
+      border-radius: 0 0 16px 16px;
+      background: #030506;
+      transform: translateX(-50%);
+    }
+
+    .speaker-grille {
+      position: absolute;
+      top: 33%;
+      left: 36%;
+      width: 32%;
+      height: 3px;
+      border-radius: 3px;
+      background: #1b2528;
+      box-shadow: 0 1px 2px #000;
+    }
+
+    .camera-dot {
+      position: absolute;
+      top: 30%;
+      right: 18%;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #1f4260, #05090d 65%);
+    }
+
+    .screen-lock {
+      position: absolute;
+      top: 10%;
+      left: 50%;
+      z-index: 2;
+      width: 13px;
+      height: 15px;
+      color: white;
+      transform: translateX(-50%);
+      opacity: 0.9;
+    }
+
+    .screen-time {
+      position: absolute;
+      top: 17%;
+      right: 0;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      text-shadow: 0 1px 9px rgba(0, 0, 0, 0.3);
+    }
+
+    .screen-time small {
+      font-size: calc(var(--phone-w) * 0.047);
+      font-weight: 500;
+      letter-spacing: 0.015em;
+    }
+
+    .screen-time strong {
+      margin-top: -3px;
+      font-size: calc(var(--phone-w) * 0.232);
+      font-weight: 250;
+      letter-spacing: -0.085em;
+      line-height: 1.18;
+    }
+
+    .screen-bottom {
+      position: absolute;
+      right: 12%;
+      bottom: 7%;
+      left: 12%;
+      z-index: 2;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .utility {
+      display: grid;
+      place-items: center;
+      width: calc(var(--phone-w) * 0.12);
+      height: calc(var(--phone-w) * 0.12);
+      border-radius: 50%;
+      background: rgba(18, 34, 27, 0.49);
+      color: white;
+      backdrop-filter: blur(8px);
+    }
+
+    .utility svg { width: 46%; height: 46%; fill: currentColor; }
+
+    .home-indicator {
+      position: absolute;
+      bottom: 2.2%;
+      left: 50%;
+      z-index: 2;
+      width: 36%;
+      height: 4px;
+      border-radius: 5px;
+      background: white;
+      transform: translateX(-50%);
+    }
+
+    .back {
+      overflow: hidden;
+      border: 2px solid var(--rim);
+      background: linear-gradient(105deg, var(--body-light) -22%, var(--body) 20%, var(--body-dark) 76%, var(--body) 111%);
+      box-shadow: inset 2px 1px 6px rgba(255, 255, 255, 0.26), inset -5px -3px 10px rgba(0, 0, 0, 0.22);
+      transform: rotateY(180deg) translateZ(10px);
+    }
+
+    .back::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: linear-gradient(100deg, transparent 9%, rgba(255, 255, 255, 0.11) 29%, transparent 51%, rgba(0, 0, 0, 0.08) 95%);
+      pointer-events: none;
+    }
+
+    .back::after {
+      content: "";
+      position: absolute;
+      inset: 5px;
+      border: 1px solid rgba(236, 249, 232, 0.1);
+      border-radius: calc(var(--phone-radius) - 6px);
+      pointer-events: none;
+    }
+
+    .camera-island {
+      position: absolute;
+      top: 4.1%;
+      left: 7.8%;
+      z-index: 2;
+      width: 37.5%;
+      aspect-ratio: 1;
+      border: 1px solid rgba(220, 238, 216, 0.23);
+      border-radius: 23%;
+      background: linear-gradient(135deg, var(--body-light), var(--camera) 36%, var(--body-dark) 100%);
+      box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.34), inset 1px 1px 3px rgba(255, 255, 255, 0.23);
+      transform: translateZ(2px);
+    }
+
+    .lens {
+      position: absolute;
+      width: 39%;
+      aspect-ratio: 1;
+      border: 3px solid rgba(181, 202, 184, 0.56);
+      border-radius: 50%;
+      background: radial-gradient(circle at 43% 45%, #27425b 0 11%, #060c14 17% 27%, #1a2b32 32%, #040708 43% 60%, #252d2c 66%, #050707 75%);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.62), inset 0 0 2px #020606;
+    }
+
+    .lens::after {
+      content: "";
+      position: absolute;
+      top: 15%;
+      left: 18%;
+      width: 29%;
+      height: 13%;
+      border-radius: 50%;
+      background: rgba(184, 216, 221, 0.58);
+      filter: blur(3px);
+      transform: rotate(-38deg);
+    }
+
+    .lens-one { top: 7%; left: 7%; }
+    .lens-two { top: 53%; left: 7%; }
+    .lens-three { top: 30%; right: 6%; }
+
+    .flash {
+      position: absolute;
+      top: 10%;
+      right: 15%;
+      width: 16%;
+      aspect-ratio: 1;
+      border: 2px solid rgba(61, 76, 63, 0.6);
+      border-radius: 50%;
+      background: radial-gradient(circle, #fff9d8 0 26%, #d9d8ba 44%, #838e80 77%);
+      box-shadow: 0 0 4px rgba(255, 246, 202, 0.5);
+    }
+
+    .microphone {
+      position: absolute;
+      right: 18%;
+      bottom: 12%;
+      width: 7%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #1b3028;
+      box-shadow: inset 0 1px 2px #05100c;
+    }
+
+    .back-logo {
+      position: absolute;
+      top: 43%;
+      left: 50%;
+      width: 22%;
+      height: auto;
+      fill: var(--logo);
+      opacity: 0.72;
+      filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.25));
+      transform: translateX(-50%);
+    }
+
+    .back-word {
+      position: absolute;
+      bottom: 10%;
+      left: 0;
+      width: 100%;
+      color: var(--logo);
+      font-size: calc(var(--phone-w) * 0.071);
+      font-weight: 500;
+      letter-spacing: -0.045em;
+      text-align: center;
+      opacity: 0.59;
+    }
+
+    .edge {
+      position: absolute;
+      display: block;
+      background: linear-gradient(90deg, var(--side-dark), var(--side-light) 21%, var(--side) 47%, var(--side-dark) 85%, var(--side-light));
+      box-shadow: inset 0 0 2px rgba(255, 255, 255, 0.35);
+      backface-visibility: visible;
+    }
+
+    .edge-left, .edge-right {
+      top: var(--phone-radius);
+      width: 20px;
+      height: calc(100% - var(--phone-radius) * 2);
+      border-radius: 4px;
+      transform: rotateY(90deg);
+    }
+
+    .edge-left { left: -10px; }
+    .edge-right { right: -10px; }
+
+    .edge-top, .edge-bottom {
+      left: var(--phone-radius);
+      width: calc(100% - var(--phone-radius) * 2);
+      height: 20px;
+      border-radius: 4px;
+      transform: rotateX(90deg);
+    }
+
+    .edge-top { top: -10px; }
+    .edge-bottom { bottom: -10px; }
+
+    .side-button {
+      position: absolute;
+      left: 1px;
+      width: 3px;
+      border-radius: 2px;
+      background: linear-gradient(90deg, var(--side-light), var(--side-dark));
+      box-shadow: -1px 0 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .mute { top: 12%; height: 5%; }
+    .volume-one { top: 23%; height: 10%; }
+    .volume-two { top: 36%; height: 10%; }
+    .power { top: 22%; height: 16%; }
+
+    .port {
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      width: 15%;
+      height: 7px;
+      border-radius: 3px;
+      background: #17231b;
+      transform: translateX(-50%);
+    }
+
+    .speaker-holes {
+      position: absolute;
+      top: 7px;
+      width: 25%;
+      height: 4px;
+      background: repeating-linear-gradient(90deg, #1d2c23 0 2px, transparent 2px 6px);
+    }
+
+    .speaker-holes.left { left: 17%; }
+    .speaker-holes.right { right: 17%; }
+
+    .viewer-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 86px;
+      position: relative;
+      z-index: 2;
+      border-top: 1px solid rgba(231, 242, 231, 0.13);
+    }
+
+    .drag-cue {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      color: #a8b9a9;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      white-space: nowrap;
+    }
+
+    .drag-cue svg {
+      width: 30px;
+      height: 24px;
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.4;
+    }
+
+    .toolbar-actions { display: flex; align-items: center; gap: 23px; }
+
+    .text-action {
+      padding: 9px 0;
+      position: relative;
+      border: 0;
+      background: none;
+      color: #8f9e91;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 550;
+      transition: color 200ms ease;
+    }
+
+    .text-action:hover, .text-action.is-selected { color: #f2f5ee; }
+
+    .text-action.is-selected::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+      left: 0;
+      height: 1px;
+      background: #d4e5d2;
+    }
+
+    .toolbar-divider {
+      width: 1px;
+      height: 23px;
+      margin-left: 1px;
+      background: rgba(232, 243, 231, 0.19);
+    }
+
+    .spin-control {
+      display: grid;
+      place-items: center;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border: 1px solid rgba(223, 240, 222, 0.35);
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.035);
+      color: #f0f5ee;
+      cursor: pointer;
+      transition: border-color 200ms ease, background 200ms ease, transform 200ms ease;
+    }
+
+    .spin-control:hover {
+      border-color: rgba(236, 250, 233, 0.8);
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.06);
+    }
+
+    .spin-control svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .spin-control .play-icon { display: none; }
+    .spin-control.is-paused .pause-icon { display: none; }
+    .spin-control.is-paused .play-icon { display: block; fill: currentColor; stroke: none; }
+
+    @keyframes rise-in {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes levitate {
+      0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+      50% { transform: translate(-50%, -50%) translateY(-9px); }
+    }
+
+    @keyframes shadow-breathe {
+      0%, 100% { opacity: 0.77; transform: translateX(-50%) scale(1); }
+      50% { opacity: 0.53; transform: translateX(-50%) scale(0.85); }
+    }
+
+    @media (max-width: 1100px) and (min-width: 761px) {
+      h1 { font-size: clamp(72px, 8vw, 100px); }
+      .toolbar-actions { gap: 16px; }
+      .drag-cue { gap: 6px; letter-spacing: 0.12em; }
+    }
+
+    @media (max-width: 760px) {
+      :root { --phone-w: min(250px, 58vw); }
+
+      .site-header { height: 68px; padding: 0 27px; }
+      .header-index { font-size: 9px; letter-spacing: 0.12em; }
+      .hero { display: block; min-height: 0; }
+      .intro { display: block; padding: 48px 28px 0; }
+      .kicker { margin-bottom: 22px; font-size: 9px; }
+      h1 { font-size: clamp(67px, 14vw, 103px); }
+      .intro-copy { max-width: 330px; margin-top: 22px; font-size: 15px; }
+      .finish-selector { margin-top: 31px; }
+      .viewer { min-height: 0; padding: 0 26px; }
+      .viewer-aura { top: 50%; left: 50%; width: min(620px, 120%); }
+      .stage { flex: none; height: min(540px, 128vw); min-height: 415px; }
+      .float-wrap { top: 48%; }
+      .floor-shadow { bottom: 6%; }
+      .viewer-toolbar { min-height: 78px; }
+    }
+
+    @media (max-width: 420px) {
+      .site-header { padding: 0 22px; }
+      .wordmark { gap: 9px; font-size: 14px; }
+      .header-index { font-size: 8px; }
+      .intro { padding-right: 23px; padding-left: 23px; }
+      .viewer { padding-right: 22px; padding-left: 22px; }
+      .toolbar-actions { gap: 15px; }
+      .drag-cue { gap: 6px; font-size: 9px; letter-spacing: 0.11em; }
+      .drag-cue svg { width: 24px; }
+      .text-action { font-size: 12px; }
+      .spin-control { width: 37px; height: 37px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body id="top">
+  <div class="page">
+    <header class="site-header">
+      <a class="wordmark" href="https://ya2yxnrarqyazjh.c.msft.feather-prod.azure.com/#top" aria-label="iPhone 11 Pro, back to top">
+        <svg class="apple-mark" viewBox="0 0 60 68" aria-hidden="true"><path d="M49.1 35.6c0-8 6.5-11.8 6.8-12-3.7-5.5-9.4-6.2-11.4-6.3-4.9-.5-9.7 2.9-12.2 2.9-2.5 0-6.3-2.8-10.5-2.7-5.4.1-10.4 3.1-13.2 7.8-5.6 9.5-1.4 23.5 4 31.2 2.7 3.8 5.8 8.1 10 7.9 4-.2 5.5-2.6 10.3-2.6 4.8 0 6.1 2.6 10.4 2.5 4.3-.1 7.1-3.8 9.8-7.7 3.1-4.4 4.3-8.6 4.4-8.8-.1 0-8.4-3.2-8.5-12.7zM41.5 11.9c2.3-2.8 3.8-6.7 3.4-10.6-3.3.1-7.3 2.2-9.7 5-2.1 2.5-4 6.5-3.5 10.2 3.7.3 7.4-1.9 9.8-4.6z"></path></svg>
+        <span>iPhone 11 Pro</span>
+      </a>
+      <span class="header-index">INTERACTIVE 360 VIEW</span>
+    </header>
+
+    <main class="hero">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-inner">
+          <p class="kicker">A CLOSER LOOK</p>
+          <h1 id="page-title">iPhone<br><span>11 Pro.</span></h1>
+          <p class="intro-copy">An iconic design, from every angle. Drag to explore the details for yourself.</p>
+
+          <div class="finish-selector">
+            <div class="finish-meta"><span>CHOOSE A FINISH</span><strong id="finish-name" aria-live="polite">Midnight Green</strong></div>
+            <div class="swatches" role="group" aria-label="Phone finish">
+              <button class="swatch" type="button" data-finish="green" aria-label="Midnight Green" aria-pressed="true" title="Midnight Green" style="--swatch: #647b69"><span></span></button>
+              <button class="swatch" type="button" data-finish="gray" aria-label="Space Gray" aria-pressed="false" title="Space Gray" style="--swatch: #777b7d"><span></span></button>
+              <button class="swatch" type="button" data-finish="silver" aria-label="Silver" aria-pressed="false" title="Silver" style="--swatch: #d7dad4"><span></span></button>
+              <button class="swatch" type="button" data-finish="gold" aria-label="Gold" aria-pressed="false" title="Gold" style="--swatch: #d5bdae"><span></span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="viewer" aria-label="Interactive iPhone 11 Pro viewer">
+        <div class="viewer-aura" aria-hidden="true"></div>
+        <div class="stage" id="stage" tabindex="0" aria-label="Rotating phone model. Drag or use arrow keys to turn it. Press space to pause or play rotation.">
+          <div class="floor-shadow" aria-hidden="true"></div>
+          <div class="float-wrap" aria-hidden="true">
+            <div class="phone" id="phone" style="transform: rotateX(-8deg) rotateY(545.409deg);">
+              <div class="core"></div>
+              <div class="edge edge-left"><span class="side-button mute"></span><span class="side-button volume-one"></span><span class="side-button volume-two"></span></div>
+              <div class="edge edge-right"><span class="side-button power"></span></div>
+              <div class="edge edge-top"></div>
+              <div class="edge edge-bottom"><span class="speaker-holes left"></span><span class="port"></span><span class="speaker-holes right"></span></div>
+
+              <div class="face front">
+                <div class="display">
+                  <div class="wallpaper"></div>
+                  <svg class="screen-lock" viewBox="0 0 16 19" aria-hidden="true"><path d="M4 8V5a4 4 0 0 1 8 0v3M3 8h10v9H3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"></path></svg>
+                  <div class="screen-time"><small>Tuesday, September 10</small><strong>9:41</strong></div>
+                  <div class="screen-bottom">
+                    <span class="utility"><svg viewBox="0 0 24 24"><path d="M9 2h6l-1 7 4 5-6 8-6-8 4-5z"></path></svg></span>
+                    <span class="utility"><svg viewBox="0 0 24 24"><path d="M7 5h3l1.2-2h4L17 5h2a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2zm5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path></svg></span>
+                  </div>
+                  <span class="home-indicator"></span>
+                  <div class="notch"><span class="speaker-grille"></span><span class="camera-dot"></span></div>
+                </div>
+              </div>
+
+              <div class="face back">
+                <div class="camera-island">
+                  <span class="lens lens-one"></span><span class="lens lens-two"></span><span class="lens lens-three"></span>
+                  <span class="flash"></span><span class="microphone"></span>
+                </div>
+                <svg class="back-logo" viewBox="0 0 60 68" aria-hidden="true"><path d="M49.1 35.6c0-8 6.5-11.8 6.8-12-3.7-5.5-9.4-6.2-11.4-6.3-4.9-.5-9.7 2.9-12.2 2.9-2.5 0-6.3-2.8-10.5-2.7-5.4.1-10.4 3.1-13.2 7.8-5.6 9.5-1.4 23.5 4 31.2 2.7 3.8 5.8 8.1 10 7.9 4-.2 5.5-2.6 10.3-2.6 4.8 0 6.1 2.6 10.4 2.5 4.3-.1 7.1-3.8 9.8-7.7 3.1-4.4 4.3-8.6 4.4-8.8-.1 0-8.4-3.2-8.5-12.7zM41.5 11.9c2.3-2.8 3.8-6.7 3.4-10.6-3.3.1-7.3 2.2-9.7 5-2.1 2.5-4 6.5-3.5 10.2 3.7.3 7.4-1.9 9.8-4.6z"></path></svg>
+                <span class="back-word">iPhone</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="viewer-toolbar">
+          <div class="drag-cue" aria-hidden="true">
+            <svg viewBox="0 0 32 24"><path d="M5 9c3-3.5 7-5.5 11-5.5s8 2 11 5.5M5 9V4m0 5h5M27 15c-3 3.5-7 5.5-11 5.5S8 18.5 5 15m22 0v5m0-5h-5"></path></svg>
+            <span>DRAG TO ROTATE</span>
+          </div>
+          <div class="toolbar-actions" aria-label="View controls">
+            <button class="text-action" id="front-button" type="button" aria-pressed="false">Front</button>
+            <button class="text-action is-selected" id="back-button" type="button" aria-pressed="true">Back</button>
+            <span class="toolbar-divider" aria-hidden="true"></span>
+            <button class="spin-control" id="spin-button" type="button" aria-label="Pause automatic rotation" aria-pressed="true" title="Pause automatic rotation">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path class="pause-icon" d="M8 5v14m8-14v14"></path><path class="play-icon" d="M8 4.5v15l12-7.5z"></path></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    const finishes = {
+      green: {
+        name: 'Midnight Green', body: '#687c6d', light: '#a3b4a3', dark: '#33493b', rim: '#8da18e',
+        side: '#69816f', sideLight: '#b2c2af', sideDark: '#2c4435', camera: '#748978', logo: '#b4c3b1', glow: '81, 136, 99'
+      },
+      gray: {
+        name: 'Space Gray', body: '#73777b', light: '#b3b7b8', dark: '#363b40', rim: '#9ba1a3',
+        side: '#777c80', sideLight: '#c3c6c5', sideDark: '#373d42', camera: '#858a8d', logo: '#c4c8c6', glow: '108, 121, 128'
+      },
+      silver: {
+        name: 'Silver', body: '#d1d7d1', light: '#f5f7ef', dark: '#a4ada6', rim: '#dce2db',
+        side: '#d4dad5', sideLight: '#fcfcf6', sideDark: '#929d96', camera: '#c8d0c8', logo: '#8e9b91', glow: '160, 184, 169'
+      },
+      gold: {
+        name: 'Gold', body: '#cdb7a6', light: '#f2dcca', dark: '#9b7c6c', rim: '#ddc6b4',
+        side: '#d3baa8', sideLight: '#f7e5d3', sideDark: '#876b5d', camera: '#d4bdac', logo: '#f0ddca', glow: '179, 126, 99'
+      }
+    };
+
+    const root = document.documentElement;
+    const phone = document.getElementById('phone');
+    const stage = document.getElementById('stage');
+    const spinButton = document.getElementById('spin-button');
+    const frontButton = document.getElementById('front-button');
+    const backButton = document.getElementById('back-button');
+    const swatches = [...document.querySelectorAll('.swatch')];
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    let yaw = 151;
+    let pitch = -8;
+    let targetYaw = null;
+    let dragging = false;
+    let playing = !reducedMotion.matches;
+    let lastTime = 0;
+    let lastX = 0;
+    let lastY = 0;
+    let visibleSide = 'back';
+
+    function clamp(value, minimum, maximum) {
+      return Math.min(maximum, Math.max(minimum, value));
+    }
+
+    function updateSpinButton() {
+      const label = playing ? 'Pause automatic rotation' : 'Play automatic rotation';
+      spinButton.classList.toggle('is-paused', !playing);
+      spinButton.setAttribute('aria-label', label);
+      spinButton.setAttribute('aria-pressed', String(playing));
+      spinButton.title = label;
+    }
+
+    function renderPhone() {
+      phone.style.transform = `rotateX(${pitch}deg) rotateY(${yaw}deg)`;
+      const angle = ((yaw % 360) + 360) % 360;
+      const nextSide = angle > 90 && angle < 270 ? 'back' : 'front';
+      if (nextSide !== visibleSide) {
+        visibleSide = nextSide;
+        frontButton.classList.toggle('is-selected', nextSide === 'front');
+        backButton.classList.toggle('is-selected', nextSide === 'back');
+        frontButton.setAttribute('aria-pressed', String(nextSide === 'front'));
+        backButton.setAttribute('aria-pressed', String(nextSide === 'back'));
+      }
+    }
+
+    function moveToView(degrees) {
+      playing = false;
+      targetYaw = degrees + Math.round((yaw - degrees) / 360) * 360;
+      updateSpinButton();
+    }
+
+    function setFinish(key) {
+      const finish = finishes[key];
+      if (!finish) return;
+      const variables = {
+        '--body': finish.body, '--body-light': finish.light, '--body-dark': finish.dark,
+        '--rim': finish.rim, '--side': finish.side, '--side-light': finish.sideLight,
+        '--side-dark': finish.sideDark, '--camera': finish.camera, '--logo': finish.logo,
+        '--glow-rgb': finish.glow
+      };
+      for (const [name, value] of Object.entries(variables)) root.style.setProperty(name, value);
+      document.getElementById('finish-name').textContent = finish.name;
+      swatches.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.finish === key)));
+      moveToView(180);
+    }
+
+    swatches.forEach(button => button.addEventListener('click', () => setFinish(button.dataset.finish)));
+    frontButton.addEventListener('click', () => moveToView(0));
+    backButton.addEventListener('click', () => moveToView(180));
+
+    spinButton.addEventListener('click', () => {
+      playing = !playing;
+      targetYaw = null;
+      updateSpinButton();
+    });
+
+    stage.addEventListener('pointerdown', event => {
+      if (event.pointerType === 'mouse' && event.button !== 0) return;
+      dragging = true;
+      playing = false;
+      targetYaw = null;
+      lastX = event.clientX;
+      lastY = event.clientY;
+      stage.setPointerCapture(event.pointerId);
+      stage.classList.add('is-dragging');
+      updateSpinButton();
+    });
+
+    stage.addEventListener('pointermove', event => {
+      if (!dragging) return;
+      yaw += (event.clientX - lastX) * 0.65;
+      pitch = clamp(pitch - (event.clientY - lastY) * 0.3, -25, 25);
+      lastX = event.clientX;
+      lastY = event.clientY;
+      renderPhone();
+    });
+
+    function endDrag() {
+      dragging = false;
+      stage.classList.remove('is-dragging');
+    }
+
+    stage.addEventListener('pointerup', endDrag);
+    stage.addEventListener('pointercancel', endDrag);
+    stage.addEventListener('lostpointercapture', endDrag);
+
+    stage.addEventListener('keydown', event => {
+      if (event.code === 'Space') {
+        event.preventDefault();
+        playing = !playing;
+        targetYaw = null;
+        updateSpinButton();
+        return;
+      }
+      if (!['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home'].includes(event.key)) return;
+      event.preventDefault();
+      playing = false;
+      targetYaw = null;
+      if (event.key === 'ArrowLeft') yaw -= event.shiftKey ? 30 : 12;
+      if (event.key === 'ArrowRight') yaw += event.shiftKey ? 30 : 12;
+      if (event.key === 'ArrowUp') pitch = clamp(pitch + 8, -25, 25);
+      if (event.key === 'ArrowDown') pitch = clamp(pitch - 8, -25, 25);
+      if (event.key === 'Home') { yaw = 151; pitch = -8; }
+      updateSpinButton();
+      renderPhone();
+    });
+
+    reducedMotion.addEventListener('change', event => {
+      if (event.matches) {
+        playing = false;
+        updateSpinButton();
+      }
+    });
+
+    function animate(time) {
+      const elapsed = Math.min(time - (lastTime || time), 45);
+      lastTime = time;
+      let changed = false;
+      if (!dragging && targetYaw !== null) {
+        yaw += (targetYaw - yaw) * Math.min(1, elapsed * 0.012);
+        pitch += (-8 - pitch) * Math.min(1, elapsed * 0.012);
+        if (Math.abs(targetYaw - yaw) < 0.08) { yaw = targetYaw; targetYaw = null; }
+        changed = true;
+      } else if (!dragging && playing) {
+        yaw += elapsed * 0.021;
+        if (yaw > 7200) yaw %= 360;
+        changed = true;
+      }
+      if (changed) renderPhone();
+      requestAnimationFrame(animate);
+    }
+
+    updateSpinButton();
+    renderPhone();
+    requestAnimationFrame(animate);
+  </script>
+
+
+</body></html>

@@ -1,0 +1,235 @@
+<svg id="infographic" viewBox="0 0 1280 720" width="2560" height="1440" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagram-title" aria-describedby="diagram-description" font-family="Arial, sans-serif"><rect width="1280" height="720" fill="#ffffff"/>
+      <title id="diagram-title">Normal artery compared with a constricted artery</title>
+      <desc id="diagram-description">A medical cutaway comparison. On the left, a smooth green artery wall surrounds an open passage with freely moving red blood cells. On the right, red artery tissue contains yellow plaque, creating a narrower passage with greater resistance and higher upstream pressure. The illustrations are simplified and not to scale.</desc>
+      <defs>
+        <linearGradient id="normal-shell" x1=".1" y1="0" x2=".7" y2="1">
+          <stop stop-color="#91c9a0"/><stop offset=".28" stop-color="#72b78b"/><stop offset=".73" stop-color="#4d986a"/><stop offset="1" stop-color="#39835a"/>
+        </linearGradient>
+        <linearGradient id="normal-rim" x1="0" y1="0" x2=".85" y2="1">
+          <stop stop-color="#aed6ae"/><stop offset=".45" stop-color="#8dbd91"/><stop offset="1" stop-color="#59996b"/>
+        </linearGradient>
+        <linearGradient id="normal-lumen" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#e5efdd"/><stop offset=".5" stop-color="#fbfcf5"/><stop offset="1" stop-color="#e1ecd6"/>
+        </linearGradient>
+        <linearGradient id="normal-lower" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#5b9c6c"/><stop offset=".17" stop-color="#77b283"/><stop offset=".8" stop-color="#52956a"/><stop offset="1" stop-color="#3d8259"/>
+        </linearGradient>
+        <linearGradient id="red-shell" x1=".1" y1="0" x2=".7" y2="1">
+          <stop stop-color="#e4a096"/><stop offset=".28" stop-color="#d78c80"/><stop offset=".73" stop-color="#bf6d60"/><stop offset="1" stop-color="#a9534c"/>
+        </linearGradient>
+        <linearGradient id="red-rim" x1="0" y1="0" x2=".85" y2="1">
+          <stop stop-color="#eeb5a4"/><stop offset=".45" stop-color="#dc9a86"/><stop offset="1" stop-color="#bf7566"/>
+        </linearGradient>
+        <linearGradient id="red-lumen" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#f1e3d7"/><stop offset=".5" stop-color="#fffaf3"/><stop offset="1" stop-color="#eeddd0"/>
+        </linearGradient>
+        <linearGradient id="red-lower" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#c27c6b"/><stop offset=".17" stop-color="#d58f7d"/><stop offset=".8" stop-color="#bd7364"/><stop offset="1" stop-color="#a5534b"/>
+        </linearGradient>
+        <linearGradient id="plaque-fill" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#ecd8a1"/><stop offset=".55" stop-color="#e7c984"/><stop offset="1" stop-color="#d4ae67"/>
+        </linearGradient>
+        <linearGradient id="plaque-lower" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#dcbf7b"/><stop offset=".55" stop-color="#ecd69c"/><stop offset="1" stop-color="#e5c88a"/>
+        </linearGradient>
+        <radialGradient id="blood-cell-fill" cx=".35" cy=".2" r=".9">
+          <stop stop-color="#ed8a83"/><stop offset=".35" stop-color="#dc6b69"/><stop offset=".8" stop-color="#c95053"/><stop offset="1" stop-color="#b14349"/>
+        </radialGradient>
+        <filter id="normal-shadow" x="-20%" y="-30%" width="150%" height="180%">
+          <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#3d6845" flood-opacity=".1"/>
+        </filter>
+        <filter id="red-shadow" x="-20%" y="-30%" width="150%" height="180%">
+          <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#7e5142" flood-opacity=".1"/>
+        </filter>
+        <clipPath id="normal-lumen-clip"><path d="M43 143H439C467 143 489 164 489 190C489 217 467 239 439 239H43Z"/></clipPath>
+        <clipPath id="red-lumen-clip"><path d="M43 143H439C467 143 489 164 489 190C489 217 467 239 439 239H43Z"/></clipPath>
+        <g id="rbc-disc">
+          <ellipse rx="14" ry="8.5" fill="url(#blood-cell-fill)" transform="rotate(-9)"/>
+          <ellipse cx="0" cy="-.5" rx="7" ry="3.3" fill="#b74349" opacity=".54" transform="rotate(-9)"/>
+          <path d="M-10-2.5C-8-6-1-8 5-5.5" stroke="#ffc2ae" stroke-width="1.1" stroke-linecap="round" fill="none" opacity=".62"/>
+          <path d="M-8 4C-3 6 4 5 8 2" stroke="#e38b7e" stroke-width=".8" stroke-linecap="round" fill="none" opacity=".5"/>
+        </g>
+      </defs>
+
+      <g id="infographic-intro" class="intro">
+        <path d="M49 43h19" stroke="#4c8a61" stroke-width="2"/>
+        <text id="intro-eyebrow" x="80" y="47" fill="#6d8c70" font-size="10.5" font-weight="600" letter-spacing="1.65">YOUR ARTERIES, EXPLAINED</text>
+        <text class="main-title" x="48" y="106" fill="#24392e" font-size="56" font-weight="500" letter-spacing="-2.1"><tspan id="title-one" x="48" y="106">Blood flow, </tspan><tspan id="title-two">side by side.</tspan></text>
+        <text x="50" y="145" fill="#6c796e" font-size="16.5" font-weight="400"><tspan id="subtitle-one" x="50" y="145" font-size="16.5">See how an open artery compares to one narrowed by plaque.</tspan><tspan id="subtitle-two" font-size="16.5"/></text>
+      </g>
+
+      <line id="comparison-divider" x1="640" y1="199" x2="640" y2="635" stroke="#e7ece5" stroke-width="1"/>
+
+      <g id="normal-panel" class="comparison-panel normal-panel" transform="translate(40 218)">
+        <text class="panel-heading" x="8" y="0" fill="#2d3d31" font-size="25" font-weight="500" letter-spacing="-.6">Normal artery</text>
+        <g class="panel-status" transform="translate(440 -4)">
+          <circle r="3" fill="#55926a"/>
+          <text class="status-text" x="11" y="3.5" fill="#4e7b55" font-size="10" font-weight="600" letter-spacing="1.3">HEALTHY</text>
+        </g>
+
+        <g class="artery-illustration" transform="translate(0 35)">
+          <g class="artery-visual" transform="rotate(-6 285 190)">
+            <path class="vessel-shadow" d="M84 113H444C485 113 516 146 516 190C516 234 485 267 444 267H84C51 267 29 234 29 190C29 146 51 113 84 113Z" fill="url(#normal-shell)" filter="url(#normal-shadow)"/>
+            <path d="M72 142H439C467 142 489 163 489 190C489 217 467 239 439 239H72C52 239 40 218 40 190C40 162 52 142 72 142Z" fill="url(#normal-lumen)"/>
+            <path d="M72 142H438C453 142 465 148 473 157" fill="none" stroke="#d0e2c5" stroke-width="3"/>
+            <path d="M82 115H442" fill="none" stroke="#c7e5c2" stroke-width="1.1" opacity=".85"/>
+            <path d="M82 120H438" fill="none" stroke="#a3cca2" stroke-width="1" opacity=".75"/>
+            <path d="M52 146C43 160 40 174 40 190" fill="none" stroke="#daead0" stroke-width="1.2" opacity=".8"/>
+
+            <g clip-path="url(#normal-lumen-clip)">
+              <path class="flow-trail" d="M35 190H504" fill="none" stroke="#85b786" stroke-width="1" stroke-dasharray="4 24" opacity=".4"/>
+              <g class="blood-cell" data-x="118" data-y="174" transform="translate(118 174)">
+                
+                <use href="#rbc-disc" transform="scale(.94)"/>
+              </g>
+              <g class="blood-cell" data-x="228" data-y="213" transform="translate(228 213)">
+                
+                <use href="#rbc-disc" transform="scale(.92) rotate(12)"/>
+              </g>
+              <g class="blood-cell" data-x="319" data-y="170" transform="translate(319 170)">
+                
+                <use href="#rbc-disc" transform="scale(.83) rotate(-8)"/>
+              </g>
+              <g class="blood-cell" data-x="409" data-y="211" transform="translate(409 211)">
+                
+                <use href="#rbc-disc" transform="scale(.88) rotate(-9)"/>
+              </g>
+              <g class="blood-cell" data-x="42" data-y="192" transform="translate(42 192)">
+                
+                <use href="#rbc-disc" transform="scale(.86) rotate(6)"/>
+              </g>
+              <g class="blood-cell" data-x="178" data-y="167" transform="translate(178 167)">
+                
+                <use href="#rbc-disc" transform="scale(.72) rotate(18)"/>
+              </g>
+              <g fill="none" stroke="#3d9266" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".77">
+                <path d="M116 190h45m-8-7 8 7-8 7"/>
+                <path d="M232 190h44m-8-7 8 7-8 7"/>
+                <path d="M343 190h41m-8-7 8 7-8 7"/>
+              </g>
+            </g>
+
+            <path d="M29 190C29 234 51 267 84 267H444C485 267 516 234 516 190C514 217 497 238 473 238H84C58 238 42 218 40 190Z" fill="url(#normal-lower)"/>
+            <path d="M43 213C51 230 64 238 84 238H438" fill="none" stroke="#3f8055" stroke-width="1.2" opacity=".65"/>
+            <path d="M57 252C64 257 73 260 84 260H437" fill="none" stroke="#aed1a0" stroke-width="1" opacity=".55"/>
+            <path d="M42 222C44 229 48 236 52 241" fill="none" stroke="#d0e4bc" stroke-width="1.3" stroke-linecap="round" opacity=".65"/>
+
+            <ellipse cx="452" cy="190" rx="64" ry="77" fill="url(#normal-rim)" stroke="#62946b" stroke-width="1"/>
+            <ellipse cx="452" cy="190" rx="45" ry="55" fill="url(#normal-lumen)" stroke="#5e8b62" stroke-width="1.7"/>
+            <path d="M416 165C423 146 440 135 456 136" fill="none" stroke="#d6e5c9" stroke-width="1.4" opacity=".8"/>
+            <path d="M420 217C431 238 452 249 472 235" fill="none" stroke="#c1d4b1" stroke-width="1.2" opacity=".75"/>
+            <path d="M452 114v19m0 114v19m-62-76h11m100 0h13M409 142l10 11m66 75 10 11m-86 0 10-11m66-74 10-12" fill="none" stroke="#d8e9cc" stroke-width="1" opacity=".7"/>
+            <path d="M390 174C389 180 390 204 393 211" fill="none" stroke="#d1e3c3" stroke-width="1.3" opacity=".7"/>
+            <path d="M529 188h20m-6-5 6 5-6 5" stroke="#86a98a" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <g class="diagram-labels">
+            <g class="annotation">
+              <title>The artery wall is smooth and flexible, surrounding a wide, open passage.</title>
+              <path class="annotation-line" d="M78 64h77l40 64" fill="none" stroke="#a6b2a5" stroke-width="1.1"/>
+              <circle cx="195" cy="128" r="2.8" fill="white" stroke="#6b9772" stroke-width="1.1"/>
+              <text class="diagram-label" x="78" y="48" fill="#657566" font-size="13.5">Smooth artery wall</text>
+            </g>
+            <g class="annotation">
+              <title>The lumen is the open inner passage where blood flows.</title>
+              <path class="annotation-line" d="M378 300v-26l55-54" fill="none" stroke="#a6b2a5" stroke-width="1.1"/>
+              <circle cx="433" cy="220" r="2.8" fill="white" stroke="#6b9772" stroke-width="1.1"/>
+              <text class="diagram-label" x="376" y="320" fill="#657566" font-size="13.5">Clear, open passage</text>
+            </g>
+          </g>
+        </g>
+
+        <text class="summary-heading" x="8" y="387" fill="#3d8059" font-size="20.5" font-weight="500" letter-spacing="-.45">Smooth, steady flow.</text>
+        <text x="8" y="413" fill="#6c796e" font-size="14.5" font-weight="400"><tspan id="normal-copy-one" x="8" y="413" font-size="14.5">Blood moves freely through a smooth, open vessel.</tspan><tspan id="normal-copy-two" x="8" y="441" font-size="14.5"/></text>
+      </g>
+
+      <g id="constricted-panel" class="comparison-panel constricted-panel" transform="translate(680 218)">
+        <text class="panel-heading" x="8" y="0" fill="#2d3d31" font-size="25" font-weight="500" letter-spacing="-.6">Constricted artery</text>
+        <g class="panel-status" transform="translate(440 -4)">
+          <circle r="3" fill="#bd7265"/>
+          <text class="status-text" x="11" y="3.5" fill="#9b5a4d" font-size="10" font-weight="600" letter-spacing="1.3">NARROWED</text>
+        </g>
+
+        <g class="artery-illustration" transform="translate(0 35)">
+          <g class="artery-visual" transform="rotate(-6 285 190)">
+            <path class="vessel-shadow" d="M84 113H444C485 113 516 146 516 190C516 234 485 267 444 267H84C51 267 29 234 29 190C29 146 51 113 84 113Z" fill="url(#red-shell)" filter="url(#red-shadow)"/>
+            <path d="M72 142H439C467 142 489 163 489 190C489 217 467 239 439 239H72C52 239 40 218 40 190C40 162 52 142 72 142Z" fill="url(#red-lumen)"/>
+            <path d="M72 142H438C453 142 465 148 473 157" fill="none" stroke="#ecc9b4" stroke-width="3"/>
+            <path d="M82 115H442" fill="none" stroke="#f6d0b8" stroke-width="1.1" opacity=".85"/>
+            <path d="M82 120H438" fill="none" stroke="#e8b8a2" stroke-width="1" opacity=".7"/>
+
+            <g clip-path="url(#red-lumen-clip)">
+              <path class="flow-trail" d="M35 194H504" fill="none" stroke="#be6a5c" stroke-width="1" stroke-dasharray="4 24" opacity=".5"/>
+              <g class="blood-cell" data-x="104" data-y="193" transform="translate(104 193)">
+                
+                <use href="#rbc-disc" transform="scale(.77 .7) rotate(-4)"/>
+              </g>
+              <g class="blood-cell" data-x="208" data-y="195" transform="translate(208 195)">
+                
+                <use href="#rbc-disc" transform="scale(.69 .71) rotate(8)"/>
+              </g>
+              <g class="blood-cell" data-x="310" data-y="194" transform="translate(310 194)">
+                
+                <use href="#rbc-disc" transform="scale(.72 .67) rotate(-9)"/>
+              </g>
+              <g class="blood-cell" data-x="400" data-y="192" transform="translate(400 192)">
+                
+                <use href="#rbc-disc" transform="scale(.73 .76) rotate(4)"/>
+              </g>
+              <g class="blood-cell" data-x="43" data-y="191" transform="translate(43 191)">
+                
+                <use href="#rbc-disc" transform="scale(.78 .7) rotate(-5)"/>
+              </g>
+              <g fill="none" stroke="#bf6557" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".8">
+                <path d="M115 191h43m-8-7 8 7-8 7"/>
+                <path d="M242 195h43m-8-7 8 7-8 7"/>
+                <path d="M349 191h43m-8-7 8 7-8 7"/>
+              </g>
+            </g>
+
+            <path d="M80 144H440C460 144 477 162 478 185L455 184C438 177 427 165 410 165C389 165 379 177 362 178C344 179 331 183 315 181C295 178 287 171 269 171C247 170 231 174 213 169C191 163 176 160 157 161L81 165Z" fill="url(#plaque-fill)" stroke="#cbaa6b" stroke-width="1"/>
+            <path d="M82 235H440C462 235 477 216 478 195L454 192C437 199 428 215 409 216C391 217 378 212 362 210C344 207 331 208 315 212C296 216 279 222 260 218C238 214 226 209 208 212C185 214 171 222 152 223L82 224Z" fill="url(#plaque-lower)" stroke="#caaa6d" stroke-width="1"/>
+            <path d="M158 161C184 160 201 169 223 169C244 175 261 170 279 174C304 182 325 183 350 177C371 173 389 167 407 166C426 166 439 176 454 181" fill="none" stroke="#f8e9bd" stroke-width="1.6" opacity=".9"/>
+            <path d="M155 222C177 219 191 213 210 212C230 210 242 217 261 218C281 219 299 213 318 212C341 206 352 211 367 213C389 218 408 216 426 208" fill="none" stroke="#f8e8bb" stroke-width="1.4" opacity=".9"/>
+            <path d="M165 153h12m10 3h7m21-2h10m9 8h8m19-2h8m17 6h9m14 7h9m16 0h9m13-7h8m12-7h9m11 9h6M159 233h13m13-6h8m10-5h8m17 6h8m22 0h10m13-4h8m17-5h9m15 4h10m12 1h7" fill="none" stroke="#d6b779" stroke-width="1.1" stroke-linecap="round" opacity=".4"/>
+            <g fill="#c8a265" opacity=".55">
+              <circle cx="201" cy="156" r="1.4"/><circle cx="237" cy="161" r="1"/><circle cx="281" cy="163" r="1.2"/><circle cx="323" cy="175" r="1"/><circle cx="359" cy="168" r="1.3"/><circle cx="402" cy="159" r="1"/><circle cx="191" cy="225" r="1"/><circle cx="244" cy="222" r="1.2"/><circle cx="288" cy="225" r="1.1"/><circle cx="335" cy="218" r="1.2"/><circle cx="383" cy="224" r="1"/>
+            </g>
+
+            <path d="M29 190C29 234 51 267 84 267H444C485 267 516 234 516 190C514 217 497 238 473 238H84C58 238 42 218 40 190Z" fill="url(#red-lower)"/>
+            <path d="M43 213C51 230 64 238 84 238H438" fill="none" stroke="#a45e50" stroke-width="1.2" opacity=".65"/>
+            <path d="M57 252C64 257 73 260 84 260H437" fill="none" stroke="#eab79b" stroke-width="1" opacity=".6"/>
+            <path d="M42 222C44 229 48 236 52 241" fill="none" stroke="#f3d2b4" stroke-width="1.3" stroke-linecap="round" opacity=".65"/>
+
+            <ellipse cx="452" cy="190" rx="64" ry="77" fill="url(#red-rim)" stroke="#b77462" stroke-width="1"/>
+            <ellipse cx="452" cy="190" rx="45" ry="55" fill="url(#plaque-fill)" stroke="#c19c63" stroke-width="1.2"/>
+            <ellipse cx="452" cy="190" rx="30" ry="29" fill="url(#red-lumen)" stroke="#d0aa6b" stroke-width="1.4"/>
+            <path d="M416 165C423 146 440 135 456 136" fill="none" stroke="#f1d6ba" stroke-width="1.4" opacity=".8"/>
+            <path d="M423 208C428 219 438 225 450 224" fill="none" stroke="#f5e4b7" stroke-width="1.4" opacity=".8"/>
+            <path d="M452 114v19m0 114v19m-62-76h11m100 0h13M409 142l10 11m66 75 10 11m-86 0 10-11m66-74 10-12" fill="none" stroke="#f6d3ba" stroke-width="1" opacity=".75"/>
+            <path d="M390 174C389 180 390 204 393 211" fill="none" stroke="#f1c6ac" stroke-width="1.3" opacity=".7"/>
+            <path d="M529 188h20m-6-5 6 5-6 5" stroke="#bf8b77" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </g>
+
+          <g class="diagram-labels">
+            <g class="annotation">
+              <title>Plaque is a buildup of fatty deposits that can narrow an artery over time.</title>
+              <path class="annotation-line" d="M78 64h77l122 109" fill="none" stroke="#b9ad9a" stroke-width="1.1"/>
+              <circle cx="277" cy="173" r="2.8" fill="white" stroke="#b59a69" stroke-width="1.1"/>
+              <text class="diagram-label" x="78" y="48" fill="#7d725d" font-size="13.5">Plaque buildup</text>
+            </g>
+            <g class="annotation">
+              <title>The smaller opening increases resistance. Blood pressure can rise upstream of the narrowing.</title>
+              <path class="annotation-line" d="M368 300v-26l-58-79" fill="none" stroke="#b9ad9a" stroke-width="1.1"/>
+              <circle cx="310" cy="195" r="2.8" fill="white" stroke="#b59a69" stroke-width="1.1"/>
+              <text class="diagram-label" x="366" y="320" fill="#7d725d" font-size="13.5">Narrowed passage</text>
+            </g>
+          </g>
+        </g>
+
+        <text class="summary-heading" x="8" y="387" fill="#b45d50" font-size="20.5" font-weight="500" letter-spacing="-.45">More resistance. Higher pressure.</text>
+        <text x="8" y="413" fill="#6c796e" font-size="14.5" font-weight="400"><tspan id="red-copy-one" x="8" y="413" font-size="14.5">Plaque narrows the passage, making blood harder to push through.</tspan><tspan id="red-copy-two" x="8" y="441" font-size="14.5"/></text>
+      </g>
+
+      <text id="diagram-footnote" x="48" y="685" fill="#6c796e" font-size="10.5" font-weight="400">A simplified educational illustration. Not to scale.</text>
+    </svg>

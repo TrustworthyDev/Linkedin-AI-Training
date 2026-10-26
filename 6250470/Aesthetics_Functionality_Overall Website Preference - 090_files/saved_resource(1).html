@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://kdjx4lgxdrwvaoe.c.msft.feather-prod.azure.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="A clear, interactive comparison of normal and constricted arteries. Explore blood flow, plaque buildup, and the difference a narrow passage makes.">
+  <title>Artery | Blood flow, side by side</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./css2" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #24392e;
+      --muted: #6c796e;
+      --green: #3d875e;
+      --red: #b95d53;
+      --line: #e6ebe6;
+      --page-width: 1280px;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html { background: #fff; color: var(--ink); font-family: "DM Sans", Arial, sans-serif; }
+    body { margin: 0; min-width: 320px; -webkit-font-smoothing: antialiased; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; cursor: pointer; }
+    button:focus-visible, a:focus-visible { outline: 2px solid var(--green); outline-offset: 5px; }
+    button:disabled { cursor: wait; opacity: .65; }
+    button svg { flex-shrink: 0; }
+    ::selection { background: #dfeddf; color: var(--ink); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .page-width { width: calc(100% - 96px); max-width: var(--page-width); margin-inline: auto; }
+
+    .site-header { height: 82px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); animation: enter .65s both; }
+    .brand-group, .brand, .header-actions { display: flex; align-items: center; }
+    .brand { gap: 9px; color: var(--ink); text-decoration: none; }
+    .brand-symbol { width: 30px; height: 30px; }
+    .wordmark { font-size: 29px; font-weight: 700; letter-spacing: -1.5px; line-height: 1; }
+    .wordmark span { color: var(--green); }
+    .brand-note { margin-left: 24px; padding-left: 24px; border-left: 1px solid #dde5dd; color: var(--muted); font-size: 12px; letter-spacing: .1px; }
+    .header-actions { gap: 27px; }
+    .about-link { border: 0; padding: 10px 0; color: #68756a; background: none; font-size: 13px; transition: color .2s; }
+    .about-link:hover { color: var(--green); }
+    .download-wrap { position: relative; }
+    .save-button { display: flex; align-items: center; justify-content: center; gap: 9px; min-width: 154px; height: 40px; padding: 0 15px; border: 1px solid #ced9ce; border-radius: 6px; background: #fff; color: var(--ink); font-size: 12px; font-weight: 600; transition: background .2s, border-color .2s, transform .2s; }
+    .save-button:hover { background: #f3f7f1; border-color: #9db49f; transform: translateY(-1px); }
+    .save-chevron { margin-left: 3px; color: #89988b; }
+    .download-menu { position: absolute; top: 49px; right: 0; z-index: 10; width: 226px; padding: 6px; border: 1px solid var(--line); border-radius: 9px; background: white; box-shadow: 0 12px 40px #203a2814; animation: menuIn .16s ease-out; }
+    .menu-option { width: 100%; display: flex; align-items: center; gap: 12px; padding: 11px 10px; border: 0; border-radius: 5px; text-align: left; color: var(--ink); background: none; }
+    .menu-option:hover, .menu-option:focus-visible { background: #f2f6ef; outline-offset: -2px; }
+    .menu-option > svg { color: #66866b; }
+    .menu-option strong { display: block; font-size: 13px; font-weight: 500; }
+    .menu-option small { display: block; margin-top: 3px; color: var(--muted); font-size: 11px; }
+
+    main { padding-top: 3px; }
+    .infographic { display: block; width: 100%; height: auto; overflow: visible; }
+    .intro { animation: introIn .85s .08s both; }
+    .comparison-panel { animation: panelIn .95s .17s both; }
+    .comparison-panel.constricted-panel { animation-delay: .28s; }
+    .diagram-labels { transition: opacity .25s ease; }
+    .hide-labels .diagram-labels { opacity: 0; pointer-events: none; }
+    .annotation-line { transition: stroke .2s; }
+    .annotation:hover .annotation-line { stroke: #4a7954; }
+    .constricted-panel .annotation:hover .annotation-line { stroke: #ad6555; }
+    .vessel-shadow { pointer-events: none; }
+    .flow-trail { animation: flowTrace 2.4s linear infinite; }
+    .constricted-panel .flow-trail { animation-duration: 1.6s; }
+    .flow-paused .flow-trail { animation-play-state: paused; }
+
+    .diagram-controls { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 24px; border-top: 1px solid var(--line); padding: 14px 0 18px; animation: enter .8s .4s both; }
+    .learn-link { display: flex; align-items: center; gap: 8px; padding: 8px 0; color: var(--muted); border: 0; background: none; font-size: 12px; transition: color .2s; }
+    .learn-link > svg:first-child { color: #9ba79d; }
+    .learn-link > svg:last-child { margin-left: 3px; transition: transform .2s; }
+    .learn-link:hover { color: var(--green); }
+    .learn-link:hover > svg:last-child { transform: translateX(3px); }
+    .control-group { display: flex; align-items: center; gap: 25px; }
+    .label-switch { display: inline-flex; align-items: center; gap: 10px; border: 0; padding: 8px 0; background: none; color: #657469; font-size: 12px; }
+    .switch-track { position: relative; display: block; width: 30px; height: 17px; border-radius: 20px; background: #bcc7bc; transition: background .2s; }
+    .switch-track::after { content: ""; position: absolute; top: 3px; left: 3px; width: 11px; height: 11px; border-radius: 50%; background: #fff; transition: transform .2s; box-shadow: 0 1px 2px #00000012; }
+    .label-switch[aria-checked="true"] .switch-track { background: #5a8b64; }
+    .label-switch[aria-checked="true"] .switch-track::after { transform: translateX(13px); }
+    .control-divider { width: 1px; height: 17px; background: var(--line); }
+    .flow-button { min-width: 96px; display: flex; align-items: center; justify-content: flex-start; gap: 8px; padding: 8px 0; border: 0; background: none; color: #657469; font-size: 12px; text-align: left; transition: color .2s; }
+    .flow-button:hover { color: var(--green); }
+    .flow-button svg { width: 14px; height: 14px; }
+
+    dialog { width: min(560px, calc(100% - 32px)); max-height: calc(100svh - 48px); padding: 0; border: 1px solid #e3e9e0; border-radius: 12px; color: var(--ink); background: white; box-shadow: 0 24px 100px #152d2626; }
+    dialog::backdrop { background: #22352a61; backdrop-filter: blur(5px); }
+    dialog[open] { animation: dialogIn .25s ease-out; }
+    .dialog-content { position: relative; padding: 37px 39px 35px; }
+    .dialog-close { position: absolute; right: 19px; top: 19px; width: 30px; height: 30px; display: grid; place-items: center; border: 0; border-radius: 50%; background: #f3f5f0; color: #778174; }
+    .dialog-close:hover { background: #e8ede3; color: var(--ink); }
+    .dialog-eyebrow { margin: 1px 0 18px; color: var(--green); font-size: 10px; font-weight: 600; letter-spacing: 1.7px; }
+    .dialog-content h2 { margin: 0 0 16px; font-size: 32px; line-height: 1.15; font-weight: 500; letter-spacing: -1px; }
+    .dialog-intro { margin: 0 0 26px; color: var(--muted); font-size: 14px; line-height: 1.75; }
+    .explanation-list { margin: 0 0 28px; }
+    .explanation-item { border-top: 1px solid var(--line); padding: 18px 0; }
+    .explanation-item:last-child { padding-bottom: 0; }
+    .explanation-item dt { display: flex; align-items: center; gap: 9px; margin-bottom: 7px; color: var(--ink); font-size: 14px; font-weight: 600; }
+    .explanation-item dt::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--green); }
+    .explanation-item:nth-child(2) dt::before { background: var(--red); }
+    .explanation-item dd { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+    .medical-note { margin: 23px 0; padding: 15px 0 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; line-height: 1.7; }
+    .dialog-done { width: 100%; height: 43px; border: 0; border-radius: 5px; background: #375e42; color: white; font-size: 13px; font-weight: 500; transition: background .2s; }
+    .dialog-done:hover { background: #294b34; }
+    body.dialog-open { overflow: hidden; }
+    .toast { position: fixed; left: 50%; bottom: 26px; z-index: 30; display: flex; align-items: center; gap: 10px; max-width: calc(100% - 32px); padding: 13px 18px; border-radius: 6px; background: #294532; color: white; font-size: 12px; box-shadow: 0 5px 24px #24412e24; transform: translate(-50%, 18px); opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s; }
+    .toast.visible { opacity: 1; transform: translate(-50%, 0); }
+    .toast svg { flex-shrink: 0; color: #bddebb; }
+
+    @keyframes enter { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes introIn { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes panelIn { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes flowTrace { to { stroke-dashoffset: -28; } }
+    @keyframes menuIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes dialogIn { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: translateY(0) scale(1); } }
+
+    @media (min-width: 801px) and (max-height: 820px) {
+      main.page-width, .diagram-controls { max-width: min(1280px, calc((100svh - 156px) * 1.77778)); }
+      .site-header { height: 74px; }
+      .diagram-controls { min-height: 63px; padding-top: 10px; padding-bottom: 12px; }
+    }
+
+    @media (max-width: 1000px) {
+      .page-width { width: calc(100% - 64px); }
+      .brand-note { margin-left: 18px; padding-left: 18px; }
+      .header-actions { gap: 21px; }
+    }
+
+    @media (max-width: 800px) {
+      .page-width { width: calc(100% - 32px); max-width: 540px; }
+      .site-header { height: 73px; }
+      .brand-symbol { width: 25px; height: 25px; }
+      .wordmark { font-size: 26px; }
+      .brand { gap: 7px; }
+      .brand-note, .about-link, .save-chevron { display: none; }
+      .save-button { min-width: 98px; height: 36px; padding: 0 10px; gap: 7px; font-size: 11px; }
+      .save-button > svg:first-child { width: 14px; height: 14px; }
+      .download-menu { top: 44px; }
+      main { padding-top: 7px; }
+      .diagram-controls { flex-direction: column-reverse; gap: 8px; align-items: center; padding: 15px 0 23px; }
+      .control-group { width: 100%; justify-content: center; gap: 25px; }
+      .label-switch, .flow-button { font-size: 12px; min-height: 36px; }
+      .learn-link { font-size: 11px; }
+      .dialog-content { padding: 31px 25px 25px; }
+      .dialog-content h2 { font-size: 29px; }
+      .dialog-intro { font-size: 13px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+
+    @media print {
+      .site-header { height: 65px; }
+      .header-actions, .diagram-controls, .toast, dialog { display: none !important; }
+      main.page-width { width: 100%; max-width: none; padding-top: 15px; }
+      .intro, .comparison-panel { animation: none; }
+      @page { size: landscape; margin: 12mm; }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header page-width">
+    <div class="brand-group">
+      <div class="brand" aria-label="Artery, health illustrated">
+        <svg class="brand-symbol" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <path d="M4 8h7c7 0 3 16 10 16h7" stroke="#3d875e" stroke-width="3.3" stroke-linecap="round"></path>
+          <path d="M4 17h7c7 0 3-10 10-10h7" stroke="#3d875e" stroke-width="3.3" stroke-linecap="round"></path>
+          <path d="M4 25h4M24 16h4" stroke="#3d875e" stroke-width="3.3" stroke-linecap="round" opacity=".38"></path>
+        </svg>
+        <span class="wordmark">artery<span>.</span></span>
+      </div>
+      <span class="brand-note">Health, illustrated.</span>
+    </div>
+    <div class="header-actions">
+      <button class="about-link" data-open-about="" type="button">About this guide</button>
+      <div class="download-wrap" id="download-wrap">
+        <button class="save-button" id="save-button" type="button" aria-haspopup="menu" aria-expanded="false" aria-controls="download-menu">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 2.5v10m-3.5-3.5L10 12.5 13.5 9M3.5 13v3.5h13V13" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <span id="save-label">Save infographic</span>
+          <svg class="save-chevron" width="11" height="11" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="m3 4.5 3 3 3-3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>
+        <div class="download-menu" id="download-menu" role="menu" aria-label="Download format" hidden="">
+          <button class="menu-option" data-format="png" role="menuitem" type="button">
+            <svg width="21" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h8l4 4v14H6V3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"></path><path d="M14 3v5h4M9 16l2-3 2 2 2-2 1 5H8" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"></path></svg>
+            <span><strong>PNG image</strong><small>2560 x 1440 / 16:9</small></span>
+          </button>
+          <button class="menu-option" data-format="svg" role="menuitem" type="button">
+            <svg width="21" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 3h8l4 4v14H6V3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"></path><path d="M14 3v5h4M9 11l-2 3 2 3m5-6 2 3-2 3" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+            <span><strong>SVG vector</strong><small>Sharp at any size / 16:9</small></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-width">
+    <h1 class="sr-only">Blood flow, side by side: normal artery versus constricted artery</h1>
+    <svg id="infographic" class="infographic" viewBox="0 0 1280 720" width="1280" height="720" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="diagram-title" aria-describedby="diagram-description" font-family="DM Sans, Arial, sans-serif">
+      <title id="diagram-title">Normal artery compared with a constricted artery</title>
+      <desc id="diagram-description">A medical cutaway comparison. On the left, a smooth green artery wall surrounds an open passage with freely moving red blood cells. On the right, red artery tissue contains yellow plaque, creating a narrower passage with greater resistance and higher upstream pressure. The illustrations are simplified and not to scale.</desc>
+      <defs>
+        <lineargradient id="normal-shell" x1=".1" y1="0" x2=".7" y2="1">
+          <stop stop-color="#91c9a0"></stop><stop offset=".28" stop-color="#72b78b"></stop><stop offset=".73" stop-color="#4d986a"></stop><stop offset="1" stop-color="#39835a"></stop>
+        </lineargradient>
+        <lineargradient id="normal-rim" x1="0" y1="0" x2=".85" y2="1">
+          <stop stop-color="#aed6ae"></stop><stop offset=".45" stop-color="#8dbd91"></stop><stop offset="1" stop-color="#59996b"></stop>
+        </lineargradient>
+        <lineargradient id="normal-lumen" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#e5efdd"></stop><stop offset=".5" stop-color="#fbfcf5"></stop><stop offset="1" stop-color="#e1ecd6"></stop>
+        </lineargradient>
+        <lineargradient id="normal-lower" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#5b9c6c"></stop><stop offset=".17" stop-color="#77b283"></stop><stop offset=".8" stop-color="#52956a"></stop><stop offset="1" stop-color="#3d8259"></stop>
+        </lineargradient>
+        <lineargradient id="red-shell" x1=".1" y1="0" x2=".7" y2="1">
+          <stop stop-color="#e4a096"></stop><stop offset=".28" stop-color="#d78c80"></stop><stop offset=".73" stop-color="#bf6d60"></stop><stop offset="1" stop-color="#a9534c"></stop>
+        </lineargradient>
+        <lineargradient id="red-rim" x1="0" y1="0" x2=".85" y2="1">
+          <stop stop-color="#eeb5a4"></stop><stop offset=".45" stop-color="#dc9a86"></stop><stop offset="1" stop-color="#bf7566"></stop>
+        </lineargradient>
+        <lineargradient id="red-lumen" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#f1e3d7"></stop><stop offset=".5" stop-color="#fffaf3"></stop><stop offset="1" stop-color="#eeddd0"></stop>
+        </lineargradient>
+        <lineargradient id="red-lower" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#c27c6b"></stop><stop offset=".17" stop-color="#d58f7d"></stop><stop offset=".8" stop-color="#bd7364"></stop><stop offset="1" stop-color="#a5534b"></stop>
+        </lineargradient>
+        <lineargradient id="plaque-fill" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#ecd8a1"></stop><stop offset=".55" stop-color="#e7c984"></stop><stop offset="1" stop-color="#d4ae67"></stop>
+        </lineargradient>
+        <lineargradient id="plaque-lower" x1="0" y1="0" x2="0" y2="1">
+          <stop stop-color="#dcbf7b"></stop><stop offset=".55" stop-color="#ecd69c"></stop><stop offset="1" stop-color="#e5c88a"></stop>
+        </lineargradient>
+        <radialgradient id="blood-cell-fill" cx=".35" cy=".2" r=".9">
+          <stop stop-color="#ed8a83"></stop><stop offset=".35" stop-color="#dc6b69"></stop><stop offset=".8" stop-color="#c95053"></stop><stop offset="1" stop-color="#b14349"></stop>
+        </radialgradient>
+        <filter id="normal-shadow" x="-20%" y="-30%" width="150%" height="180%">
+          <fedropshadow dx="0" dy="10" stdDeviation="10" flood-color="#3d6845" flood-opacity=".1"></fedropshadow>
+        </filter>
+        <filter id="red-shadow" x="-20%" y="-30%" width="150%" height="180%">
+          <fedropshadow dx="0" dy="10" stdDeviation="10" flood-color="#7e5142" flood-opacity=".1"></fedropshadow>
+        </filter>
+        <clippath id="normal-lumen-clip"><path d="M43 143H439C467 143 489 164 489 190C489 217 467 239 439 239H43Z"></path></clippath>
+        <clippath id="red-lumen-clip"><path d="M43 143H439C467 143 489 164 489 190C489 217 467 239 439 239H43Z"></path></clippath>
+        <g id="rbc-disc">
+          <ellipse rx="14" ry="8.5" fill="url(#blood-cell-fill)" transform="rotate(-9)"></ellipse>
+          <ellipse cx="0" cy="-.5" rx="7" ry="3.3" fill="#b74349" opacity=".54" transform="rotate(-9)"></ellipse>
+          <path d="M-10-2.5C-8-6-1-8 5-5.5" stroke="#ffc2ae" stroke-width="1.1" stroke-linecap="round" fill="none" opacity=".62"></path>
+          <path d="M-8 4C-3 6 4 5 8 2" stroke="#e38b7e" stroke-width=".8" stroke-linecap="round" fill="none" opacity=".5"></path>
+        </g>
+      </defs>
+
+      <g id="infographic-intro" class="intro">
+        <path d="M49 43h19" stroke="#4c8a61" stroke-width="2"></path>
+        <text id="intro-eyebrow" x="80" y="47" fill="#6d8c70" font-size="10.5" font-weight="600" letter-spacing="1.65">YOUR ARTERIES, EXPLAINED</text>
+        <text class="main-title" x="48" y="106" fill="#24392e" font-size="56" font-weight="500" letter-spacing="-2.1"><tspan id="title-one" x="48" y="106">Blood flow, </tspan><tspan id="title-two">side by side.</tspan></text>
+        <text x="50" y="145" fill="#6c796e" font-size="16.5" font-weight="400"><tspan id="subtitle-one" x="50" y="145" font-size="16.5">See how an open artery compares to one narrowed by plaque.</tspan><tspan id="subtitle-two" font-size="16.5"></tspan></text>
+      </g>
+
+      <line id="comparison-divider" x1="640" y1="199" x2="640" y2="635" stroke="#e7ece5" stroke-width="1"></line>
+
+      <g id="normal-panel" class="comparison-panel normal-panel" transform="translate(40 218)">
+        <text class="panel-heading" x="8" y="0" fill="#2d3d31" font-size="25" font-weight="500" letter-spacing="-.6">Normal artery</text>
+        <g class="panel-status" transform="translate(440 -4)">
+          <circle r="3" fill="#55926a"></circle>
+          <text class="status-text" x="11" y="3.5" fill="#4e7b55" font-size="10" font-weight="600" letter-spacing="1.3">HEALTHY</text>
+        </g>
+
+        <g class="artery-illustration" transform="translate(0 35)">
+          <g class="artery-visual" transform="rotate(-6 285 190)">
+            <path class="vessel-shadow" d="M84 113H444C485 113 516 146 516 190C516 234 485 267 444 267H84C51 267 29 234 29 190C29 146 51 113 84 113Z" fill="url(#normal-shell)" filter="url(#normal-shadow)"></path>
+            <path d="M72 142H439C467 142 489 163 489 190C489 217 467 239 439 239H72C52 239 40 218 40 190C40 162 52 142 72 142Z" fill="url(#normal-lumen)"></path>
+            <path d="M72 142H438C453 142 465 148 473 157" fill="none" stroke="#d0e2c5" stroke-width="3"></path>
+            <path d="M82 115H442" fill="none" stroke="#c7e5c2" stroke-width="1.1" opacity=".85"></path>
+            <path d="M82 120H438" fill="none" stroke="#a3cca2" stroke-width="1" opacity=".75"></path>
+            <path d="M52 146C43 160 40 174 40 190" fill="none" stroke="#daead0" stroke-width="1.2" opacity=".8"></path>
+
+            <g clip-path="url(#normal-lumen-clip)">
+              <path class="flow-trail" d="M35 190H504" fill="none" stroke="#85b786" stroke-width="1" stroke-dasharray="4 24" opacity=".4"></path>
+              <g class="blood-cell" data-x="118" data-y="174">
+                <animatemotion path="M-35 174L550 174" dur="8.5s" begin="-2.45s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.94)"></use>
+              </g>
+              <g class="blood-cell" data-x="228" data-y="213">
+                <animatemotion path="M-35 213L550 213" dur="8.5s" begin="-3.82s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.92) rotate(12)"></use>
+              </g>
+              <g class="blood-cell" data-x="319" data-y="170">
+                <animatemotion path="M-35 170L550 170" dur="8.5s" begin="-5.14s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.83) rotate(-8)"></use>
+              </g>
+              <g class="blood-cell" data-x="409" data-y="211">
+                <animatemotion path="M-35 211L550 211" dur="8.5s" begin="-6.45s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.88) rotate(-9)"></use>
+              </g>
+              <g class="blood-cell" data-x="42" data-y="192">
+                <animatemotion path="M-35 192L550 192" dur="8.5s" begin="-1.12s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.86) rotate(6)"></use>
+              </g>
+              <g class="blood-cell" data-x="178" data-y="167">
+                <animatemotion path="M-35 167L550 167" dur="8.5s" begin="-3.1s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.72) rotate(18)"></use>
+              </g>
+              <g fill="none" stroke="#3d9266" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".77">
+                <path d="M116 190h45m-8-7 8 7-8 7"></path>
+                <path d="M232 190h44m-8-7 8 7-8 7"></path>
+                <path d="M343 190h41m-8-7 8 7-8 7"></path>
+              </g>
+            </g>
+
+            <path d="M29 190C29 234 51 267 84 267H444C485 267 516 234 516 190C514 217 497 238 473 238H84C58 238 42 218 40 190Z" fill="url(#normal-lower)"></path>
+            <path d="M43 213C51 230 64 238 84 238H438" fill="none" stroke="#3f8055" stroke-width="1.2" opacity=".65"></path>
+            <path d="M57 252C64 257 73 260 84 260H437" fill="none" stroke="#aed1a0" stroke-width="1" opacity=".55"></path>
+            <path d="M42 222C44 229 48 236 52 241" fill="none" stroke="#d0e4bc" stroke-width="1.3" stroke-linecap="round" opacity=".65"></path>
+
+            <ellipse cx="452" cy="190" rx="64" ry="77" fill="url(#normal-rim)" stroke="#62946b" stroke-width="1"></ellipse>
+            <ellipse cx="452" cy="190" rx="45" ry="55" fill="url(#normal-lumen)" stroke="#5e8b62" stroke-width="1.7"></ellipse>
+            <path d="M416 165C423 146 440 135 456 136" fill="none" stroke="#d6e5c9" stroke-width="1.4" opacity=".8"></path>
+            <path d="M420 217C431 238 452 249 472 235" fill="none" stroke="#c1d4b1" stroke-width="1.2" opacity=".75"></path>
+            <path d="M452 114v19m0 114v19m-62-76h11m100 0h13M409 142l10 11m66 75 10 11m-86 0 10-11m66-74 10-12" fill="none" stroke="#d8e9cc" stroke-width="1" opacity=".7"></path>
+            <path d="M390 174C389 180 390 204 393 211" fill="none" stroke="#d1e3c3" stroke-width="1.3" opacity=".7"></path>
+            <path d="M529 188h20m-6-5 6 5-6 5" stroke="#86a98a" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+
+          <g class="diagram-labels">
+            <g class="annotation">
+              <title>The artery wall is smooth and flexible, surrounding a wide, open passage.</title>
+              <path class="annotation-line" d="M78 64h77l40 64" fill="none" stroke="#a6b2a5" stroke-width="1.1"></path>
+              <circle cx="195" cy="128" r="2.8" fill="white" stroke="#6b9772" stroke-width="1.1"></circle>
+              <text class="diagram-label" x="78" y="48" fill="#657566" font-size="13.5">Smooth artery wall</text>
+            </g>
+            <g class="annotation">
+              <title>The lumen is the open inner passage where blood flows.</title>
+              <path class="annotation-line" d="M378 300v-26l55-54" fill="none" stroke="#a6b2a5" stroke-width="1.1"></path>
+              <circle cx="433" cy="220" r="2.8" fill="white" stroke="#6b9772" stroke-width="1.1"></circle>
+              <text class="diagram-label" x="376" y="320" fill="#657566" font-size="13.5">Clear, open passage</text>
+            </g>
+          </g>
+        </g>
+
+        <text class="summary-heading" x="8" y="387" fill="#3d8059" font-size="20.5" font-weight="500" letter-spacing="-.45">Smooth, steady flow.</text>
+        <text x="8" y="413" fill="#6c796e" font-size="14.5" font-weight="400"><tspan id="normal-copy-one" x="8" y="413" font-size="14.5">Blood moves freely through a smooth, open vessel.</tspan><tspan id="normal-copy-two" x="8" y="441" font-size="14.5"></tspan></text>
+      </g>
+
+      <g id="constricted-panel" class="comparison-panel constricted-panel" transform="translate(680 218)">
+        <text class="panel-heading" x="8" y="0" fill="#2d3d31" font-size="25" font-weight="500" letter-spacing="-.6">Constricted artery</text>
+        <g class="panel-status" transform="translate(440 -4)">
+          <circle r="3" fill="#bd7265"></circle>
+          <text class="status-text" x="11" y="3.5" fill="#9b5a4d" font-size="10" font-weight="600" letter-spacing="1.3">NARROWED</text>
+        </g>
+
+        <g class="artery-illustration" transform="translate(0 35)">
+          <g class="artery-visual" transform="rotate(-6 285 190)">
+            <path class="vessel-shadow" d="M84 113H444C485 113 516 146 516 190C516 234 485 267 444 267H84C51 267 29 234 29 190C29 146 51 113 84 113Z" fill="url(#red-shell)" filter="url(#red-shadow)"></path>
+            <path d="M72 142H439C467 142 489 163 489 190C489 217 467 239 439 239H72C52 239 40 218 40 190C40 162 52 142 72 142Z" fill="url(#red-lumen)"></path>
+            <path d="M72 142H438C453 142 465 148 473 157" fill="none" stroke="#ecc9b4" stroke-width="3"></path>
+            <path d="M82 115H442" fill="none" stroke="#f6d0b8" stroke-width="1.1" opacity=".85"></path>
+            <path d="M82 120H438" fill="none" stroke="#e8b8a2" stroke-width="1" opacity=".7"></path>
+
+            <g clip-path="url(#red-lumen-clip)">
+              <path class="flow-trail" d="M35 194H504" fill="none" stroke="#be6a5c" stroke-width="1" stroke-dasharray="4 24" opacity=".5"></path>
+              <g class="blood-cell" data-x="104" data-y="193">
+                <animatemotion path="M-35 193L550 193" dur="5.8s" begin="-1.38s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.77 .7) rotate(-4)"></use>
+              </g>
+              <g class="blood-cell" data-x="208" data-y="195">
+                <animatemotion path="M-35 195L550 195" dur="5.8s" begin="-2.42s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.69 .71) rotate(8)"></use>
+              </g>
+              <g class="blood-cell" data-x="310" data-y="194">
+                <animatemotion path="M-35 194L550 194" dur="5.8s" begin="-3.42s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.72 .67) rotate(-9)"></use>
+              </g>
+              <g class="blood-cell" data-x="400" data-y="192">
+                <animatemotion path="M-35 192L550 192" dur="5.8s" begin="-4.31s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.73 .76) rotate(4)"></use>
+              </g>
+              <g class="blood-cell" data-x="43" data-y="191">
+                <animatemotion path="M-35 191L550 191" dur="5.8s" begin="-.77s" repeatCount="indefinite"></animatemotion>
+                <use href="#rbc-disc" transform="scale(.78 .7) rotate(-5)"></use>
+              </g>
+              <g fill="none" stroke="#bf6557" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".8">
+                <path d="M115 191h43m-8-7 8 7-8 7"></path>
+                <path d="M242 195h43m-8-7 8 7-8 7"></path>
+                <path d="M349 191h43m-8-7 8 7-8 7"></path>
+              </g>
+            </g>
+
+            <path d="M80 144H440C460 144 477 162 478 185L455 184C438 177 427 165 410 165C389 165 379 177 362 178C344 179 331 183 315 181C295 178 287 171 269 171C247 170 231 174 213 169C191 163 176 160 157 161L81 165Z" fill="url(#plaque-fill)" stroke="#cbaa6b" stroke-width="1"></path>
+            <path d="M82 235H440C462 235 477 216 478 195L454 192C437 199 428 215 409 216C391 217 378 212 362 210C344 207 331 208 315 212C296 216 279 222 260 218C238 214 226 209 208 212C185 214 171 222 152 223L82 224Z" fill="url(#plaque-lower)" stroke="#caaa6d" stroke-width="1"></path>
+            <path d="M158 161C184 160 201 169 223 169C244 175 261 170 279 174C304 182 325 183 350 177C371 173 389 167 407 166C426 166 439 176 454 181" fill="none" stroke="#f8e9bd" stroke-width="1.6" opacity=".9"></path>
+            <path d="M155 222C177 219 191 213 210 212C230 210 242 217 261 218C281 219 299 213 318 212C341 206 352 211 367 213C389 218 408 216 426 208" fill="none" stroke="#f8e8bb" stroke-width="1.4" opacity=".9"></path>
+            <path d="M165 153h12m10 3h7m21-2h10m9 8h8m19-2h8m17 6h9m14 7h9m16 0h9m13-7h8m12-7h9m11 9h6M159 233h13m13-6h8m10-5h8m17 6h8m22 0h10m13-4h8m17-5h9m15 4h10m12 1h7" fill="none" stroke="#d6b779" stroke-width="1.1" stroke-linecap="round" opacity=".4"></path>
+            <g fill="#c8a265" opacity=".55">
+              <circle cx="201" cy="156" r="1.4"></circle><circle cx="237" cy="161" r="1"></circle><circle cx="281" cy="163" r="1.2"></circle><circle cx="323" cy="175" r="1"></circle><circle cx="359" cy="168" r="1.3"></circle><circle cx="402" cy="159" r="1"></circle><circle cx="191" cy="225" r="1"></circle><circle cx="244" cy="222" r="1.2"></circle><circle cx="288" cy="225" r="1.1"></circle><circle cx="335" cy="218" r="1.2"></circle><circle cx="383" cy="224" r="1"></circle>
+            </g>
+
+            <path d="M29 190C29 234 51 267 84 267H444C485 267 516 234 516 190C514 217 497 238 473 238H84C58 238 42 218 40 190Z" fill="url(#red-lower)"></path>
+            <path d="M43 213C51 230 64 238 84 238H438" fill="none" stroke="#a45e50" stroke-width="1.2" opacity=".65"></path>
+            <path d="M57 252C64 257 73 260 84 260H437" fill="none" stroke="#eab79b" stroke-width="1" opacity=".6"></path>
+            <path d="M42 222C44 229 48 236 52 241" fill="none" stroke="#f3d2b4" stroke-width="1.3" stroke-linecap="round" opacity=".65"></path>
+
+            <ellipse cx="452" cy="190" rx="64" ry="77" fill="url(#red-rim)" stroke="#b77462" stroke-width="1"></ellipse>
+            <ellipse cx="452" cy="190" rx="45" ry="55" fill="url(#plaque-fill)" stroke="#c19c63" stroke-width="1.2"></ellipse>
+            <ellipse cx="452" cy="190" rx="30" ry="29" fill="url(#red-lumen)" stroke="#d0aa6b" stroke-width="1.4"></ellipse>
+            <path d="M416 165C423 146 440 135 456 136" fill="none" stroke="#f1d6ba" stroke-width="1.4" opacity=".8"></path>
+            <path d="M423 208C428 219 438 225 450 224" fill="none" stroke="#f5e4b7" stroke-width="1.4" opacity=".8"></path>
+            <path d="M452 114v19m0 114v19m-62-76h11m100 0h13M409 142l10 11m66 75 10 11m-86 0 10-11m66-74 10-12" fill="none" stroke="#f6d3ba" stroke-width="1" opacity=".75"></path>
+            <path d="M390 174C389 180 390 204 393 211" fill="none" stroke="#f1c6ac" stroke-width="1.3" opacity=".7"></path>
+            <path d="M529 188h20m-6-5 6 5-6 5" stroke="#bf8b77" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"></path>
+          </g>
+
+          <g class="diagram-labels">
+            <g class="annotation">
+              <title>Plaque is a buildup of fatty deposits that can narrow an artery over time.</title>
+              <path class="annotation-line" d="M78 64h77l122 109" fill="none" stroke="#b9ad9a" stroke-width="1.1"></path>
+              <circle cx="277" cy="173" r="2.8" fill="white" stroke="#b59a69" stroke-width="1.1"></circle>
+              <text class="diagram-label" x="78" y="48" fill="#7d725d" font-size="13.5">Plaque buildup</text>
+            </g>
+            <g class="annotation">
+              <title>The smaller opening increases resistance. Blood pressure can rise upstream of the narrowing.</title>
+              <path class="annotation-line" d="M368 300v-26l-58-79" fill="none" stroke="#b9ad9a" stroke-width="1.1"></path>
+              <circle cx="310" cy="195" r="2.8" fill="white" stroke="#b59a69" stroke-width="1.1"></circle>
+              <text class="diagram-label" x="366" y="320" fill="#7d725d" font-size="13.5">Narrowed passage</text>
+            </g>
+          </g>
+        </g>
+
+        <text class="summary-heading" x="8" y="387" fill="#b45d50" font-size="20.5" font-weight="500" letter-spacing="-.45">More resistance. Higher pressure.</text>
+        <text x="8" y="413" fill="#6c796e" font-size="14.5" font-weight="400"><tspan id="red-copy-one" x="8" y="413" font-size="14.5">Plaque narrows the passage, making blood harder to push through.</tspan><tspan id="red-copy-two" x="8" y="441" font-size="14.5"></tspan></text>
+      </g>
+
+      <text id="diagram-footnote" x="48" y="685" fill="#6c796e" font-size="10.5" font-weight="400">A simplified educational illustration. Not to scale.</text>
+    </svg>
+
+    <div class="diagram-controls">
+      <button class="learn-link" data-open-about="" type="button">
+        <svg width="15" height="15" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="6.5" stroke="currentColor" stroke-width="1.1"></circle><path d="M9 8v4M9 5.5v.1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"></path></svg>
+        <span>Why does this matter?</span>
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h9m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </button>
+      <div class="control-group">
+        <button class="label-switch" id="label-switch" type="button" role="switch" aria-checked="true" aria-label="Show diagram labels">
+          <span>Show labels</span>
+          <span class="switch-track" aria-hidden="true"></span>
+        </button>
+        <span class="control-divider" aria-hidden="true"></span>
+        <button class="flow-button" id="flow-button" type="button" aria-pressed="false" aria-label="Pause blood flow animation">
+          <svg id="flow-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5.5 3.5v9m5-9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+          <span id="flow-label">Pause flow</span>
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <dialog id="about-dialog" aria-labelledby="about-title" aria-describedby="about-intro">
+    <div class="dialog-content">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close guide" autofocus="">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="m4 4 8 8M12 4l-8 8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"></path></svg>
+      </button>
+      <p class="dialog-eyebrow">A CLOSER LOOK AT CIRCULATION</p>
+      <h2 id="about-title">A small passage.<br>An important difference.</h2>
+      <p class="dialog-intro" id="about-intro">Arteries carry oxygen-rich blood away from your heart. Their inner passage, called the lumen, helps determine how easily blood can move.</p>
+      <dl class="explanation-list">
+        <div class="explanation-item">
+          <dt>When the passage is clear</dt>
+          <dd>A smooth, healthy artery wall surrounds a wide lumen. Blood flows with less resistance, helping it reach the tissues that need it.</dd>
+        </div>
+        <div class="explanation-item">
+          <dt>When plaque builds up</dt>
+          <dd>Fatty deposits can narrow the lumen. Blood faces more resistance, pressure can rise upstream, and flow to tissues downstream may decrease. The heart may have to work harder to maintain circulation.</dd>
+        </div>
+      </dl>
+      <p class="medical-note">This diagram is a conceptual illustration, not a measurement of blood pressure or a diagnostic tool. The faster-moving cells show flow through the local narrowing, not an increase in total blood flow. For personal medical advice, speak with a qualified healthcare professional.</p>
+      <button class="dialog-done" id="dialog-done" type="button">Back to the comparison</button>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.2"></circle><path d="m6 10 2.5 2.5L14 7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <span id="toast-message"></span>
+  </div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const diagram = document.getElementById('infographic');
+      const mobileQuery = window.matchMedia('(max-width: 800px)');
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const labelSwitch = document.getElementById('label-switch');
+      const flowButton = document.getElementById('flow-button');
+      const flowLabel = document.getElementById('flow-label');
+      const flowIcon = document.getElementById('flow-icon');
+      const saveButton = document.getElementById('save-button');
+      const saveLabel = document.getElementById('save-label');
+      const downloadWrap = document.getElementById('download-wrap');
+      const downloadMenu = document.getElementById('download-menu');
+      const aboutDialog = document.getElementById('about-dialog');
+      const toast = document.getElementById('toast');
+      let labelsVisible = true;
+      let flowPaused = reducedMotion.matches;
+      let toastTimer;
+      let menuOpen = false;
+
+      const q = (root, selector) => root.querySelector(selector);
+      const attr = (element, values) => {
+        Object.entries(values).forEach(([name, value]) => {
+          if (value === null) element.removeAttribute(name);
+          else element.setAttribute(name, value);
+        });
+      };
+
+      // Use the same SVG for the stacked mobile view and the 16:9 export.
+      function layoutDiagram(root, mobile) {
+        attr(root, { viewBox: mobile ? '0 0 640 1285' : '0 0 1280 720', width: mobile ? '640' : '1280', height: mobile ? '1285' : '720' });
+        attr(q(root, '#normal-panel'), { transform: mobile ? 'translate(32 285)' : 'translate(40 218)' });
+        attr(q(root, '#constricted-panel'), { transform: mobile ? 'translate(32 795)' : 'translate(680 218)' });
+        attr(q(root, '#comparison-divider'), { display: mobile ? 'none' : null });
+        attr(q(root, '#intro-eyebrow'), { x: mobile ? 64 : 80, y: mobile ? 40 : 47, 'font-size': mobile ? 18 : 10.5 });
+        attr(q(root, '#infographic-intro > path'), { d: mobile ? 'M34 36h19' : 'M49 43h19' });
+        attr(q(root, '#title-one'), { x: mobile ? 32 : 48, y: mobile ? 99 : 106 });
+        attr(q(root, '.main-title'), { x: mobile ? 32 : 48, y: mobile ? 99 : 106, 'font-size': mobile ? 54 : 56 });
+        attr(q(root, '#title-two'), { x: mobile ? 32 : null, y: mobile ? 157 : null });
+        q(root, '#title-one').textContent = mobile ? 'Blood flow,' : 'Blood flow, ';
+        q(root, '#subtitle-one').textContent = mobile ? 'See how an open artery compares to' : 'See how an open artery compares to one narrowed by plaque.';
+        q(root, '#subtitle-two').textContent = mobile ? 'one narrowed by plaque.' : '';
+        attr(q(root, '#subtitle-one'), { x: mobile ? 34 : 50, y: mobile ? 204 : 145, 'font-size': mobile ? 23 : 16.5 });
+        attr(q(root, '#subtitle-two'), { x: mobile ? 34 : null, y: mobile ? 234 : null, 'font-size': mobile ? 23 : 16.5 });
+
+        root.querySelectorAll('.panel-heading').forEach(element => attr(element, { 'font-size': mobile ? 30 : 25 }));
+        root.querySelectorAll('.panel-status').forEach(element => attr(element, { transform: mobile ? 'translate(438 -4)' : 'translate(440 -4)' }));
+        root.querySelectorAll('.status-text').forEach(element => attr(element, { 'font-size': mobile ? 16 : 10, 'letter-spacing': mobile ? 1 : 1.3 }));
+        root.querySelectorAll('.diagram-label').forEach(element => attr(element, { 'font-size': mobile ? 20 : 13.5 }));
+        root.querySelectorAll('.summary-heading').forEach(element => attr(element, { 'font-size': mobile ? 25 : 20.5 }));
+        root.querySelectorAll('.artery-illustration').forEach(element => attr(element, { transform: mobile ? 'translate(0 38)' : 'translate(0 35)' }));
+
+        const copy = [
+          ['#normal-copy-one', 'Blood moves freely through a', 'Blood moves freely through a smooth, open vessel.', 413],
+          ['#normal-copy-two', 'smooth, open vessel.', '', 441],
+          ['#red-copy-one', 'Plaque makes blood harder to push', 'Plaque narrows the passage, making blood harder to push through.', 413],
+          ['#red-copy-two', 'through a narrowed passage.', '', 441]
+        ];
+        copy.forEach(([selector, mobileText, desktopText, y]) => {
+          const element = q(root, selector);
+          element.textContent = mobile ? mobileText : desktopText;
+          attr(element, { x: 8, y, 'font-size': mobile ? 23 : 14.5 });
+        });
+        attr(q(root, '#diagram-footnote'), { x: mobile ? 40 : 48, y: mobile ? 1267 : 685, 'font-size': mobile ? 16 : 10.5 });
+      }
+
+      function updateFlow() {
+        diagram.classList.toggle('flow-paused', flowPaused);
+        if (flowPaused) diagram.pauseAnimations();
+        else diagram.unpauseAnimations();
+        flowButton.setAttribute('aria-pressed', String(flowPaused));
+        flowButton.setAttribute('aria-label', flowPaused ? 'Resume blood flow animation' : 'Pause blood flow animation');
+        flowLabel.textContent = flowPaused ? 'Play flow' : 'Pause flow';
+        flowIcon.innerHTML = flowPaused
+          ? '<path d="m5 3 8 5-8 5V3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>'
+          : '<path d="M5.5 3.5v9m5-9v9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>';
+      }
+
+      function toggleMenu(open, focusFirst = false) {
+        menuOpen = open;
+        downloadMenu.hidden = !open;
+        saveButton.setAttribute('aria-expanded', String(open));
+        if (open && focusFirst) downloadMenu.querySelector('button').focus();
+      }
+
+      function notify(message) {
+        clearTimeout(toastTimer);
+        document.getElementById('toast-message').textContent = message;
+        toast.classList.add('visible');
+        toastTimer = setTimeout(() => toast.classList.remove('visible'), 3800);
+      }
+
+      function createExportSVG() {
+        const clone = diagram.cloneNode(true);
+        layoutDiagram(clone, false);
+        attr(clone, { width: 2560, height: 1440, 'font-family': 'Arial, sans-serif', 'aria-hidden': null });
+        clone.removeAttribute('class');
+        clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+        clone.querySelectorAll('animateMotion, animateTransform, animate').forEach(element => element.remove());
+        clone.querySelectorAll('.blood-cell').forEach(element => {
+          element.setAttribute('transform', `translate(${element.dataset.x} ${element.dataset.y})`);
+        });
+        if (!labelsVisible) clone.querySelectorAll('.diagram-labels').forEach(element => element.remove());
+        const background = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+        attr(background, { width: 1280, height: 720, fill: '#ffffff' });
+        clone.insertBefore(background, clone.firstChild);
+        return clone;
+      }
+
+      function downloadBlob(blob, extension) {
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `artery-normal-vs-constricted.${extension}`;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 3000);
+      }
+
+      function makePNG(source) {
+        return new Promise((resolve, reject) => {
+          const url = URL.createObjectURL(new Blob([source], { type: 'image/svg+xml;charset=utf-8' }));
+          const image = new Image();
+          const timeout = setTimeout(() => {
+            URL.revokeObjectURL(url);
+            reject(new Error('Image preparation timed out'));
+          }, 15000);
+          image.onload = () => {
+            try {
+              const canvas = document.createElement('canvas');
+              canvas.width = 2560;
+              canvas.height = 1440;
+              const context = canvas.getContext('2d');
+              if (!context) throw new Error('Canvas is unavailable');
+              context.fillStyle = '#ffffff';
+              context.fillRect(0, 0, canvas.width, canvas.height);
+              context.drawImage(image, 0, 0, canvas.width, canvas.height);
+              canvas.toBlob(blob => {
+                clearTimeout(timeout);
+                if (blob) resolve(blob);
+                else reject(new Error('Image export failed'));
+              }, 'image/png');
+            } catch (error) {
+              clearTimeout(timeout);
+              reject(error);
+            } finally {
+              URL.revokeObjectURL(url);
+            }
+          };
+          image.onerror = () => {
+            clearTimeout(timeout);
+            URL.revokeObjectURL(url);
+            reject(new Error('Image preparation failed'));
+          };
+          image.src = url;
+        });
+      }
+
+      async function exportInfographic(format) {
+        toggleMenu(false);
+        saveButton.disabled = true;
+        saveButton.setAttribute('aria-busy', 'true');
+        saveLabel.textContent = 'Preparing...';
+        try {
+          const clone = createExportSVG();
+          const source = new XMLSerializer().serializeToString(clone);
+          if (format === 'svg') {
+            downloadBlob(new Blob([source], { type: 'image/svg+xml;charset=utf-8' }), 'svg');
+          } else {
+            const blob = await makePNG(source);
+            downloadBlob(blob, 'png');
+          }
+          notify(`${format.toUpperCase()} infographic saved in 16:9 format.`);
+        } catch (error) {
+          console.error('Infographic export:', error);
+          notify('This browser could not save the image. Please try SVG instead.');
+        } finally {
+          saveButton.disabled = false;
+          saveButton.removeAttribute('aria-busy');
+          saveLabel.textContent = mobileQuery.matches ? 'Save' : 'Save infographic';
+          saveButton.focus({ preventScroll: true });
+        }
+      }
+
+      function updateSaveLabel() {
+        if (!saveButton.disabled) saveLabel.textContent = mobileQuery.matches ? 'Save' : 'Save infographic';
+      }
+
+      labelSwitch.addEventListener('click', () => {
+        labelsVisible = !labelsVisible;
+        labelSwitch.setAttribute('aria-checked', String(labelsVisible));
+        diagram.classList.toggle('hide-labels', !labelsVisible);
+      });
+      flowButton.addEventListener('click', () => { flowPaused = !flowPaused; updateFlow(); });
+      saveButton.addEventListener('click', () => toggleMenu(!menuOpen));
+      saveButton.addEventListener('keydown', event => {
+        if (event.key === 'ArrowDown') { event.preventDefault(); toggleMenu(true, true); }
+      });
+      downloadMenu.addEventListener('click', event => {
+        const option = event.target.closest('[data-format]');
+        if (option) exportInfographic(option.dataset.format);
+      });
+      downloadMenu.addEventListener('keydown', event => {
+        const options = [...downloadMenu.querySelectorAll('button')];
+        const index = options.indexOf(document.activeElement);
+        if (event.key === 'ArrowDown' || event.key === 'ArrowUp') {
+          event.preventDefault();
+          const direction = event.key === 'ArrowDown' ? 1 : -1;
+          options[(index + direction + options.length) % options.length].focus();
+        }
+        if (event.key === 'Escape') { event.preventDefault(); toggleMenu(false); saveButton.focus(); }
+      });
+      document.addEventListener('click', event => {
+        if (menuOpen && !downloadWrap.contains(event.target)) toggleMenu(false);
+      });
+      document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && menuOpen) { toggleMenu(false); saveButton.focus(); }
+      });
+      downloadWrap.addEventListener('focusout', () => {
+        setTimeout(() => { if (!downloadWrap.contains(document.activeElement)) toggleMenu(false); }, 0);
+      });
+
+      document.querySelectorAll('[data-open-about]').forEach(button => {
+        button.addEventListener('click', () => {
+          toggleMenu(false);
+          aboutDialog.showModal();
+          document.body.classList.add('dialog-open');
+        });
+      });
+      document.getElementById('dialog-close').addEventListener('click', () => aboutDialog.close());
+      document.getElementById('dialog-done').addEventListener('click', () => aboutDialog.close());
+      aboutDialog.addEventListener('click', event => { if (event.target === aboutDialog) aboutDialog.close(); });
+      aboutDialog.addEventListener('close', () => document.body.classList.remove('dialog-open'));
+      aboutDialog.addEventListener('cancel', () => document.body.classList.remove('dialog-open'));
+
+      mobileQuery.addEventListener('change', () => {
+        layoutDiagram(diagram, mobileQuery.matches);
+        updateSaveLabel();
+        updateFlow();
+      });
+      reducedMotion.addEventListener('change', () => {
+        flowPaused = reducedMotion.matches;
+        updateFlow();
+      });
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) diagram.pauseAnimations();
+        else updateFlow();
+      });
+
+      // A compact phone layout keeps the annotations readable; printing resets to landscape.
+      window.addEventListener('beforeprint', () => { layoutDiagram(diagram, false); diagram.pauseAnimations(); });
+      window.addEventListener('afterprint', () => { layoutDiagram(diagram, mobileQuery.matches); updateFlow(); });
+
+      layoutDiagram(diagram, mobileQuery.matches);
+      updateSaveLabel();
+      updateFlow();
+    })();
+  </script>
+
+
+</body></html>

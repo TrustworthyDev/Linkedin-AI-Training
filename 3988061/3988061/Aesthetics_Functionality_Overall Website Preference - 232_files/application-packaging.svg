@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 550" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientTransform="translate(355 198) rotate(107) scale(460 560)" gradientUnits="userSpaceOnUse"><stop stop-color="#35342b"/><stop offset=".53" stop-color="#1c2119"/><stop offset="1" stop-color="#090d09"/></radialGradient>
+    <linearGradient id="lid" x1="139" y1="102" x2="574" y2="424" gradientUnits="userSpaceOnUse"><stop stop-color="#34362a"/><stop offset=".3" stop-color="#292c22"/><stop offset=".64" stop-color="#20241b"/><stop offset="1" stop-color="#141910"/></linearGradient>
+    <linearGradient id="side" x1="315" y1="391" x2="315" y2="453" gradientUnits="userSpaceOnUse"><stop stop-color="#11170e"/><stop offset=".5" stop-color="#23271a"/><stop offset="1" stop-color="#0b100a"/></linearGradient>
+    <radialGradient id="vignette" cx="0" cy="0" r="1" gradientTransform="translate(350 265) rotate(90) scale(375 485)" gradientUnits="userSpaceOnUse"><stop offset=".44" stop-color="#060705" stop-opacity="0"/><stop offset="1" stop-color="#050805" stop-opacity=".68"/></radialGradient>
+    <filter id="noise" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+    <filter id="paper" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".32 .57" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+    <filter id="shadow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="25"/></filter>
+    <clipPath id="topClip"><rect x="154" y="116" width="390" height="300" rx="2"/></clipPath>
+    <pattern id="weave" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 0h4M0 2h4" stroke="#a7a079" stroke-width=".3" opacity=".25"/></pattern>
+    <g id="corner" stroke-linecap="round" stroke-linejoin="round"><path d="M0 29V0h29M4 20V4h16M8 16V8h8m-4 0V4m-4 8H4m12-4 4 4-4 4-4-4z"/><path d="M24 0c-3 6-2 11 2 14 3 2 6 0 6-2m-32 12c6-3 11-2 14 2 2 3 0 6-2 6"/></g>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h700v550H0z"/>
+  <path fill="#9c9270" filter="url(#noise)" style="mix-blend-mode:soft-light" opacity=".41" d="M0 0h700v550H0z"/>
+  <path d="M556 0c-5 118 47 182 144 219M0 454c120 38 194 60 317 96m257-550c-5 103 39 157 126 202M0 472c127 37 180 54 258 78" stroke="#a09262" stroke-width=".6" opacity=".15"/>
+  <g transform="rotate(-10 350 275)">
+    <rect x="139" y="157" width="438" height="320" rx="10" fill="#040704" opacity=".9" filter="url(#shadow)"/>
+    <path d="M158 128h384l17 17v281l-14 21H165l-15-19V146z" fill="url(#side)" stroke="#080d07" stroke-width="2"/>
+    <path d="M157 397h390v37H157z" fill="#0d130b"/><path d="M159 433h387l7-8m-383 12h367" stroke="#635a38" stroke-width=".55" opacity=".7"/>
+    <path d="M539 129l14 13v283l-11 12V145z" fill="#30301e" opacity=".55"/>
+    <rect x="154" y="116" width="390" height="300" rx="2" fill="url(#lid)" stroke="#4a4830" stroke-width="1"/>
+    <g clip-path="url(#topClip)"><path fill="#a49a6d" filter="url(#paper)" style="mix-blend-mode:soft-light" opacity=".55" d="M0 0h700v550H0z"/><path fill="url(#weave)" opacity=".33" d="M150 115h400v304H150z"/></g>
+    <path d="M160 409V122h377m3 6v282H162" stroke="#77704a" stroke-width=".45" opacity=".6"/>
+    <rect x="177" y="139" width="344" height="253" rx="1" stroke="#8b7748" stroke-width=".65" opacity=".57"/>
+    <rect x="181" y="143" width="336" height="245" rx="1" stroke="#090f08" stroke-width=".65" opacity=".85"/>
+    <rect x="184" y="146" width="330" height="239" rx="1" stroke="#7c6840" stroke-width=".3" opacity=".65"/>
+    <g stroke="#a0874b" stroke-width=".5" opacity=".7"><use href="#corner" x="188" y="150"/><use href="#corner" transform="translate(510 150) rotate(90)"/><use href="#corner" transform="translate(510 381) rotate(180)"/><use href="#corner" transform="translate(188 381) rotate(270)"/></g>
+    <path d="M304 355h37m15 0h37m-44-3 3 3-3 3-3-3z" stroke="#a58b52" stroke-width=".45" opacity=".65"/>
+    <path d="M179 415h342" stroke="#989061" stroke-width=".6" opacity=".38"/>
+  </g>
+  <path fill="url(#vignette)" d="M0 0h700v550H0z"/>
+</svg>

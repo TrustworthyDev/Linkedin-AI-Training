@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 600 430" role="img" aria-labelledby="logo01-title logo01-desc" xmlns="http://www.w3.org/2000/svg" width="1200" height="860">
+                <title id="logo01-title">Minimal geometric fish logo</title>
+                <desc id="logo01-desc">A bold navy fish body with a coral geometric tail.</desc>
+                <defs>
+                  <linearGradient id="geoMain" x1="132" y1="105" x2="500" y2="315" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#1e5364"/>
+                    <stop offset="1" stop-color="#0b2634"/>
+                  </linearGradient>
+                  <linearGradient id="geoTail" x1="60" y1="128" x2="145" y2="302" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#ff765e"/>
+                    <stop offset="1" stop-color="#e94531"/>
+                  </linearGradient>
+                </defs>
+                <path d="M132 215C208 116 387 105 500 215C388 325 207 314 132 215Z" fill="#123646"/>
+                <path d="M145 215L60 128L78 215L60 302Z" fill="#f05a43"/>
+                <circle cx="430" cy="185" r="11" fill="#f05a43"/>
+              </svg>

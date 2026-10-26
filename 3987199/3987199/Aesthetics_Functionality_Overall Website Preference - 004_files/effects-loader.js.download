@@ -1,0 +1,38 @@
+/* CDN-first loading, with a self-hosted fallback for offline or restricted networks. */
+(() => {
+  function load(globalName, cdnUrl, localUrl) {
+    return new Promise(resolve => {
+      if (window[globalName]) return resolve(window[globalName]);
+      let finished = false;
+      let fallbackStarted = false;
+      let timer;
+      const script = document.createElement('script');
+      const finish = () => {
+        if (!window[globalName] || finished) return;
+        finished = true;
+        clearTimeout(timer);
+        resolve(window[globalName]);
+      };
+      const fallback = () => {
+        if (finished || fallbackStarted) return;
+        fallbackStarted = true;
+        script.remove();
+        const backup = document.createElement('script');
+        backup.src = localUrl;
+        backup.async = false;
+        backup.onload = finish;
+        backup.onerror = () => resolve(null);
+        document.head.appendChild(backup);
+      };
+      script.src = cdnUrl;
+      script.async = true;
+      script.onload = finish;
+      script.onerror = fallback;
+      document.head.appendChild(script);
+      timer = setTimeout(fallback, 1400);
+    });
+  }
+  load('THREE', 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js', '/vendor/three.min.js');
+  load('gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js', '/vendor/gsap.min.js')
+    .then(gsap => { if (gsap) load('ScrollTrigger', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js', '/vendor/ScrollTrigger.min.js'); });
+})();

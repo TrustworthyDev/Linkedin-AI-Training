@@ -1,0 +1,5 @@
+- [Task workflow](task-workflow.md) — per task: 16-min limit, run.js → steps.js → lint.js --append; answer in chat + Feedback.md with empty "## Feedback:" slot; record feedback in prompt.md §7; aim 5/5
+- [Follow prompt.md rulebook](follow-feedback-md.md) — Prompt/prompt.md rules; exact "Website A/B", no you/users/category words, openings "Website X is better because" / ties "...are tied because", unrequested extras never decide, ASCII only, visible text only
+- [UI Berry toolkit](ui-berry-toolkit.md) — _tools folder: run.js first pass (visual % per click, hero close-up), both.js/steps.js real-input checks, lint.js rule checker/appender
+- [Editing task format](editing-task-format.md) — Editing A/B tasks: before/after wrapper panes, judge After only, Satisfaction + Overall questions, decode base64 source to diff
+- [Review test method](review-test-method.md) — reviewers test in a sandboxed 800px iframe (downloads blocked); use real clicks and check every gallery item close up

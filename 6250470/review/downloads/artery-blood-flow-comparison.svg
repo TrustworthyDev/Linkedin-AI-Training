@@ -1,0 +1,168 @@
+<svg id="infographic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="graphic-title graphic-description" width="1600" height="900">
+        <title id="graphic-title">How narrowing changes blood flow</title>
+        <desc id="graphic-description">Side-by-side cross sections of a normal artery with a wide green lumen and smooth flow, and a constricted artery with plaque, a narrow red lumen, and high-pressure restricted flow.</desc>
+        <defs>
+          <style>
+            text { font-family: Arial, Helvetica, sans-serif; }
+            .kicker { font-size: 14px; font-weight: 700; letter-spacing: 2.6px; }
+            .main-title { font-size: 50px; font-weight: 700; letter-spacing: -2px; }
+            .subtitle { font-size: 20px; }
+            .section-number { font-size: 19px; font-weight: 700; }
+            .section-title { font-size: 28px; font-weight: 700; letter-spacing: -.6px; }
+            .section-detail { font-size: 13px; font-weight: 700; letter-spacing: 2px; }
+            .callout { font-size: 14px; font-weight: 700; letter-spacing: 1.2px; }
+            .caption-title { font-size: 27px; font-weight: 700; letter-spacing: -.5px; }
+            .caption-detail { font-size: 18px; }
+            .note { font-size: 14px; }
+            .header-content { animation: fade-up .75s ease-out both; }
+            .diagram { transform-box: fill-box; transform-origin: center; animation: diagram-in .8s cubic-bezier(.2,.75,.2,1) both; }
+            .diagram-right { animation-delay: .17s; }
+            .annotation { animation: fade-up .55s ease-out .6s both; }
+            .flow-arrow { animation: flow-presence 3s ease-in-out infinite; }
+            .flow-arrow:nth-child(2) { animation-delay: .45s; }
+            .flow-arrow:nth-child(3) { animation-delay: .9s; }
+            @keyframes fade-up {
+              from { opacity: 0; transform: translateY(12px); }
+              to { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes diagram-in {
+              from { opacity: 0; transform: translateY(18px) scale(.965); }
+              to { opacity: 1; transform: translateY(0) scale(1); }
+            }
+            @keyframes flow-presence {
+              0%, 100% { opacity: .76; }
+              50% { opacity: 1; }
+            }
+            @media (prefers-reduced-motion: reduce) {
+              .header-content, .diagram, .annotation, .flow-arrow { animation: none; }
+            }
+          </style>
+          <radialGradient id="wall-gradient" cx="38%" cy="31%" r="76%">
+            <stop offset="0%" stop-color="#FFF8F3"/>
+            <stop offset="63%" stop-color="#F5DAD1"/>
+            <stop offset="100%" stop-color="#E8BDB4"/>
+          </radialGradient>
+          <radialGradient id="healthy-lumen" cx="38%" cy="29%" r="79%">
+            <stop offset="0%" stop-color="#F2FFF8"/>
+            <stop offset="63%" stop-color="#DDF5E8"/>
+            <stop offset="100%" stop-color="#C5E9D5"/>
+          </radialGradient>
+          <radialGradient id="plaque-gradient" cx="40%" cy="33%" r="78%">
+            <stop offset="0%" stop-color="#FFEBD5"/>
+            <stop offset="53%" stop-color="#F8D4B8"/>
+            <stop offset="100%" stop-color="#EEB19B"/>
+          </radialGradient>
+          <radialGradient id="narrow-lumen" cx="36%" cy="30%" r="82%">
+            <stop offset="0%" stop-color="#FFF0EC"/>
+            <stop offset="58%" stop-color="#FBD7CE"/>
+            <stop offset="100%" stop-color="#F4B2A9"/>
+          </radialGradient>
+          <filter id="vessel-shadow" x="-30%" y="-30%" width="160%" height="170%">
+            <feDropShadow dx="0" dy="12" stdDeviation="13" flood-color="#754f47" flood-opacity=".12"/>
+          </filter>
+          <marker id="green-arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M 2 2 L 12 7 L 2 12 Z" fill="#249C6D"/>
+          </marker>
+          <marker id="red-arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto" markerUnits="userSpaceOnUse">
+            <path d="M 2 2 L 12 7 L 2 12 Z" fill="#D75650"/>
+          </marker>
+          <clipPath id="healthy-clip"><circle cx="405" cy="513" r="126"/></clipPath>
+          <clipPath id="narrow-clip">
+            <path d="M 1197 442 C 1227 437 1250 450 1263 477 C 1273 499 1270 527 1257 551 C 1245 572 1222 584 1197 580 C 1170 577 1147 558 1140 534 C 1131 510 1141 481 1158 463 C 1169 451 1182 445 1197 442 Z"/>
+          </clipPath>
+        </defs>
+
+        <rect width="1600" height="900" fill="#FFFFFF"/>
+
+        <g class="header-content">
+          <rect x="92" y="69" width="32" height="4" rx="2" fill="#249C6D"/>
+          <text x="139" y="79" class="kicker" fill="#4B746B">A VISUAL GUIDE TO ARTERIAL HEALTH</text>
+          <text x="92" y="153" class="main-title" fill="#17333B">How narrowing changes blood flow</text>
+          <text x="94" y="195" class="subtitle" fill="#637A7D">A cross-section comparison of an open artery and one affected by plaque.</text>
+        </g>
+        <line x1="92" y1="230" x2="1508" y2="230" stroke="#E5ECE8" stroke-width="2"/>
+        <line x1="800" y1="268" x2="800" y2="807" stroke="#E7EDEB" stroke-width="2" stroke-dasharray="4 10"/>
+
+        <g class="header-content">
+          <text x="109" y="285" class="section-number" fill="#209969">01</text>
+          <text x="153" y="285" class="section-title" fill="#193B34">Normal artery</text>
+          <text x="109" y="315" class="section-detail" fill="#3C9E72">WIDE, OPEN PASSAGE</text>
+          <text x="865" y="285" class="section-number" fill="#D6534E">02</text>
+          <text x="909" y="285" class="section-title" fill="#442D2D">Constricted artery</text>
+          <text x="865" y="315" class="section-detail" fill="#D45D55">NARROWED BY PLAQUE</text>
+        </g>
+
+        <!-- The vessel wall stays the same size so the reduction in open space is immediately visible. -->
+        <g class="diagram diagram-left">
+          <circle cx="405" cy="513" r="211" fill="#F1FAF5"/>
+          <circle cx="405" cy="513" r="182" fill="url(#wall-gradient)" stroke="#DDAEA5" stroke-width="2" filter="url(#vessel-shadow)"/>
+          <circle cx="405" cy="513" r="168" fill="none" stroke="#FFF9F5" stroke-width="8" opacity=".72"/>
+          <circle cx="405" cy="513" r="151" fill="#F0CAC1" stroke="#E4B3AA" stroke-width="2"/>
+          <circle cx="405" cy="513" r="140" fill="#FAEAE4" stroke="#E9BDB3" stroke-width="1.5"/>
+          <circle cx="405" cy="513" r="128" fill="url(#healthy-lumen)" stroke="#6DBB91" stroke-width="4"/>
+          <path d="M 322 427 C 362 398 443 401 480 432" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round" opacity=".28" clip-path="url(#healthy-clip)"/>
+          <g clip-path="url(#healthy-clip)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M 291 471 C 354 463 450 464 510 471" stroke="#9EDBBB" stroke-width="12" opacity=".45"/>
+            <path d="M 285 513 C 354 513 449 513 516 513" stroke="#9EDBBB" stroke-width="12" opacity=".45"/>
+            <path d="M 296 553 C 355 561 449 560 507 552" stroke="#9EDBBB" stroke-width="12" opacity=".45"/>
+            <g stroke="#249C6D" stroke-width="5.5" marker-end="url(#green-arrow)">
+              <path class="flow-arrow" d="M 296 471 C 354 464 445 464 504 471"/>
+              <path class="flow-arrow" d="M 291 513 C 354 513 443 513 509 513"/>
+              <path class="flow-arrow" d="M 302 553 C 358 560 446 559 501 552"/>
+            </g>
+          </g>
+        </g>
+
+        <g class="diagram diagram-right">
+          <circle cx="1200" cy="513" r="211" fill="#FFF3F1"/>
+          <circle cx="1200" cy="513" r="182" fill="url(#wall-gradient)" stroke="#DDAEA5" stroke-width="2" filter="url(#vessel-shadow)"/>
+          <circle cx="1200" cy="513" r="168" fill="none" stroke="#FFF9F5" stroke-width="8" opacity=".72"/>
+          <circle cx="1200" cy="513" r="151" fill="#E9A99E" stroke="#DC9A90" stroke-width="2"/>
+          <circle cx="1200" cy="513" r="141" fill="url(#plaque-gradient)" stroke="#E7A791" stroke-width="2"/>
+          <path d="M 1093 438 C 1122 394 1171 372 1219 379 C 1170 397 1134 428 1118 478 C 1104 478 1094 462 1093 438 Z" fill="#FFF2DD" opacity=".68"/>
+          <path d="M 1288 421 C 1323 450 1339 489 1335 529 C 1319 498 1297 481 1277 477 C 1268 454 1274 435 1288 421 Z" fill="#F8B69D" opacity=".43"/>
+          <path d="M 1101 558 C 1130 615 1195 642 1251 627 C 1209 620 1170 599 1151 568 C 1136 558 1117 552 1101 558 Z" fill="#FFF0D6" opacity=".5"/>
+          <path d="M 1197 442 C 1227 437 1250 450 1263 477 C 1273 499 1270 527 1257 551 C 1245 572 1222 584 1197 580 C 1170 577 1147 558 1140 534 C 1131 510 1141 481 1158 463 C 1169 451 1182 445 1197 442 Z" fill="url(#narrow-lumen)" stroke="#C95E56" stroke-width="3.5"/>
+          <path d="M 1167 471 C 1185 455 1213 453 1231 464" fill="none" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" opacity=".28" clip-path="url(#narrow-clip)"/>
+          <g clip-path="url(#narrow-clip)" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M 1149 488 C 1181 478 1220 478 1262 489" stroke="#F0A099" stroke-width="12" opacity=".42"/>
+            <path d="M 1147 514 C 1180 512 1223 513 1266 514" stroke="#F0A099" stroke-width="12" opacity=".42"/>
+            <path d="M 1152 541 C 1185 550 1224 549 1261 539" stroke="#F0A099" stroke-width="12" opacity=".42"/>
+            <g stroke="#D75650" stroke-width="6" marker-end="url(#red-arrow)">
+              <path class="flow-arrow" d="M 1156 487 C 1186 480 1221 480 1256 489"/>
+              <path class="flow-arrow" d="M 1153 514 C 1183 512 1223 513 1260 514"/>
+              <path class="flow-arrow" d="M 1158 540 C 1188 548 1223 547 1255 539"/>
+            </g>
+          </g>
+          <path d="M 1281 475 C 1297 497 1297 529 1281 551" fill="none" stroke="#D76659" stroke-width="3" stroke-linecap="round" opacity=".67"/>
+          <path d="M 1294 465 C 1313 493 1313 533 1294 562" fill="none" stroke="#D76659" stroke-width="2.5" stroke-linecap="round" opacity=".42"/>
+        </g>
+
+        <g class="annotation">
+          <circle cx="506" cy="441" r="4" fill="#5DAE83"/>
+          <path d="M 506 441 L 600 409 L 619 409" fill="none" stroke="#7DBB99" stroke-width="1.7"/>
+          <text x="627" y="414" class="callout" fill="#288D64">OPEN LUMEN</text>
+          <circle cx="248" cy="601" r="4" fill="#BD8C83"/>
+          <path d="M 248 601 L 173 642 L 108 642" fill="none" stroke="#CAA69C" stroke-width="1.7"/>
+          <text x="108" y="666" class="callout" fill="#90675E">VESSEL WALL</text>
+
+          <circle cx="1105" cy="443" r="4" fill="#D48969"/>
+          <path d="M 1105 443 L 1029 410 L 871 410" fill="none" stroke="#DA9F8A" stroke-width="1.7"/>
+          <text x="871" y="400" class="callout" fill="#C26752">PLAQUE BUILDUP</text>
+          <circle cx="1245" cy="549" r="4" fill="#CE5C54"/>
+          <path d="M 1245 549 L 1365 609 L 1384 609" fill="none" stroke="#DD8C84" stroke-width="1.7"/>
+          <text x="1391" y="632" class="callout" fill="#C8524C">NARROW LUMEN</text>
+        </g>
+
+        <g class="annotation">
+          <line x1="109" y1="722" x2="708" y2="722" stroke="#D8EADF" stroke-width="2"/>
+          <text x="109" y="765" class="caption-title" fill="#197B58">Smooth, steady flow</text>
+          <text x="109" y="797" class="caption-detail" fill="#607774">Blood passes easily through the wide opening.</text>
+          <line x1="865" y1="722" x2="1492" y2="722" stroke="#F0DAD6" stroke-width="2"/>
+          <text x="865" y="765" class="caption-title" fill="#C74943">High-pressure, restricted flow</text>
+          <text x="865" y="797" class="caption-detail" fill="#77706F">Plaque reduces the opening and raises resistance.</text>
+        </g>
+
+        <line x1="92" y1="835" x2="1508" y2="835" stroke="#E9EEEB" stroke-width="1.5"/>
+        <text x="92" y="864" class="note" fill="#81918E">Educational illustration. Vessel anatomy is simplified and not to scale.</text>
+      <style>* { animation: none !important; transition: none !important; }</style></svg>

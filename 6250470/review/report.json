@@ -1,0 +1,705 @@
+{
+  "a": {
+    "initial": {
+      "title": "How Narrowing Changes Blood Flow | Artery Infographic",
+      "text": "A VISUAL GUIDE TO ARTERIAL HEALTH\nHow narrowing changes blood flow\nA cross-section comparison of an open artery and one affected by plaque.\n01\nNormal artery\nWIDE, OPEN PASSAGE\n02\nConstricted artery\nNARROWED BY PLAQUE\nOPEN LUMEN\nVESSEL WALL\nPLAQUE BUILDUP\nNARROW LUMEN\nSmooth, steady flow\nBlood passes easily through the wide opening.\nHigh-pressure, restricted flow\nPlaque reduces the opening and raises resistance.\nEducational illustration. Vessel anatomy is simplified and not to scale.\nArtery comparison infographic | 16:9 format\nDownload SVG\nDownload PNG",
+      "buttons": [
+        {
+          "text": "Download SVG",
+          "id": "download-svg",
+          "label": "Download infographic as SVG"
+        },
+        {
+          "text": "Download PNG",
+          "id": "download-png",
+          "label": "Download infographic as PNG"
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    "downloads": [
+      "artery-blood-flow-comparison.png",
+      "artery-blood-flow-comparison.svg"
+    ],
+    "mobile": {
+      "title": "How Narrowing Changes Blood Flow | Artery Infographic",
+      "text": "A VISUAL GUIDE TO ARTERIAL HEALTH\nHow narrowing changes blood flow\nA cross-section comparison of an open artery and one affected by plaque.\n01\nNormal artery\nWIDE, OPEN PASSAGE\n02\nConstricted artery\nNARROWED BY PLAQUE\nOPEN LUMEN\nVESSEL WALL\nPLAQUE BUILDUP\nNARROW LUMEN\nSmooth, steady flow\nBlood passes easily through the wide opening.\nHigh-pressure, restricted flow\nPlaque reduces the opening and raises resistance.\nEducational illustration. Vessel anatomy is simplified and not to scale.\nArtery comparison infographic | 16:9 format\nDownload SVG\nDownload PNG",
+      "buttons": [
+        {
+          "text": "Download SVG",
+          "id": "download-svg",
+          "label": "Download infographic as SVG"
+        },
+        {
+          "text": "Download PNG",
+          "id": "download-png",
+          "label": "Download infographic as PNG"
+        }
+      ],
+      "width": 390,
+      "scrollWidth": 390
+    }
+  },
+  "b": {
+    "initial": {
+      "title": "Artery | Blood flow, side by side",
+      "text": "artery.\nHealth, illustrated.\nAbout this guide\nSave infographic\nBlood flow, side by side: normal artery versus constricted artery\nYOUR ARTERIES, EXPLAINED\nBlood flow, side by side.\nSee how an open artery compares to one narrowed by plaque.\nNormal artery\nHEALTHY\nSmooth artery wall\nClear, open passage\nSmooth, steady flow.\nBlood moves freely through a smooth, open vessel.\nConstricted artery\nNARROWED\nPlaque buildup\nNarrowed passage\nMore resistance. Higher pressure.\nPlaque narrows the passage, making blood harder to push through.\nA simplified educational illustration. Not to scale.\nWhy does this matter?\nShow labels\nPause flow",
+      "buttons": [
+        {
+          "text": "About this guide",
+          "id": "",
+          "label": null
+        },
+        {
+          "text": "Save infographic",
+          "id": "save-button",
+          "label": null
+        },
+        {
+          "text": "\n            \n            PNG image2560 x 1440 / 16:9\n          ",
+          "id": "",
+          "label": null
+        },
+        {
+          "text": "\n            \n            SVG vectorSharp at any size / 16:9\n          ",
+          "id": "",
+          "label": null
+        },
+        {
+          "text": "Why does this matter?",
+          "id": "",
+          "label": null
+        },
+        {
+          "text": "Show labels",
+          "id": "label-switch",
+          "label": "Show diagram labels"
+        },
+        {
+          "text": "Pause flow",
+          "id": "flow-button",
+          "label": "Pause blood flow animation"
+        },
+        {
+          "text": "\n        \n      ",
+          "id": "dialog-close",
+          "label": "Close guide"
+        },
+        {
+          "text": "Back to the comparison",
+          "id": "dialog-done",
+          "label": null
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440
+    },
+    "labelsOff": {
+      "checked": "false",
+      "opacity": "0"
+    },
+    "paused": {
+      "label": "Resume blood flow animation",
+      "pressed": "true",
+      "paused": true
+    },
+    "resumed": {
+      "label": "Pause blood flow animation",
+      "paused": false
+    },
+    "dialogOpen": {
+      "open": true,
+      "text": "A CLOSER LOOK AT CIRCULATION\n\nA small passage.\nAn important difference.\n\nArteries carry oxygen-rich blood away from your heart. Their inner passage, called the lumen, helps determine how easily blood can move.\n\nWhen the passage is clear\nA smooth, healthy artery wall surrounds a wide lumen. Blood flows with less resistance, helping it reach the tissues that need it.\nWhen plaque builds up\nFatty deposits can narrow the lumen. Blood faces more resistance, pressure can rise upstream, and flow to tissues downstream may decrease. The heart may have to work harder to maintain circulation.\n\nThis diagram is a conceptual illustration, not a measurement of blood pressure or a diagnostic tool. The faster-moving cells show flow through the local narrowing, not an increase in total blood flow. For personal medical advice, speak with a qualified healthcare professional.\n\nBack to the comparison"
+    },
+    "dialogClosed": true,
+    "menuSelectors": {
+      "buttons": [
+        {
+          "format": "png",
+          "text": "\n            \n            PNG image2560 x 1440 / 16:9\n          "
+        },
+        {
+          "format": "svg",
+          "text": "\n            \n            SVG vectorSharp at any size / 16:9\n          "
+        }
+      ],
+      "save": "save-button"
+    },
+    "menuOpen": {
+      "expanded": "true",
+      "text": "PNG image\n2560 x 1440 / 16:9\nSVG vector\nSharp at any size / 16:9"
+    },
+    "exportStatus": "PNG infographic saved in 16:9 format.",
+    "downloads": [
+      "artery-blood-flow-comparison.png",
+      "artery-blood-flow-comparison.svg",
+      "artery-normal-vs-constricted.png",
+      "artery-normal-vs-constricted.svg"
+    ],
+    "mobile": {
+      "title": "Artery | Blood flow, side by side",
+      "text": "artery.\nSave\nBlood flow, side by side: normal artery versus constricted artery\nYOUR ARTERIES, EXPLAINED\nBlood flow,side by side.\nSee how an open artery compares toone narrowed by plaque.\nNormal artery\nHEALTHY\nSmooth artery wall\nClear, open passage\nSmooth, steady flow.\nBlood moves freely through asmooth, open vessel.\nConstricted artery\nNARROWED\nPlaque buildup\nNarrowed passage\nMore resistance. Higher pressure.\nPlaque makes blood harder to pushthrough a narrowed passage.\nA simplified educational illustration. Not to scale.\nWhy does this matter?\nShow labels\nPause flow\nPNG infographic saved in 16:9 format.",
+      "buttons": [
+        {
+          "text": "About this guide",
+          "id": "",
+          "label": null
+        },
+        {
+          "text": "Save",
+          "id": "save-button",
+          "label": null
+        },
+        {
+          "text": "\n            \n            PNG image2560 x 1440 / 16:9\n          ",
+          "id": "",
+          "label": null
+        },
+        {
+          "text": "\n            \n            SVG vectorSharp at any size / 16:9\n          ",
+          "id": "",
+          "label": null
+        },
+        {
+          "text": "Why does this matter?",
+          "id": "",
+          "label": null
+        },
+        {
+          "text": "Show labels",
+          "id": "label-switch",
+          "label": "Show diagram labels"
+        },
+        {
+          "text": "Pause flow",
+          "id": "flow-button",
+          "label": "Pause blood flow animation"
+        },
+        {
+          "text": "\n        \n      ",
+          "id": "dialog-close",
+          "label": "Close guide"
+        },
+        {
+          "text": "Back to the comparison",
+          "id": "dialog-done",
+          "label": null
+        }
+      ],
+      "width": 390,
+      "scrollWidth": 390
+    },
+    "mobileViewBox": "0 0 640 1285"
+  },
+  "events": [
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "688133585BCB776FA5BF5F4FE3EA1A4E",
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "url": "blob:null/19f8447f-b083-4051-b3a4-76536270ce5c",
+        "suggestedFilename": "artery-blood-flow-comparison.svg"
+      }
+    },
+    {
+      "method": "Page.downloadWillBegin",
+      "params": {
+        "frameId": "688133585BCB776FA5BF5F4FE3EA1A4E",
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "url": "blob:null/19f8447f-b083-4051-b3a4-76536270ce5c",
+        "suggestedFilename": "artery-blood-flow-comparison.svg"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "completed",
+        "filePath": "C:\\Workspace\\linkedin-ai-trainer\\Tasks\\6250470\\review\\downloads\\artery-blood-flow-comparison.svg"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "38a4f489-f582-4a4e-a707-d00dfea22355",
+        "totalBytes": 12156,
+        "receivedBytes": 12156,
+        "state": "completed"
+      }
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "688133585BCB776FA5BF5F4FE3EA1A4E",
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "url": "blob:null/59122254-bec3-4e25-bf56-f3d8f4c0cf2a",
+        "suggestedFilename": "artery-blood-flow-comparison.png"
+      }
+    },
+    {
+      "method": "Page.downloadWillBegin",
+      "params": {
+        "frameId": "688133585BCB776FA5BF5F4FE3EA1A4E",
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "url": "blob:null/59122254-bec3-4e25-bf56-f3d8f4c0cf2a",
+        "suggestedFilename": "artery-blood-flow-comparison.png"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "completed",
+        "filePath": "C:\\Workspace\\linkedin-ai-trainer\\Tasks\\6250470\\review\\downloads\\artery-blood-flow-comparison.png"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "965eb327-01a6-482d-9bd1-347d9d5e42ec",
+        "totalBytes": 1246431,
+        "receivedBytes": 1246431,
+        "state": "completed"
+      }
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "688133585BCB776FA5BF5F4FE3EA1A4E",
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "url": "blob:null/a1ca7202-70bd-4af6-84ab-c32feebd894e",
+        "suggestedFilename": "artery-normal-vs-constricted.svg"
+      }
+    },
+    {
+      "method": "Page.downloadWillBegin",
+      "params": {
+        "frameId": "688133585BCB776FA5BF5F4FE3EA1A4E",
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "url": "blob:null/a1ca7202-70bd-4af6-84ab-c32feebd894e",
+        "suggestedFilename": "artery-normal-vs-constricted.svg"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "completed",
+        "filePath": "C:\\Workspace\\linkedin-ai-trainer\\Tasks\\6250470\\review\\downloads\\artery-normal-vs-constricted.svg"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "2a3ee209-d89f-4bc5-a806-576af26082e4",
+        "totalBytes": 19105,
+        "receivedBytes": 19105,
+        "state": "completed"
+      }
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "688133585BCB776FA5BF5F4FE3EA1A4E",
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "url": "blob:null/a268452f-bb2d-4db7-bef3-2fd5d6ac19ad",
+        "suggestedFilename": "artery-normal-vs-constricted.png"
+      }
+    },
+    {
+      "method": "Page.downloadWillBegin",
+      "params": {
+        "frameId": "688133585BCB776FA5BF5F4FE3EA1A4E",
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "url": "blob:null/a268452f-bb2d-4db7-bef3-2fd5d6ac19ad",
+        "suggestedFilename": "artery-normal-vs-constricted.png"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "completed",
+        "filePath": "C:\\Workspace\\linkedin-ai-trainer\\Tasks\\6250470\\review\\downloads\\artery-normal-vs-constricted.png"
+      }
+    },
+    {
+      "method": "Page.downloadProgress",
+      "params": {
+        "guid": "f9c929e3-53a9-4118-b25c-38148b685e7a",
+        "totalBytes": 1017873,
+        "receivedBytes": 1017873,
+        "state": "completed"
+      }
+    }
+  ]
+}

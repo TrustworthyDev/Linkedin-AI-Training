@@ -1,0 +1,492 @@
+{
+  "a": {
+    "initial": {
+      "title": "Jackson Pharmacy 智生大藥房 | Neighbourhood Care in Kwai Chung",
+      "headings": [
+        "JacksonPharmacy",
+        "How can we help?",
+        "Let's talk.",
+        "Everyday needs,handled with care.",
+        "Pharmacy essentials",
+        "Wellness & personal care",
+        "Delivery enquiries",
+        "Care feels better close to home.",
+        "Right in the neighbourhood",
+        "Ask before you visit",
+        "Delivery is an option",
+        "Care for the life you live.",
+        "A few quick answers.",
+        "Good care is just a call away."
+      ],
+      "sections": [
+        {
+          "id": "top",
+          "y": 0
+        },
+        {
+          "id": "services",
+          "y": 1000
+        },
+        {
+          "id": "why-us",
+          "y": 1751
+        },
+        {
+          "id": "gallery",
+          "y": 2565
+        },
+        {
+          "id": "faq",
+          "y": 3496
+        }
+      ],
+      "images": [
+        {
+          "src": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/photo-1587854692152-cbe660dbde88",
+          "width": 2200,
+          "alt": ""
+        },
+        {
+          "src": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/photo-1576671081837-49000212a370",
+          "width": 1100,
+          "alt": "Illustrative image of everyday health and pharmacy essentials"
+        },
+        {
+          "src": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/photo-1584308666744-24d5c474f2ae",
+          "width": 900,
+          "alt": "Illustrative image of medicine and health essentials"
+        },
+        {
+          "src": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/photo-1608248543803-ba4f8c70ae0b",
+          "width": 800,
+          "alt": "Illustrative image of personal care products"
+        },
+        {
+          "src": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/photo-1471864190281-a93a3070b6de",
+          "width": 800,
+          "alt": "Illustrative image of wellness essentials"
+        },
+        {
+          "src": "",
+          "width": 0,
+          "alt": ""
+        }
+      ],
+      "links": [
+        {
+          "text": "Jackson Pharmacy智生大藥房",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#top"
+        },
+        {
+          "text": "Services",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#services"
+        },
+        {
+          "text": "Why Jackson",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#why-us"
+        },
+        {
+          "text": "Gallery",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#gallery"
+        },
+        {
+          "text": "FAQs",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#faq"
+        },
+        {
+          "text": "2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Services",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#services"
+        },
+        {
+          "text": "Why Jackson",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#why-us"
+        },
+        {
+          "text": "Gallery",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#gallery"
+        },
+        {
+          "text": "FAQs",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#faq"
+        },
+        {
+          "text": "Call 2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Call 2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Explore services",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#services"
+        },
+        {
+          "text": "Call 2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Not sure what you need? Give us a call",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Find your way to us",
+          "href": "https://www.google.com/maps/search/?api=1&query=Jackson+Pharmacy+78A+Tin+On+House+78-96+Shek+Yam+Road+Kwai+Chung"
+        },
+        {
+          "text": "Open directions",
+          "href": "https://www.google.com/maps/search/?api=1&query=Jackson+Pharmacy+78A+Tin+On+House+78-96+Shek+Yam+Road+Kwai+Chung"
+        },
+        {
+          "text": "2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "+852 2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Call 2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/search/?api=1&query=Jackson+Pharmacy+78A+Tin+On+House+78-96+Shek+Yam+Road+Kwai+Chung"
+        },
+        {
+          "text": "Jackson Pharmacy智生大藥房",
+          "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#top"
+        },
+        {
+          "text": "Open in Google Maps",
+          "href": "https://www.google.com/maps/search/?api=1&query=Jackson+Pharmacy+78A+Tin+On+House+78-96+Shek+Yam+Road+Kwai+Chung"
+        },
+        {
+          "text": "+852 2421 8663",
+          "href": "tel:+85224218663"
+        }
+      ]
+    },
+    "faq": {
+      "open": true,
+      "text": "Where is Jackson Pharmacy located?\n            We're at Shop 78A, G/F, Tin On House, 78-96 Shek Yam Road, Kwai Chung. Open directions."
+    },
+    "emptyForm": {
+      "valid": false,
+      "nameError": "Please fill out this field.",
+      "phoneError": "Please fill out this field.",
+      "resultVisible": false,
+      "summary": ""
+    },
+    "invalidPhone": {
+      "valid": true,
+      "nameError": "",
+      "phoneError": "",
+      "resultVisible": true,
+      "summary": "Name: Review Visitor\nPhone: --------\nEnquiry: Delivery enquiry\nDetails: Checking delivery availability."
+    },
+    "whitespaceName": {
+      "valid": true,
+      "nameError": "",
+      "phoneError": "",
+      "resultVisible": true,
+      "summary": "Name: \nPhone: 91234567\nEnquiry: Delivery enquiry\nDetails: Checking delivery availability."
+    },
+    "validForm": {
+      "valid": true,
+      "nameError": "",
+      "phoneError": "",
+      "resultVisible": true,
+      "summary": "Name: Review Visitor\nPhone: 91234567\nEnquiry: Delivery enquiry\nDetails: Checking delivery availability."
+    },
+    "copyAction": {
+      "clicked": "Copy enquiry"
+    },
+    "copyStatus": "Copy is unavailable. You can select the note above instead.",
+    "editRestoresForm": true,
+    "galleryClick": {
+      "clicked": ""
+    },
+    "gallery": {
+      "open": true,
+      "imageWidth": 1600,
+      "caption": "Everyday health essentials (illustrative image)"
+    },
+    "nav": {
+      "href": "https://u5e2xh5lcu2x4ce.c.msft.feather-prod.azure.com/#services"
+    },
+    "navResult": {
+      "hash": "#services",
+      "y": 912
+    },
+    "mobile": {
+      "width": 390,
+      "bodyWidth": 390,
+      "menuExpanded": "true",
+      "menuVisible": true
+    }
+  },
+  "b": {
+    "initial": {
+      "title": "Jackson Pharmacy | Your Neighbourhood, Your Wellbeing",
+      "headings": [
+        "JacksonPharmacy.",
+        "How can we help?",
+        "Everyday care, made simpler.",
+        "Medicines & wellness",
+        "A helpful conversation",
+        "Convenient local delivery",
+        "Local care.\nA personal touch.",
+        "A pharmacy close to home",
+        "People-first, straightforward help",
+        "A delivery option, too",
+        "A closer look at everyday care.",
+        "A few things\nyou might be wondering.",
+        "Good health starts\nwith a conversation.",
+        "Your enquiry is ready.",
+        "Everyday essentials",
+        "Your details, your choice."
+      ],
+      "sections": [
+        {
+          "id": "services",
+          "y": 766
+        },
+        {
+          "id": "why-us",
+          "y": 1297
+        },
+        {
+          "id": "gallery",
+          "y": 1991
+        },
+        {
+          "id": "faq",
+          "y": 2736
+        },
+        {
+          "id": "visit",
+          "y": 3309
+        }
+      ],
+      "images": [
+        {
+          "src": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/photo-1585435557343-3b092031a831",
+          "width": 2200,
+          "alt": ""
+        },
+        {
+          "src": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/photo-1576602976047-174e57a47881",
+          "width": 1100,
+          "alt": "Health and wellness products on pharmacy shelves"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=1000&q=80",
+          "width": 1000,
+          "alt": "Health and wellness tablets and everyday pharmacy essentials"
+        },
+        {
+          "src": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/photo-1576091160399-112ba8d25d1d",
+          "width": 1000,
+          "alt": "A friendly conversation about personal healthcare"
+        },
+        {
+          "src": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/photo-1587854692152-cbe660dbde88(1)",
+          "width": 1000,
+          "alt": "A selection of pharmacy products and health essentials"
+        },
+        {
+          "src": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/photo-1471864190281-a93c3070b6de",
+          "width": 0,
+          "alt": "Health and wellness tablets and everyday pharmacy essentials"
+        }
+      ],
+      "links": [
+        {
+          "text": "Skip to content",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#main"
+        },
+        {
+          "text": "Jackson Pharmacy智生大藥房",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#top"
+        },
+        {
+          "text": "Our services",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#services"
+        },
+        {
+          "text": "Why Jackson",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#why-us"
+        },
+        {
+          "text": "Gallery",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#gallery"
+        },
+        {
+          "text": "FAQs",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#faq"
+        },
+        {
+          "text": "2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Our services",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#services"
+        },
+        {
+          "text": "Why Jackson",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#why-us"
+        },
+        {
+          "text": "Gallery",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#gallery"
+        },
+        {
+          "text": "FAQs",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#faq"
+        },
+        {
+          "text": "Visit us",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#visit"
+        },
+        {
+          "text": "Call 2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Find us in Kwai Chung",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#visit"
+        },
+        {
+          "text": "Ask about a product",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#enquiry"
+        },
+        {
+          "text": "Let's talk",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#enquiry"
+        },
+        {
+          "text": "Ask about delivery",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#enquiry"
+        },
+        {
+          "text": "Talk to our team",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Call 2421 8663",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Get directions",
+          "href": "https://www.google.com/maps/search/?api=1&query=Jackson+Pharmacy+Tin+On+House+78-96+Shek+Yam+Road+Kwai+Chung"
+        },
+        {
+          "text": "949Q+RV Kwai Chung",
+          "href": "https://www.google.com/maps/search/?api=1&query=949Q%2BRV+Kwai+Chung"
+        },
+        {
+          "text": "Jackson Pharmacy智生大藥房",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#top"
+        },
+        {
+          "text": "Give us a call",
+          "href": "tel:+85224218663"
+        },
+        {
+          "text": "Our services",
+          "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#services"
+        },
+        {
+          "text": "Call 2421 8663",
+          "href": "tel:+85224218663"
+        }
+      ]
+    },
+    "faq": {
+      "open": false,
+      "text": "Do you offer delivery?\n            Yes, delivery is one of our service options. Please call 2421 8663 or prepare an enquiry to confirm delivery areas, charges and timing before arranging your order."
+    },
+    "emptyForm": {
+      "valid": false,
+      "nameError": "Please fill out this field.",
+      "phoneError": "Please fill out this field.",
+      "resultVisible": false,
+      "summary": ""
+    },
+    "invalidPhone": {
+      "valid": false,
+      "nameError": "",
+      "phoneError": "Please enter a valid phone number with 8 to 15 digits.",
+      "resultVisible": false,
+      "summary": ""
+    },
+    "whitespaceName": {
+      "valid": false,
+      "nameError": "Please enter your name.",
+      "phoneError": "",
+      "resultVisible": false,
+      "summary": ""
+    },
+    "validForm": {
+      "valid": true,
+      "nameError": "",
+      "phoneError": "",
+      "resultVisible": true,
+      "summary": "Jackson Pharmacy enquiry\n\nName: Review Visitor\nPhone: 91234567\nInterested in: Local delivery\n\nMessage: Checking delivery availability."
+    },
+    "copyAction": {
+      "clicked": "Copy enquiry"
+    },
+    "copyStatus": "Please select and copy the summary above manually.",
+    "editRestoresForm": true,
+    "serviceClick": {
+      "clicked": "Ask about delivery"
+    },
+    "serviceSelection": {
+      "value": "delivery",
+      "focus": "customer-name"
+    },
+    "galleryClick": {
+      "clicked": "Everyday essentials"
+    },
+    "galleryFirst": {
+      "open": true,
+      "count": "1 / 3",
+      "imageWidth": 1000
+    },
+    "galleryNext": {
+      "count": "2 / 3",
+      "imageWidth": 1000,
+      "title": "A helping hand"
+    },
+    "galleryPrevious": "1 / 3",
+    "escapeClosed": true,
+    "chinese": {
+      "lang": "zh-Hant",
+      "heading": "JacksonPharmacy.",
+      "formButton": "準備查詢訊息",
+      "languageButton": "English"
+    },
+    "privacy": true,
+    "nav": {
+      "href": "https://txy4taosdtb5o2k.c.msft.feather-prod.azure.com/#services"
+    },
+    "navResult": {
+      "hash": "#services",
+      "y": 656
+    },
+    "mobile": {
+      "width": 390,
+      "bodyWidth": 390,
+      "menuExpanded": "true",
+      "menuVisible": true
+    }
+  },
+  "exceptions": []
+}

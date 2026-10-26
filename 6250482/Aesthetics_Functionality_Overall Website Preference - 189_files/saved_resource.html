@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/ -->
+<html lang="en" class="js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#254b32">
+  <meta name="description" content="Meet Green Crate. A fresh, friendly organic grocery identity, rooted in good food and a little everyday goodness. Explore the logo and make it yours.">
+  <title>Green Crate | Good Food. Happy Roots.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link rel="preconnect" href="https://images.unsplash.com/">
+  <link href="./css2" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23254b32'/%3E%3Cpath d='M15 31h34l-4 23H19z' fill='%23f5f5e9'/%3E%3Cpath d='M17 39h30M18 46h28' stroke='%23254b32' stroke-width='3'/%3E%3Cpath d='M32 31c-12 0-16-9-10-13 6-4 11 3 10 9-1-13 11-22 16-13 3 7-5 13-12 17' fill='%23b9cf8c'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --forest: #254b32;
+      --forest-dark: #183923;
+      --leaf: #b9cf8c;
+      --cream: #f6f5eb;
+      --orange: #d98246;
+      --muted: #5f6b59;
+      --line: #dce1d3;
+      --heading: 'Fredoka', 'Trebuchet MS', sans-serif;
+      --body: 'DM Sans', Arial, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 28px; }
+    body { margin: 0; background: var(--cream); color: var(--forest); font-family: var(--body); font-size: 16px; -webkit-font-smoothing: antialiased; }
+    body.menu-open { overflow: hidden; }
+    button, input, select { font: inherit; }
+    button, a, select, input { -webkit-tap-highlight-color: transparent; }
+    button { cursor: pointer; }
+    a { color: inherit; text-decoration: none; }
+    button, a, select, input { touch-action: manipulation; }
+    button:focus-visible, a:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid var(--orange); outline-offset: 5px; }
+    img, svg { display: block; }
+    img { max-width: 100%; }
+    button { color: inherit; }
+    h1, h2, h3, p { margin: 0; }
+    h1, h2, h3 { font-family: var(--heading); font-weight: 500; }
+    ::selection { background: var(--leaf); color: var(--forest-dark); }
+    .container { width: min(1224px, calc(100% - 112px)); margin-inline: auto; }
+    .icon { width: 20px; height: 20px; flex: 0 0 auto; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+    .skip-link { position: fixed; top: -80px; left: 20px; padding: 14px 20px; color: white; background: var(--forest); z-index: 20; }
+    .skip-link:focus { top: 14px; }
+    .eyebrow { font-size: 11px; font-weight: 600; letter-spacing: 2px; line-height: 1.5; text-transform: uppercase; }
+    .section-title { font-size: clamp(38px, 4.1vw, 56px); line-height: 1.08; letter-spacing: -1.8px; }
+    .section-copy { color: var(--muted); line-height: 1.8; font-size: 15px; }
+    .button { display: inline-flex; align-items: center; justify-content: center; gap: 28px; min-height: 54px; padding: 0 25px; border: 1px solid transparent; border-radius: 5px; background: var(--forest); color: var(--cream); font-size: 13px; font-weight: 600; transition: background .2s, transform .2s, box-shadow .2s; }
+    .button:hover { background: var(--forest-dark); transform: translateY(-2px); }
+    .button .icon { width: 18px; height: 18px; transition: transform .25s; }
+    .button:hover .icon { transform: translate(2px, -2px); }
+    .button:active { transform: translateY(0); }
+    .button:disabled { opacity: .7; cursor: wait; transform: none; }
+    .button-light { background: var(--leaf); color: var(--forest-dark); }
+    .button-light:hover { background: #cbe29e; }
+    .text-link { display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 600; }
+    .text-link .icon { width: 16px; transition: transform .2s; }
+    .text-link:hover .icon { transform: translateX(4px); }
+
+    .site-header { position: relative; z-index: 10; height: 90px; background: var(--cream); }
+    .header-inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .brand-icon { width: 48px; height: 48px; color: var(--forest); transition: transform .35s; }
+    .brand:hover .brand-icon { transform: rotate(-7deg); }
+    .brand-name { font-family: var(--heading); font-size: 25px; font-weight: 600; letter-spacing: -1px; line-height: 1; }
+    .header-nav { display: flex; align-items: center; gap: 34px; margin-left: 76px; }
+    .header-nav a { position: relative; font-size: 12px; font-weight: 500; padding-block: 10px; }
+    .header-nav a::after { content: ''; position: absolute; height: 1px; left: 0; right: 0; bottom: 3px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform .25s; }
+    .header-nav a:hover::after { transform: scaleX(1); }
+    .header-action { min-height: 43px; padding: 0 19px; gap: 23px; font-size: 12px; white-space: nowrap; }
+    .menu-toggle { display: none; border: 0; background: transparent; padding: 10px; }
+    .menu-toggle .icon { width: 25px; height: 25px; }
+    .mobile-menu-cta { display: none; }
+
+    .hero { position: relative; isolation: isolate; min-height: 660px; overflow: hidden; background: #d4d9c5; }
+    .hero-image { position: absolute; z-index: -3; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 56%; }
+    .hero::before { content: ''; position: absolute; z-index: -2; inset: 0; background: linear-gradient(90deg, #eef1e5 0%, rgba(238, 241, 229, .98) 20%, rgba(238, 241, 229, .91) 32%, rgba(238, 241, 229, .49) 46%, rgba(238, 241, 229, .06) 65%, rgba(20, 40, 22, .04) 100%); }
+    .hero::after { content: ''; position: absolute; z-index: -1; inset: 0; background: rgba(40, 66, 30, .08); mix-blend-mode: multiply; pointer-events: none; }
+    .hero-inner { min-height: 660px; display: flex; align-items: center; padding-block: 56px 65px; }
+    .hero-content { width: 520px; max-width: 100%; }
+    .hero-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 26px; font-size: 10px; letter-spacing: 2.1px; }
+    .hero-eyebrow::before { content: ''; width: 7px; height: 7px; background: var(--forest); border-radius: 50%; }
+    .hero h1 { font-family: var(--heading); font-size: clamp(100px, 9.55vw, 140px); font-weight: 600; letter-spacing: -5.5px; line-height: .89; }
+    .hero h1 .hero-dot { color: var(--orange); }
+    .hero-copy { margin-top: 29px; font-size: 17px; font-weight: 400; line-height: 1.65; letter-spacing: -.15px; }
+    .hero-copy strong { font-weight: 500; }
+    .hero .button { margin-top: 30px; gap: 37px; }
+
+    .roots { padding-block: 87px 94px; }
+    .roots-topline { display: flex; align-items: center; justify-content: space-between; padding-bottom: 31px; border-bottom: 1px solid var(--line); margin-bottom: 43px; }
+    .roots-topline .small-note { font-size: 11px; color: var(--muted); }
+    .roots-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: 100px; align-items: center; }
+    .roots .section-title { font-size: clamp(38px, 3.9vw, 54px); }
+    .roots-copy { margin-top: 24px; max-width: 450px; font-size: 15px; color: var(--muted); line-height: 1.85; }
+    .roots-link { margin-top: 23px; padding-bottom: 4px; border-bottom: 1px solid #bbc8ad; }
+    .roots-art { position: relative; display: flex; align-items: center; justify-content: center; gap: 35px; }
+    .roots-mark { width: 226px; height: 226px; flex-shrink: 0; color: var(--forest); }
+    .roots-mark .logo-accent { fill: var(--orange); }
+    .roots-art-copy { padding-left: 23px; border-left: 1px solid var(--line); }
+    .roots-art-copy span { display: block; font-size: 12px; line-height: 1.9; color: var(--muted); }
+    .roots-art-copy strong { display: block; margin-bottom: 8px; font-family: var(--heading); font-size: 25px; font-weight: 500; line-height: 1.15; letter-spacing: -.6px; }
+
+    .logo-section { background: #e9eddf; padding-block: 82px 91px; }
+    .section-heading { display: flex; align-items: end; justify-content: space-between; gap: 40px; margin-bottom: 40px; }
+    .section-heading .eyebrow { margin-bottom: 18px; }
+    .section-heading .section-copy { width: 300px; max-width: 100%; padding-bottom: 3px; }
+    .logo-workbench { display: grid; grid-template-columns: 1.7fr 1fr; gap: 48px; align-items: stretch; }
+    .logo-stage { min-height: 495px; position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #f6f5eb; color: #254b32; transition: background .4s, color .4s; }
+    .stage-label { position: absolute; top: 24px; left: 27px; z-index: 1; font-size: 9px; letter-spacing: 1.6px; font-weight: 500; opacity: .65; }
+    .stage-corner { position: absolute; right: 25px; bottom: 22px; width: 17px; height: 17px; opacity: .5; }
+    .stage-corner::before, .stage-corner::after { content: ''; position: absolute; background: currentColor; }
+    .stage-corner::before { width: 17px; height: 1px; left: 0; top: 8px; }
+    .stage-corner::after { height: 17px; width: 1px; left: 8px; top: 0; }
+    .logo-preview { width: 87%; max-width: 510px; margin-block: 38px 22px; }
+    .logo-preview svg { width: 100%; max-height: 400px; height: auto; overflow: visible; }
+    .logo-preview.is-changing { animation: logo-change .4s ease-out both; }
+    .logo-controls { padding-block: 8px; }
+    .control-group + .control-group { margin-top: 29px; }
+    .control-label { display: block; font-size: 10px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 14px; }
+    .layout-options { display: grid; grid-template-columns: 1fr 1.2fr 1fr; gap: 6px; }
+    .layout-option { min-height: 42px; padding: 8px; background: transparent; border: 1px solid #c6d0ba; border-radius: 3px; font-size: 11px; transition: color .2s, background .2s, border-color .2s; }
+    .layout-option:hover { border-color: var(--forest); }
+    .layout-option[aria-pressed="true"] { background: var(--forest); border-color: var(--forest); color: var(--cream); }
+    .color-options { display: flex; align-items: center; gap: 13px; }
+    .color-option { width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(37, 75, 50, .15); background: var(--swatch); position: relative; transition: transform .2s; }
+    .color-option:hover { transform: translateY(-2px); }
+    .color-option::after { content: ''; position: absolute; inset: -5px; border: 1px solid transparent; border-radius: 50%; transition: border-color .2s; }
+    .color-option[aria-pressed="true"]::after { border-color: var(--forest); }
+    .color-name { margin-left: 8px; color: var(--muted); font-size: 11px; }
+    .export-controls { border-top: 1px solid #ccd5c1; padding-top: 25px; margin-top: 28px; }
+    .format-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .format-label { font-size: 12px; }
+    .format-select { width: 188px; max-width: 65%; padding: 10px 32px 10px 12px; border: 1px solid #c6d0ba; border-radius: 3px; color: var(--forest); background-color: transparent; font-size: 11px; cursor: pointer; }
+    .transparent-option { display: flex; align-items: center; gap: 9px; margin-top: 16px; font-size: 11px; cursor: pointer; }
+    .transparent-option input { width: 15px; height: 15px; accent-color: var(--forest); margin: 0; cursor: pointer; }
+    .download-button { width: 100%; margin-top: 23px; justify-content: space-between; }
+    .download-button:hover .icon { transform: translateY(3px); }
+    .export-note { font-size: 10px; color: var(--muted); text-align: center; margin-top: 11px; line-height: 1.6; }
+
+    .palette-section { padding-block: 90px 100px; }
+    .palette-section .section-heading { margin-bottom: 37px; }
+    .palette-colors { display: grid; grid-template-columns: 1.15fr 1fr 1fr 1fr; }
+    .palette-color { min-height: 210px; position: relative; display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end; gap: 7px; padding: 25px; border: none; border-radius: 0; text-align: left; background: var(--color); color: var(--on-color); transition: transform .25s; }
+    .palette-color:hover { transform: translateY(-5px); }
+    .palette-color:focus-visible { z-index: 1; }
+    .palette-color-name { font-family: var(--heading); font-size: 24px; font-weight: 500; letter-spacing: -.4px; }
+    .palette-color-code { font-family: var(--body); font-size: 10px; letter-spacing: 1px; }
+    .palette-color .icon { position: absolute; top: 24px; right: 24px; width: 16px; height: 16px; opacity: .65; transition: opacity .2s, transform .2s; }
+    .palette-color:hover .icon { opacity: 1; transform: translate(-2px, 2px); }
+    .palette-hint { margin-top: 16px; display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 10px; }
+    .palette-hint .icon { width: 13px; height: 13px; }
+
+    .closing { background: var(--forest); color: var(--cream); padding-block: 64px 62px; overflow: hidden; }
+    .closing-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+    .closing .eyebrow { color: var(--leaf); margin-bottom: 18px; font-size: 10px; }
+    .closing h2 { font-size: clamp(42px, 4.8vw, 66px); line-height: 1.04; letter-spacing: -2px; }
+    .closing h2 span { color: var(--leaf); }
+    .closing-action { flex-shrink: 0; text-align: left; }
+    .closing-action p { margin-bottom: 20px; color: #d5decd; font-size: 13px; line-height: 1.7; }
+    .closing-action .button { min-width: 224px; justify-content: space-between; }
+    .site-footer { padding-block: 28px; }
+    .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .footer-brand { font-family: var(--heading); font-size: 20px; font-weight: 600; letter-spacing: -.5px; }
+    .copyright { font-size: 10px; color: var(--muted); margin-top: 3px; }
+    .back-top { font-size: 11px; display: inline-flex; align-items: center; gap: 13px; }
+    .back-top .icon { width: 14px; height: 14px; }
+
+    .toast { position: fixed; bottom: 25px; left: 50%; z-index: 30; max-width: calc(100vw - 32px); padding: 14px 20px; border: 1px solid #516b48; border-radius: 5px; color: var(--cream); background: var(--forest-dark); box-shadow: 0 8px 30px rgba(20, 40, 22, .15); font-size: 12px; text-align: center; opacity: 0; pointer-events: none; transform: translate(-50%, 15px); transition: opacity .25s, transform .25s; }
+    .toast.visible { opacity: 1; transform: translate(-50%, 0); }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .logo-accent { fill: var(--logo-accent, #d98246); }
+
+    @media (min-width: 1600px) {
+      .hero, .hero-inner { min-height: 730px; }
+      .hero-content { width: 600px; }
+      .hero h1 { font-size: 146px; }
+      .hero::before { background: linear-gradient(90deg, #eef1e5 0%, rgba(238, 241, 229, .97) 23%, rgba(238, 241, 229, .83) 36%, rgba(238, 241, 229, .18) 58%, transparent 75%); }
+    }
+    @media (max-width: 1100px) {
+      .container { width: calc(100% - 72px); }
+      .header-nav { margin-left: 10px; gap: 25px; }
+      .hero, .hero-inner { min-height: 615px; }
+      .hero h1 { font-size: 116px; }
+      .roots-grid { gap: 30px; }
+      .roots-art { gap: 14px; }
+      .roots-mark { width: 185px; height: 185px; }
+      .roots-art-copy { padding-left: 18px; }
+      .roots-art-copy strong { font-size: 22px; }
+      .logo-workbench { gap: 30px; grid-template-columns: 1.5fr 1fr; }
+      .logo-stage { min-height: 465px; }
+      .color-options { gap: 11px; }
+      .color-name { font-size: 10px; margin-left: 3px; }
+      .palette-color { min-height: 190px; padding: 22px; }
+    }
+    @media (max-width: 800px) {
+      .container { width: calc(100% - 48px); }
+      .site-header { height: 78px; }
+      .header-nav { gap: 23px; margin-left: 0; }
+      .header-nav a { font-size: 11px; }
+      .brand-name { font-size: 23px; }
+      .brand-icon { width: 40px; height: 40px; }
+      .header-action { gap: 13px; padding: 0 13px; min-height: 40px; font-size: 11px; }
+      .hero, .hero-inner { min-height: 595px; }
+      .hero h1 { font-size: 108px; }
+      .hero-content { width: 440px; }
+      .hero-copy { font-size: 15px; }
+      .hero::before { background: linear-gradient(90deg, rgba(238, 241, 229, .97), rgba(238, 241, 229, .84) 40%, rgba(238, 241, 229, .1) 92%); }
+      .roots { padding-block: 64px; }
+      .roots-grid { grid-template-columns: 1.2fr 1fr; gap: 30px; }
+      .roots-art { flex-direction: column; gap: 6px; }
+      .roots-mark { width: 165px; height: 165px; }
+      .roots-art-copy { text-align: center; padding-left: 0; border: 0; }
+      .roots-art-copy strong { font-size: 20px; margin-bottom: 5px; }
+      .roots-art-copy span { font-size: 10px; }
+      .section-heading { gap: 25px; }
+      .section-heading .section-copy { width: 240px; font-size: 13px; }
+      .section-title { font-size: 41px; }
+      .logo-section { padding-block: 64px; }
+      .logo-workbench { grid-template-columns: 1.25fr 1fr; gap: 27px; }
+      .logo-stage { min-height: 450px; }
+      .logo-preview { width: 94%; }
+      .stage-label { left: 20px; top: 21px; font-size: 8px; }
+      .color-options { gap: 12px; flex-wrap: wrap; }
+      .color-name { width: 100%; margin: 2px 0 0; }
+      .format-row { gap: 10px; }
+      .format-label { font-size: 11px; }
+      .format-select { font-size: 10px; padding-left: 9px; padding-right: 18px; }
+      .layout-option { font-size: 10px; padding: 5px; }
+      .palette-section { padding-block: 67px 72px; }
+      .palette-color { min-height: 175px; padding: 18px; }
+      .palette-color-name { font-size: 22px; }
+      .palette-color .icon { right: 18px; top: 18px; }
+      .closing { padding-block: 55px; }
+      .closing h2 { font-size: 48px; }
+      .closing-action .button { min-width: 190px; font-size: 12px; gap: 16px; }
+      .closing-action p { font-size: 12px; }
+    }
+    @media (max-width: 640px) {
+      html { scroll-padding-top: 18px; }
+      .container { width: calc(100% - 40px); }
+      .site-header { height: 76px; }
+      .brand-name { font-size: 24px; }
+      .header-inner { gap: 15px; }
+      .header-action { margin-left: auto; min-height: 36px; padding-inline: 12px; font-size: 10px; gap: 10px; }
+      .header-action .icon { width: 14px; height: 14px; }
+      .menu-toggle { display: block; margin-right: -8px; }
+      .header-nav { display: none; position: absolute; top: 76px; left: 0; right: 0; margin: 0; padding: 27px 25px 32px; background: var(--cream); border-top: 1px solid var(--line); box-shadow: 0 20px 25px rgba(37, 75, 50, .1); }
+      .header-nav.is-open { display: flex; flex-direction: column; align-items: stretch; gap: 9px; }
+      .header-nav a { font-size: 20px; font-family: var(--heading); padding: 12px 0; }
+      .header-nav a::after { display: none; }
+      .hero, .hero-inner { min-height: 745px; }
+      .hero-inner { align-items: flex-start; padding-block: 46px 30px; }
+      .hero-image { object-position: 62% center; }
+      .hero::before { background: linear-gradient(180deg, #eef1e5 0%, rgba(238, 241, 229, .99) 25%, rgba(238, 241, 229, .92) 39%, rgba(238, 241, 229, .48) 57%, rgba(238, 241, 229, 0) 76%); }
+      .hero-content { width: 100%; }
+      .hero-eyebrow { margin-bottom: 22px; font-size: 9px; letter-spacing: 1.8px; }
+      .hero h1 { font-size: clamp(94px, 23vw, 124px); letter-spacing: -4.7px; line-height: .89; }
+      .hero-copy { margin-top: 25px; font-size: 14px; line-height: 1.65; }
+      .hero .button { margin-top: 24px; min-height: 49px; font-size: 12px; padding-inline: 22px; gap: 32px; }
+      .roots { padding-block: 49px 55px; }
+      .roots-topline { margin-bottom: 29px; padding-bottom: 21px; }
+      .eyebrow { font-size: 9px; letter-spacing: 1.6px; }
+      .roots-topline .small-note { display: none; }
+      .roots-grid { grid-template-columns: 1fr; gap: 30px; }
+      .roots .section-title { font-size: 43px; letter-spacing: -1.3px; }
+      .roots-copy { margin-top: 20px; font-size: 14px; line-height: 1.8; max-width: 100%; }
+      .roots-link { margin-top: 19px; font-size: 12px; }
+      .roots-art { flex-direction: row; justify-content: flex-start; gap: 30px; padding-top: 12px; }
+      .roots-mark { width: 150px; height: 150px; }
+      .roots-art-copy { text-align: left; padding-left: 25px; border-left: 1px solid var(--line); }
+      .roots-art-copy strong { font-size: 24px; }
+      .roots-art-copy span { font-size: 11px; }
+      .logo-section { padding-block: 53px 58px; }
+      .section-heading { display: block; margin-bottom: 27px; }
+      .section-heading .eyebrow { margin-bottom: 15px; }
+      .section-title { font-size: 42px; letter-spacing: -1.4px; }
+      .section-heading .section-copy { width: 100%; margin-top: 17px; font-size: 13px; line-height: 1.8; }
+      .logo-workbench { grid-template-columns: 1fr; gap: 30px; }
+      .logo-stage { min-height: 385px; }
+      .logo-preview { width: 89%; margin-block: 40px 20px; max-width: 390px; }
+      .logo-preview svg { max-height: 330px; }
+      .stage-label { top: 21px; left: 23px; font-size: 8px; }
+      .logo-controls { padding: 0; }
+      .control-label { font-size: 9px; margin-bottom: 12px; }
+      .layout-options { gap: 8px; }
+      .layout-option { min-height: 42px; font-size: 12px; }
+      .control-group + .control-group { margin-top: 25px; }
+      .color-options { gap: 17px; flex-wrap: nowrap; }
+      .color-name { width: auto; margin-left: 8px; font-size: 11px; }
+      .color-option { width: 33px; height: 33px; }
+      .export-controls { margin-top: 27px; }
+      .format-label { font-size: 12px; }
+      .format-select { font-size: 12px; width: 180px; }
+      .transparent-option { font-size: 12px; }
+      .download-button { margin-top: 22px; font-size: 13px; }
+      .export-note { font-size: 10px; }
+      .palette-section { padding-block: 55px 57px; }
+      .palette-colors { grid-template-columns: 1fr 1fr; }
+      .palette-color { min-height: 178px; padding: 21px; }
+      .palette-color-name { font-size: 24px; }
+      .palette-color .icon { top: 21px; right: 21px; }
+      .palette-color:hover { transform: none; }
+      .palette-hint { font-size: 10px; }
+      .closing { padding-block: 48px 46px; }
+      .closing-inner { flex-direction: column; align-items: flex-start; gap: 29px; }
+      .closing h2 { font-size: 49px; }
+      .closing-action p { font-size: 13px; margin-bottom: 18px; }
+      .closing-action .button { min-width: 216px; min-height: 49px; }
+      .site-footer { padding-block: 26px; }
+      .footer-inner { gap: 20px; }
+      .footer-brand { font-size: 20px; }
+      .copyright { font-size: 9px; }
+      .back-top { font-size: 10px; gap: 8px; }
+    }
+    @media (max-width: 420px) {
+      .header-action { padding-inline: 11px; }
+      .header-action .icon { display: none; }
+      .header-inner { gap: 10px; }
+    }
+    @media (max-width: 360px) {
+      .brand-name { font-size: 21px; }
+      .brand-icon { width: 35px; height: 35px; }
+      .brand { gap: 5px; }
+      .header-inner { gap: 10px; }
+      .header-action { padding-inline: 10px; }
+      .header-action .icon { display: none; }
+      .hero h1 { font-size: 91px; }
+      .hero, .hero-inner { min-height: 720px; }
+      .roots-art { gap: 15px; }
+      .roots-art-copy { padding-left: 15px; }
+      .roots-mark { width: 130px; height: 130px; }
+      .color-name { font-size: 10px; margin-left: 3px; }
+      .color-options { gap: 14px; }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-image { animation: hero-image-in 1.8s cubic-bezier(.2, .7, .3, 1) both; }
+      .hero-content > * { animation: hero-text-in .85s cubic-bezier(.2, .7, .3, 1) both; }
+      .hero-eyebrow { animation-delay: .1s !important; }
+      .hero h1 { animation-delay: .2s !important; }
+      .hero-copy { animation-delay: .34s !important; }
+      .hero .button { animation-delay: .45s !important; }
+      .js .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .3, 1); }
+      .js .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes hero-image-in { from { transform: scale(1.05); } to { transform: scale(1); } }
+    @keyframes hero-text-in { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes logo-change { from { opacity: .2; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#main">Skip to the good stuff</a>
+
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <defs>
+      <symbol id="crate-mark" viewBox="0 0 140 140">
+        <path d="M29 68C18 64 12 53 17 43c9-1 17 7 16 16l9 12-13-3Z" fill="currentColor"></path>
+        <path d="M71 69C54 66 40 57 43 43c2-9 12-12 22-5-3-13 7-24 17-23 12 1 15 13 9 23 12-6 24 1 22 12-1 13-19 22-32 20Z" fill="currentColor"></path>
+        <path d="M96 44c2-10 5-17 13-21M102 32c-7-12-1-19 6-22 7 8 4 17-6 22ZM103 34c7-12 18-12 25-5-5 10-15 12-25 5Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M94 42c4-6 14-6 18 0l-12 36c-1 3-5 6-8 3l-5-5 7-34Z" class="logo-accent"></path>
+        <path d="m94 54 8 4m-11 6 7 3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path>
+        <path d="M20 80h101l-8 46c-1 5-5 8-10 8H37c-5 0-9-3-10-8l-7-46Zm12 13 1 9h75l2-9H32Zm3 20 1 9h70l2-9H35Z" fill="currentColor" fill-rule="evenodd"></path>
+        <rect x="14" y="72" width="113" height="13" rx="4" fill="currentColor"></rect>
+        <path d="m26 127-3-8m95 8 1-8" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path>
+      </symbol>
+      <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"></path></symbol>
+      <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"></path></symbol>
+      <symbol id="arrow-down" viewBox="0 0 24 24"><path d="M12 4v16m-6-6 6 6 6-6"></path></symbol>
+      <symbol id="download-icon" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"></path></symbol>
+      <symbol id="copy-icon" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"></rect><path d="M15 8V4H4v11h4"></path></symbol>
+      <symbol id="check-icon" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#top" aria-label="Green Crate home">
+        <svg class="brand-icon" aria-hidden="true" viewBox="0 0 140 140"><use href="#crate-mark"></use></svg>
+        <span class="brand-name">Green Crate</span>
+      </a>
+      <nav class="header-nav" id="main-navigation" aria-label="Main navigation">
+        <a href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#our-roots">Our roots</a>
+        <a href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#the-logo">The logo</a>
+        <a href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#our-colors">Our colors</a>
+      </nav>
+      <a class="button header-action" href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#the-logo">Get the logo <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"></use></svg></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-navigation">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path id="menu-icon-path" d="M4 7h16M4 12h16M4 17h16"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="./photo-1542838132-92c53300491e" alt="A colorful harvest of fresh leafy greens, carrots, and vegetables at a neighborhood produce market" width="2400" height="1600" fetchpriority="high">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">Fresh from the good earth</p>
+          <h1 id="hero-title">Green<br>Crate<span class="hero-dot">.</span></h1>
+          <p class="hero-copy"><strong>Good food. Happy roots.</strong><br>A fresh little brand for a greener everyday.</p>
+          <a class="button" href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#the-logo">Explore the logo <svg class="icon" aria-hidden="true"><use href="#arrow-down"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="roots" id="our-roots" aria-labelledby="roots-title">
+      <div class="container">
+        <div class="roots-topline reveal">
+          <p class="eyebrow">01 / A fresh little idea</p>
+          <p class="small-note">Rooted in the simple things.</p>
+        </div>
+        <div class="roots-grid">
+          <div class="reveal">
+            <h2 class="section-title" id="roots-title">A little crate.<br>A lot of goodness.</h2>
+            <p class="roots-copy">A wooden crate, a few fresh leaves, and a little carrot. A simple mark that brings honest food, local goodness, and the joy of a fresh start together.</p>
+            <a class="text-link roots-link" href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#the-logo">Meet the little mark <svg class="icon" aria-hidden="true"><use href="#arrow-right"></use></svg></a>
+          </div>
+          <div class="roots-art reveal">
+            <svg class="roots-mark" role="img" aria-label="Green Crate logo symbol: fresh leafy greens and a carrot growing out of a wooden crate" viewBox="0 0 140 140"><use href="#crate-mark"></use></svg>
+            <div class="roots-art-copy"><strong>From the earth.<br>With a little love.</strong><span>Fresh, friendly, and full of life.<br>That's the Green Crate way.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logo-section" id="the-logo" aria-labelledby="logo-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">02 / Make it yours</p><h2 class="section-title" id="logo-title">Fresh looks good on you.</h2></div>
+          <p class="section-copy">One friendly identity. A few ways to wear it.<br>Find your favorite, then take it with you.</p>
+        </div>
+        <div class="logo-workbench reveal">
+          <div class="logo-stage" id="logo-stage" style="background: rgb(246, 245, 235); color: rgb(37, 75, 50);">
+            <p class="stage-label" id="stage-label">THE STACKED LOGO</p>
+            <div class="logo-preview" id="logo-preview" role="img" aria-label="Stacked Green Crate logo in fresh cream"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560" aria-hidden="true"><g transform="translate(200 19) scale(1.43)" color="#254B32">
+        <path d="M29 68C18 64 12 53 17 43c9-1 17 7 16 16l9 12-13-3Z" fill="currentColor"></path>
+        <path d="M71 69C54 66 40 57 43 43c2-9 12-12 22-5-3-13 7-24 17-23 12 1 15 13 9 23 12-6 24 1 22 12-1 13-19 22-32 20Z" fill="currentColor"></path>
+        <path d="M96 44c2-10 5-17 13-21M102 32c-7-12-1-19 6-22 7 8 4 17-6 22ZM103 34c7-12 18-12 25-5-5 10-15 12-25 5Z" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+        <path d="M94 42c4-6 14-6 18 0l-12 36c-1 3-5 6-8 3l-5-5 7-34Z" fill="#D98246"></path>
+        <path d="m94 54 8 4m-11 6 7 3" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path>
+        <path d="M20 80h101l-8 46c-1 5-5 8-10 8H37c-5 0-9-3-10-8l-7-46Zm12 13 1 9h75l2-9H32Zm3 20 1 9h70l2-9H35Z" fill="currentColor" fill-rule="evenodd"></path>
+        <rect x="14" y="72" width="113" height="13" rx="4" fill="currentColor"></rect>
+        <path d="m26 127-3-8m95 8 1-8" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path>
+      </g><text x="300" y="343" text-anchor="middle" font-family="Fredoka, Trebuchet MS, sans-serif" font-weight="600" font-size="110" letter-spacing="-3" fill="#254B32">Green</text><text x="300" y="441" text-anchor="middle" font-family="Fredoka, Trebuchet MS, sans-serif" font-weight="600" font-size="110" letter-spacing="-3" fill="#254B32">Crate</text><text x="300" y="500" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="400" letter-spacing="3.5" fill="#254B32">GOOD FOOD. HAPPY ROOTS.</text></svg></div>
+            <span class="stage-corner" aria-hidden="true"></span>
+          </div>
+          <div class="logo-controls" aria-label="Customize your Green Crate logo">
+            <div class="control-group">
+              <p class="control-label" id="layout-label">Pick a little personality</p>
+              <div class="layout-options" role="group" aria-labelledby="layout-label">
+                <button class="layout-option" type="button" data-layout="stacked" aria-pressed="true">Stacked</button>
+                <button class="layout-option" type="button" data-layout="horizontal" aria-pressed="false">Side by side</button>
+                <button class="layout-option" type="button" data-layout="icon" aria-pressed="false">Mark only</button>
+              </div>
+            </div>
+            <div class="control-group">
+              <p class="control-label" id="palette-label">Choose your shade of green</p>
+              <div class="color-options" role="group" aria-labelledby="palette-label">
+                <button class="color-option" type="button" data-theme="cream" style="--swatch:#f6f5eb" aria-label="Fresh cream" title="Fresh cream" aria-pressed="true"></button>
+                <button class="color-option" type="button" data-theme="forest" style="--swatch:#254b32" aria-label="Forest green" title="Forest green" aria-pressed="false"></button>
+                <button class="color-option" type="button" data-theme="leaf" style="--swatch:#b9cf8c" aria-label="Fresh leaf" title="Fresh leaf" aria-pressed="false"></button>
+                <button class="color-option" type="button" data-theme="carrot" style="--swatch:#e8ac7c" aria-label="Soft carrot" title="Soft carrot" aria-pressed="false"></button>
+                <span class="color-name" id="color-name">Fresh cream</span>
+              </div>
+            </div>
+            <div class="export-controls">
+              <div class="format-row">
+                <label class="format-label" for="download-format">Keep it as</label>
+                <select class="format-select" id="download-format">
+                  <option value="svg">SVG / scalable vector</option>
+                  <option value="png">PNG / high resolution</option>
+                </select>
+              </div>
+              <label class="transparent-option"><input type="checkbox" id="transparent-background" checked=""> Transparent background</label>
+              <button class="button download-button" id="download-logo" type="button"><span id="download-label">Download your logo</span><svg class="icon" aria-hidden="true"><use href="#download-icon"></use></svg></button>
+              <p class="export-note">A little goodness, ready for wherever you grow.</p>
+            </div>
+          </div>
+        </div>
+        <p class="visually-hidden" id="logo-status" aria-live="polite">Stacked logo, Fresh cream. Preview updated.</p>
+      </div>
+    </section>
+
+    <section class="palette-section" id="our-colors" aria-labelledby="palette-title">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div><p class="eyebrow">03 / The colors of good things</p><h2 class="section-title" id="palette-title">Straight from nature.</h2></div>
+          <p class="section-copy">Earthy greens, warm cream, and a little sunshine.<br>Nothing complicated. Just good company.</p>
+        </div>
+        <div class="palette-colors reveal" aria-label="Green Crate color palette. Select a color to copy its hexadecimal value.">
+          <button class="palette-color" type="button" data-color="#254B32" data-name="Forest" style="--color:#254b32;--on-color:#f6f5eb" aria-label="Copy Forest green, hex 254B32"><span class="palette-color-name">Forest</span><span class="palette-color-code">#254B32</span><svg class="icon" aria-hidden="true"><use href="#copy-icon"></use></svg></button>
+          <button class="palette-color" type="button" data-color="#B9CF8C" data-name="Leaf" style="--color:#b9cf8c;--on-color:#254b32" aria-label="Copy Leaf green, hex B9CF8C"><span class="palette-color-name">Leaf</span><span class="palette-color-code">#B9CF8C</span><svg class="icon" aria-hidden="true"><use href="#copy-icon"></use></svg></button>
+          <button class="palette-color" type="button" data-color="#F6F5EB" data-name="Cream" style="--color:#f6f5eb;--on-color:#254b32" aria-label="Copy Cream, hex F6F5EB"><span class="palette-color-name">Cream</span><span class="palette-color-code">#F6F5EB</span><svg class="icon" aria-hidden="true"><use href="#copy-icon"></use></svg></button>
+          <button class="palette-color" type="button" data-color="#D98246" data-name="Carrot" style="--color:#d98246;--on-color:#122d1c" aria-label="Copy Carrot orange, hex D98246"><span class="palette-color-name">Carrot</span><span class="palette-color-code">#D98246</span><svg class="icon" aria-hidden="true"><use href="#copy-icon"></use></svg></button>
+        </div>
+        <p class="palette-hint"><svg class="icon" aria-hidden="true"><use href="#copy-icon"></use></svg> A color you love? Click to copy its hex code.</p>
+      </div>
+    </section>
+
+    <section class="closing" aria-labelledby="closing-title">
+      <div class="container closing-inner">
+        <div class="reveal"><p class="eyebrow">Here's to good things growing.</p><h2 id="closing-title">A greener day<br>starts with a <span>little crate.</span></h2></div>
+        <div class="closing-action reveal"><p>From the first idea to the everyday.<br>Bring a little Green Crate into your world.</p><a class="button button-light" href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#the-logo">Take the goodness with you <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"></use></svg></a></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><a class="footer-brand" href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#home">Green Crate</a><p class="copyright">© 2026 Green Crate. A fresh brand concept.</p></div>
+      <a class="back-top" href="https://bfqydnplo2crfz7.c.msft.feather-prod.azure.com/#top">Back to the good stuff <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4m-6 6 6-6 6 6"></path></svg></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const themes = {
+        cream: { name: 'Fresh cream', background: '#F6F5EB', ink: '#254B32', accent: '#D98246' },
+        forest: { name: 'Forest green', background: '#254B32', ink: '#F6F5EB', accent: '#B9CF8C' },
+        leaf: { name: 'Fresh leaf', background: '#B9CF8C', ink: '#254B32', accent: '#D98246' },
+        carrot: { name: 'Soft carrot', background: '#E8AC7C', ink: '#254B32', accent: '#F6F5EB' }
+      };
+      const layoutNames = { stacked: 'Stacked', horizontal: 'Side by side', icon: 'Mark only' };
+      const state = { layout: 'stacked', theme: 'cream' };
+      const preview = document.getElementById('logo-preview');
+      const stage = document.getElementById('logo-stage');
+      const logoStatus = document.getElementById('logo-status');
+      const downloadButton = document.getElementById('download-logo');
+      const downloadLabel = document.getElementById('download-label');
+      const mark = document.getElementById('crate-mark').innerHTML;
+      const toast = document.getElementById('toast');
+      let toastTimer;
+      let fontPromise;
+
+      function notify(message) {
+        clearTimeout(toastTimer);
+        toast.textContent = message;
+        toast.classList.add('visible');
+        toastTimer = setTimeout(() => toast.classList.remove('visible'), 3600);
+      }
+
+      function logoParts(layout, theme) {
+        const themedMark = mark.replace('class="logo-accent"', `fill="${theme.accent}"`);
+        const word = (text, x, y, size) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="Fredoka, Trebuchet MS, sans-serif" font-weight="600" font-size="${size}" letter-spacing="-3" fill="${theme.ink}">${text}</text>`;
+        const tagline = (x, y, size = 13) => `<text x="${x}" y="${y}" text-anchor="middle" font-family="Arial, sans-serif" font-size="${size}" font-weight="400" letter-spacing="3.5" fill="${theme.ink}">GOOD FOOD. HAPPY ROOTS.</text>`;
+        if (layout === 'icon') {
+          return { width: 240, height: 240, body: `<g transform="translate(30 25) scale(1.3)" color="${theme.ink}">${themedMark}</g>` };
+        }
+        if (layout === 'horizontal') {
+          return { width: 880, height: 280, body: `<g transform="translate(34 39) scale(1.45)" color="${theme.ink}">${themedMark}</g>${word('Green Crate', 525, 151, 88)}${tagline(525, 197, 12)}` };
+        }
+        return { width: 600, height: 560, body: `<g transform="translate(200 19) scale(1.43)" color="${theme.ink}">${themedMark}</g>${word('Green', 300, 343, 110)}${word('Crate', 300, 441, 110)}${tagline(300, 500)}` };
+      }
+
+      function renderLogo(animate = true) {
+        const theme = themes[state.theme];
+        const parts = logoParts(state.layout, theme);
+        stage.style.background = theme.background;
+        stage.style.color = theme.ink;
+        preview.setAttribute('aria-label', `${layoutNames[state.layout]} Green Crate logo in ${theme.name.toLowerCase()}`);
+        preview.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${parts.width} ${parts.height}" aria-hidden="true">${parts.body}</svg>`;
+        document.getElementById('stage-label').textContent = state.layout === 'icon' ? 'THE LITTLE MARK' : `THE ${state.layout === 'horizontal' ? 'SIDE-BY-SIDE' : 'STACKED'} LOGO`;
+        document.getElementById('color-name').textContent = theme.name;
+        logoStatus.textContent = `${layoutNames[state.layout]} logo, ${theme.name}. Preview updated.`;
+        preview.classList.remove('is-changing');
+        if (animate) {
+          void preview.offsetWidth;
+          preview.classList.add('is-changing');
+        }
+      }
+
+      document.querySelectorAll('[data-layout]').forEach(button => {
+        button.addEventListener('click', () => {
+          state.layout = button.dataset.layout;
+          document.querySelectorAll('[data-layout]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+          renderLogo();
+        });
+      });
+
+      document.querySelectorAll('[data-theme]').forEach(button => {
+        button.addEventListener('click', () => {
+          state.theme = button.dataset.theme;
+          document.querySelectorAll('[data-theme]').forEach(option => option.setAttribute('aria-pressed', String(option === button)));
+          renderLogo();
+        });
+      });
+
+      const menuButton = document.querySelector('.menu-toggle');
+      const navigation = document.getElementById('main-navigation');
+      function setMenu(open) {
+        navigation.classList.toggle('is-open', open);
+        menuButton.setAttribute('aria-expanded', String(open));
+        menuButton.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+        document.getElementById('menu-icon-path').setAttribute('d', open ? 'm6 6 12 12M6 18 18 6' : 'M4 7h16M4 12h16M4 17h16');
+        document.body.classList.toggle('menu-open', open);
+      }
+      menuButton.addEventListener('click', () => setMenu(menuButton.getAttribute('aria-expanded') !== 'true'));
+      navigation.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setMenu(false)));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') { setMenu(false); menuButton.focus(); } });
+      document.addEventListener('click', event => { if (!event.target.closest('.site-header') && menuButton.getAttribute('aria-expanded') === 'true') setMenu(false); });
+      window.matchMedia('(min-width: 641px)').addEventListener('change', event => { if (event.matches) setMenu(false); });
+
+      async function copyText(text) {
+        if (navigator.clipboard && window.isSecureContext) {
+          try { await navigator.clipboard.writeText(text); return true; } catch (_) { /* Fall back for browser clipboard restrictions. */ }
+        }
+        const field = document.createElement('textarea');
+        field.value = text;
+        field.style.cssText = 'position:fixed;top:-9999px;left:0;opacity:0';
+        field.setAttribute('readonly', '');
+        document.body.appendChild(field);
+        field.select();
+        let copied = false;
+        try { copied = document.execCommand('copy'); } catch (_) { copied = false; }
+        field.remove();
+        return copied;
+      }
+
+      const copyTimers = new WeakMap();
+      document.querySelectorAll('[data-color]').forEach(button => {
+        button.addEventListener('click', async () => {
+          const success = await copyText(button.dataset.color);
+          if (success) {
+            clearTimeout(copyTimers.get(button));
+            button.querySelector('use').setAttribute('href', '#check-icon');
+            notify(`${button.dataset.name} copied: ${button.dataset.color}`);
+            copyTimers.set(button, setTimeout(() => button.querySelector('use').setAttribute('href', '#copy-icon'), 2200));
+          } else {
+            notify(`Your ${button.dataset.name} color is ${button.dataset.color}. Select the code to copy it manually.`);
+          }
+          button.focus({ preventScroll: true });
+        });
+      });
+
+      function blobToDataURL(blob) {
+        return new Promise((resolve, reject) => {
+          const reader = new FileReader();
+          reader.onload = () => resolve(reader.result);
+          reader.onerror = () => reject(new Error('Could not read the logo font.'));
+          reader.readAsDataURL(blob);
+        });
+      }
+
+      // Embed the small wordmark font subset so the exported logo travels on its own.
+      async function getEmbeddedFont() {
+        if (!fontPromise) {
+          fontPromise = (async () => {
+            const controller = new AbortController();
+            const timeout = setTimeout(() => controller.abort(), 9000);
+            try {
+              const stylesheetURL = 'https://fonts.googleapis.com/css2?family=Fredoka:wght@600&text=Green%20Crate&display=swap';
+              const response = await fetch(stylesheetURL, { signal: controller.signal });
+              if (!response.ok) throw new Error('Font stylesheet unavailable.');
+              const stylesheet = await response.text();
+              const source = stylesheet.match(/url\(([^)]+)\)/);
+              if (!source) throw new Error('Font source unavailable.');
+              const fontResponse = await fetch(source[1].replace(/['"]/g, ''), { signal: controller.signal });
+              if (!fontResponse.ok) throw new Error('Font unavailable.');
+              const fontBlob = await fontResponse.blob();
+              const fontData = await blobToDataURL(fontBlob);
+              const fontFormat = stylesheet.match(/format\(['"]?([a-z0-9-]+)['"]?\)/i)?.[1] || 'woff2';
+              return `@font-face{font-family:Fredoka;src:url('${fontData}') format('${fontFormat}');font-weight:600;font-style:normal;}`;
+            } finally { clearTimeout(timeout); }
+          })().catch(() => {
+            fontPromise = null;
+            return '';
+          });
+        }
+        return fontPromise;
+      }
+
+      function exportSVG(parts, theme, transparent, fontCSS, layoutName) {
+        const background = transparent ? '' : `<rect width="${parts.width}" height="${parts.height}" fill="${theme.background}"/>`;
+        return `<svg xmlns="http://www.w3.org/2000/svg" width="${parts.width}" height="${parts.height}" viewBox="0 0 ${parts.width} ${parts.height}" color="${theme.ink}"><title>Green Crate - ${layoutName} logo</title><defs><style><![CDATA[${fontCSS}]]></style></defs>${background}${parts.body}</svg>`;
+      }
+
+      function saveBlob(blob, filename) {
+        const url = URL.createObjectURL(blob);
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.download = filename;
+        document.body.appendChild(anchor);
+        anchor.click();
+        anchor.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 10000);
+      }
+
+      function renderPNG(svg, width, height) {
+        return new Promise((resolve, reject) => {
+          const url = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml;charset=utf-8' }));
+          const image = new Image();
+          image.onload = () => {
+            try {
+              const canvas = document.createElement('canvas');
+              canvas.width = width;
+              canvas.height = Math.round(height);
+              const context = canvas.getContext('2d');
+              if (!context) throw new Error('Canvas unavailable.');
+              context.drawImage(image, 0, 0, canvas.width, canvas.height);
+              canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('PNG could not be created.')), 'image/png');
+            } catch (error) { reject(error); }
+            finally { URL.revokeObjectURL(url); }
+          };
+          image.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Logo image could not be rendered.')); };
+          image.src = url;
+        });
+      }
+
+      downloadButton.addEventListener('click', async () => {
+        const selectedLayout = state.layout;
+        const selectedTheme = state.theme;
+        const selectedFormat = document.getElementById('download-format').value;
+        const theme = themes[selectedTheme];
+        const parts = logoParts(selectedLayout, theme);
+        const transparent = document.getElementById('transparent-background').checked;
+        downloadButton.disabled = true;
+        downloadButton.setAttribute('aria-busy', 'true');
+        downloadLabel.textContent = 'Preparing a little goodness...';
+        try {
+          if (document.fonts && document.fonts.ready) await document.fonts.ready;
+          const fontCSS = await getEmbeddedFont();
+          const svg = exportSVG(parts, theme, transparent, fontCSS, layoutNames[selectedLayout]);
+          const filename = `green-crate-${selectedLayout}-${selectedTheme}${transparent ? '-transparent' : ''}`;
+          if (selectedFormat === 'png') {
+            const png = await renderPNG(svg, 2400, parts.height / parts.width * 2400);
+            saveBlob(png, `${filename}.png`);
+          } else {
+            saveBlob(new Blob([svg], { type: 'image/svg+xml;charset=utf-8' }), `${filename}.svg`);
+          }
+          notify(`Your Green Crate ${selectedFormat.toUpperCase()} is ready. A little goodness to go.`);
+        } catch (error) {
+          notify('That download did not grow quite right. Please try again, or choose SVG.');
+        } finally {
+          downloadButton.disabled = false;
+          downloadButton.removeAttribute('aria-busy');
+          downloadLabel.textContent = 'Download your logo';
+        }
+      });
+
+      renderLogo(false);
+      document.documentElement.classList.add('js');
+      if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const observer = new IntersectionObserver(entries => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); }
+          });
+        }, { threshold: .1 });
+        document.querySelectorAll('.reveal').forEach(element => observer.observe(element));
+      } else {
+        document.querySelectorAll('.reveal').forEach(element => element.classList.add('is-visible'));
+      }
+    })();
+  </script>
+
+
+</body></html>

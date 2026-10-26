@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://s5hucczhzrozxjj.c.msft.feather-prod.azure.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Machli Forms is a premium collection of eight clean, scalable fish logo concepts.">
+  <title>Machli Forms | Premium Fish Logo Collection</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./css2" rel="stylesheet">
+  <script src="./lucide@latest"></script>
+  <style>
+    :root {
+      --ink: #101419;
+      --paper: #f2f0e9;
+      --paper-deep: #e7e3d9;
+      --line: rgba(16, 20, 25, 0.16);
+      --muted: #6f746f;
+      --accent: #ff5b3d;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--paper);
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "DM Sans", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    button,
+    a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:focus-visible,
+    a:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+
+    .shell {
+      width: min(1380px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 75% 45%, rgba(255, 255, 255, 0.82), transparent 34%),
+        linear-gradient(135deg, #f4f1e9 0%, #e7eae4 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 140 140' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.88' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
+      opacity: 0.04;
+      mix-blend-mode: multiply;
+    }
+
+    .site-nav {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 24px 32px;
+      font-family: "Manrope", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+    .nav-mark {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .mini-fish {
+      width: 34px;
+      height: 20px;
+      display: block;
+    }
+
+    .nav-link {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+      padding-bottom: 3px;
+    }
+
+    .hero-art {
+      position: absolute;
+      inset: 2% -8% -3% 18%;
+      z-index: 1;
+      display: grid;
+      place-items: center;
+      pointer-events: none;
+      animation: heroDrift 8s ease-in-out infinite alternate;
+    }
+
+    .hero-art svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+
+    .hero-flow {
+      stroke-dasharray: 18 16;
+      animation: lineFlow 12s linear infinite;
+    }
+
+    .hero-copy {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      padding: 0 32px 38px;
+    }
+
+    .hero-name {
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(72px, 14vw, 235px);
+      line-height: 0.76;
+      letter-spacing: -0.085em;
+      font-weight: 700;
+      margin: 0;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .hero-name span {
+      color: var(--accent);
+    }
+
+    .hero-bottom {
+      display: grid;
+      grid-template-columns: minmax(260px, 510px) 1fr auto;
+      align-items: end;
+      gap: 36px;
+      margin-top: 38px;
+    }
+
+    .hero-intro {
+      margin: 0;
+      max-width: 490px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(27px, 3.1vw, 48px);
+      line-height: 1.04;
+      letter-spacing: -0.035em;
+    }
+
+    .hero-note {
+      margin: 0;
+      max-width: 370px;
+      color: #4c5350;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    .primary-link {
+      min-width: 172px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 22px;
+      color: #fff;
+      background: var(--ink);
+      padding: 17px 19px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: transform 180ms ease, background 180ms ease;
+    }
+
+    .primary-link:hover {
+      transform: translateY(-3px);
+      background: var(--accent);
+    }
+
+    .collection {
+      padding: 118px 0 140px;
+    }
+
+    .collection-head {
+      display: grid;
+      grid-template-columns: minmax(0, 1.6fr) minmax(240px, 0.7fr);
+      gap: 60px;
+      align-items: end;
+      padding-bottom: 46px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 18px;
+      font-family: "Manrope", sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .section-title {
+      margin: 0;
+      max-width: 830px;
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(45px, 6.7vw, 96px);
+      line-height: 0.96;
+      letter-spacing: -0.075em;
+      font-weight: 600;
+    }
+
+    .section-title em {
+      font-family: "Playfair Display", serif;
+      font-weight: 600;
+    }
+
+    .head-tools {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .head-tools p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .mode-switch {
+      display: inline-flex;
+      border: 1px solid var(--ink);
+      background: transparent;
+    }
+
+    .mode-button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: var(--ink);
+      padding: 11px 15px;
+      font: 700 11px/1 "Manrope", sans-serif;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 160ms ease, background 160ms ease;
+    }
+
+    .mode-button[aria-pressed="true"] {
+      color: #fff;
+      background: var(--ink);
+    }
+
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 76px 34px;
+      padding-top: 70px;
+    }
+
+    .logo-entry {
+      min-width: 0;
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 700ms ease, transform 700ms cubic-bezier(.2, .75, .25, 1);
+    }
+
+    .logo-entry.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .logo-stage {
+      position: relative;
+      aspect-ratio: 1.35 / 1;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      border: 1px solid rgba(16, 20, 25, 0.1);
+      background: #ebe9e2;
+      transition: background 300ms ease;
+    }
+
+    .logo-stage::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border: 12px solid transparent;
+      pointer-events: none;
+      transition: border-color 220ms ease;
+    }
+
+    .logo-entry:hover .logo-stage::after {
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .logo-stage svg.logo-artwork {
+      width: min(82%, 600px);
+      height: auto;
+      display: block;
+      overflow: visible;
+      transition: transform 500ms cubic-bezier(.2, .7, .2, 1), filter 300ms ease;
+    }
+
+    .logo-entry:hover .logo-stage svg.logo-artwork {
+      transform: scale(1.035);
+    }
+
+    .stage-geo { background: #e4e6e3; }
+    .stage-negative { background: #d9ece8; }
+    .stage-luxury { background: #11100e; }
+    .stage-motion { background: #e3edf0; }
+    .stage-letter { background: #e6e5dc; }
+    .stage-abstract { background: #e7e2ef; }
+    .stage-emblem { background: #e8dfcd; }
+    .stage-mascot { background: #f1e5d9; }
+
+    .entry-meta {
+      display: grid;
+      grid-template-columns: 48px minmax(0, 1fr) auto;
+      gap: 16px;
+      align-items: start;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .entry-number {
+      font-family: "Manrope", sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      padding-top: 4px;
+    }
+
+    .entry-title {
+      margin: 0;
+      font-family: "Manrope", sans-serif;
+      font-size: 21px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      font-weight: 700;
+    }
+
+    .entry-description {
+      margin: 8px 0 0;
+      max-width: 460px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+
+    .entry-actions {
+      display: flex;
+      gap: 7px;
+    }
+
+    .icon-button {
+      width: 40px;
+      height: 40px;
+      display: grid;
+      place-items: center;
+      color: var(--ink);
+      background: transparent;
+      border: 1px solid var(--line);
+      cursor: pointer;
+      transition: color 180ms ease, background 180ms ease, transform 180ms ease;
+    }
+
+    .icon-button:hover {
+      color: #fff;
+      background: var(--ink);
+      transform: translateY(-2px);
+    }
+
+    .icon-button svg {
+      width: 16px;
+      height: 16px;
+      stroke-width: 1.8;
+    }
+
+    .collection-note {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin-top: 110px;
+      padding-top: 30px;
+      border-top: 1px solid var(--ink);
+    }
+
+    .collection-note strong {
+      max-width: 650px;
+      font-family: "Manrope", sans-serif;
+      font-size: clamp(25px, 3vw, 42px);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+    }
+
+    .collection-note p {
+      max-width: 430px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+
+    .site-footer {
+      color: #f4f1e8;
+      background: var(--ink);
+      padding: 29px 0;
+    }
+
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      font-family: "Manrope", sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .footer-inner a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+      padding-bottom: 3px;
+    }
+
+    .toast {
+      position: fixed;
+      z-index: 50;
+      left: 50%;
+      bottom: 24px;
+      transform: translate(-50%, 20px);
+      padding: 12px 16px;
+      color: #fff;
+      background: var(--ink);
+      font: 700 11px/1 "Manrope", sans-serif;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    @keyframes heroDrift {
+      from { transform: translate3d(0, -5px, 0) rotate(-0.6deg); }
+      to { transform: translate3d(-20px, 11px, 0) rotate(0.7deg); }
+    }
+
+    @keyframes lineFlow {
+      to { stroke-dashoffset: -340; }
+    }
+
+    @media (max-width: 960px) {
+      .hero-art {
+        inset: 5% -20% 15% -2%;
+        opacity: 0.86;
+      }
+
+      .hero-bottom {
+        grid-template-columns: 1fr auto;
+      }
+
+      .hero-note {
+        display: none;
+      }
+
+      .collection-head {
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+
+      .logo-grid {
+        gap: 60px 22px;
+      }
+
+      .entry-meta {
+        grid-template-columns: 40px minmax(0, 1fr);
+      }
+
+      .entry-actions {
+        grid-column: 2;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100% - 28px, 1380px);
+      }
+
+      .site-nav {
+        padding: 20px 16px;
+      }
+
+      .hero {
+        min-height: 800px;
+      }
+
+      .hero-art {
+        inset: 8% -48% 29% -25%;
+      }
+
+      .hero-copy {
+        padding: 0 16px 26px;
+      }
+
+      .hero-name {
+        font-size: clamp(60px, 22vw, 116px);
+      }
+
+      .hero-bottom {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 26px;
+      }
+
+      .primary-link {
+        width: min(100%, 260px);
+      }
+
+      .collection {
+        padding: 84px 0 100px;
+      }
+
+      .logo-grid {
+        grid-template-columns: 1fr;
+        gap: 58px;
+        padding-top: 48px;
+      }
+
+      .logo-stage {
+        aspect-ratio: 1.22 / 1;
+      }
+
+      .collection-note {
+        flex-direction: column;
+        margin-top: 80px;
+      }
+
+      .footer-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+      .logo-entry {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="site-nav" aria-label="Main navigation">
+      <div class="nav-mark">
+        <svg class="mini-fish" viewBox="0 0 68 40" role="img" aria-label="Machli Forms mark">
+          <path d="M20 20C28 7 49 8 61 20C49 32 28 33 20 20Z" fill="#101419"></path>
+          <path d="M22 20L5 8L10 20L5 32Z" fill="#ff5b3d"></path>
+        </svg>
+        <span>Machli Forms</span>
+      </div>
+      <a class="nav-link" href="https://s5hucczhzrozxjj.c.msft.feather-prod.azure.com/#collection">View collection</a>
+    </nav>
+
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <lineargradient id="heroBody" x1="260" y1="160" x2="1240" y2="700" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#173b48"></stop>
+            <stop offset="1" stop-color="#071c28"></stop>
+          </lineargradient>
+          <lineargradient id="heroTail" x1="70" y1="230" x2="310" y2="680" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ff7657"></stop>
+            <stop offset="1" stop-color="#e93c28"></stop>
+          </lineargradient>
+        </defs>
+        <path d="M280 450C470 134 975 107 1302 438C984 772 483 758 280 450Z" fill="url(#heroBody)" data-paint="fill" data-gradient="url(#heroBody)" data-flat="#102f3d"></path>
+        <path d="M298 450L72 199L114 450L72 701Z" fill="url(#heroTail)" data-paint="fill" data-gradient="url(#heroTail)" data-flat="#ff5b3d"></path>
+        <path d="M340 449C513 252 909 185 1212 423" fill="none" stroke="#d8e3df" stroke-width="5" stroke-linecap="round" opacity="0.55"></path>
+        <circle cx="1124" cy="362" r="25" fill="#f3f0e8"></circle>
+        <path class="hero-flow" d="M41 769C327 648 459 768 698 697" fill="none" stroke="#ff5b3d" stroke-width="7" stroke-linecap="round" opacity="0.72"></path>
+      </svg>
+    </div>
+
+    <div class="hero-copy">
+      <h1 class="hero-name">Machli<span>.</span></h1>
+      <div class="hero-bottom">
+        <p class="hero-intro">Eight precise ways to make a fish unforgettable.</p>
+        <p class="hero-note">A marketplace-ready logo study built from clean vector geometry, controlled palettes, and recognizable silhouettes.</p>
+        <a class="primary-link" href="https://s5hucczhzrozxjj.c.msft.feather-prod.azure.com/#collection">
+          Explore the set
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-down" aria-hidden="true" class="lucide lucide-arrow-down"><path d="M12 5v14"></path><path d="m19 12-7 7-7-7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="collection" id="collection">
+      <div class="shell">
+        <div class="collection-head">
+          <div>
+            <p class="eyebrow">Collection 01 / Eight marks</p>
+            <h2 class="section-title">One subject.<br><em>Distinct signatures.</em></h2>
+          </div>
+          <div class="head-tools">
+            <p>Switch the entire collection between subtle gradients and marketplace-friendly flat color, then copy or download any SVG.</p>
+            <div class="mode-switch" role="group" aria-label="Logo color treatment">
+              <button class="mode-button" type="button" data-mode="gradient" aria-pressed="true">Gradient</button>
+              <button class="mode-button" type="button" data-mode="flat" aria-pressed="false">Flat</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="logo-grid">
+          <article class="logo-entry is-visible" data-name="machli-geometric" style="transition-delay: 0ms;">
+            <div class="logo-stage stage-geo">
+              <svg class="logo-artwork" id="logo-01" viewBox="0 0 600 430" role="img" aria-labelledby="logo01-title logo01-desc">
+                <title id="logo01-title">Minimal geometric fish logo</title>
+                <desc id="logo01-desc">A bold navy fish body with a coral geometric tail.</desc>
+                <defs>
+                  <lineargradient id="geoMain" x1="132" y1="105" x2="500" y2="315" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#1e5364"></stop>
+                    <stop offset="1" stop-color="#0b2634"></stop>
+                  </lineargradient>
+                  <lineargradient id="geoTail" x1="60" y1="128" x2="145" y2="302" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#ff765e"></stop>
+                    <stop offset="1" stop-color="#e94531"></stop>
+                  </lineargradient>
+                </defs>
+                <path d="M132 215C208 116 387 105 500 215C388 325 207 314 132 215Z" fill="url(#geoMain)" data-paint="fill" data-gradient="url(#geoMain)" data-flat="#123646"></path>
+                <path d="M145 215L60 128L78 215L60 302Z" fill="url(#geoTail)" data-paint="fill" data-gradient="url(#geoTail)" data-flat="#f05a43"></path>
+                <circle cx="430" cy="185" r="11" fill="#f05a43"></circle>
+              </svg>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-number">01</span>
+              <div>
+                <h3 class="entry-title">Geometric Current</h3>
+                <p class="entry-description">An almond body and folded tail create a balanced, bold silhouette for universal use.</p>
+              </div>
+              <div class="entry-actions">
+                <button class="icon-button copy-logo" type="button" data-target="logo-01" aria-label="Copy Geometric Current SVG" title="Copy SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button>
+                <button class="icon-button download-logo" type="button" data-target="logo-01" aria-label="Download Geometric Current SVG" title="Download SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" aria-hidden="true" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="logo-entry is-visible" data-name="machli-negative-wave" style="transition-delay: 110ms;">
+            <div class="logo-stage stage-negative">
+              <svg class="logo-artwork" id="logo-02" viewBox="0 0 600 430" role="img" aria-labelledby="logo02-title logo02-desc">
+                <title id="logo02-title">Negative space wave fish logo</title>
+                <desc id="logo02-desc">A teal fish silhouette cut by a transparent wave.</desc>
+                <defs>
+                  <lineargradient id="negativeMain" x1="75" y1="116" x2="510" y2="310" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#13a49b"></stop>
+                    <stop offset="1" stop-color="#056766"></stop>
+                  </lineargradient>
+                  <mask id="negativeMask">
+                    <rect width="600" height="430" fill="#000"></rect>
+                    <path d="M145 215C219 118 394 108 510 215C394 322 219 312 145 215Z" fill="#fff"></path>
+                    <path d="M158 215L66 129L90 215L66 301Z" fill="#fff"></path>
+                    <path d="M95 224C155 174 220 179 279 223C337 266 409 263 468 212" fill="none" stroke="#000" stroke-width="31" stroke-linecap="round"></path>
+                  </mask>
+                </defs>
+                <rect x="45" y="90" width="500" height="250" fill="url(#negativeMain)" mask="url(#negativeMask)" data-paint="fill" data-gradient="url(#negativeMain)" data-flat="#087b77"></rect>
+                <circle cx="440" cy="180" r="10" fill="#073d43"></circle>
+              </svg>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-number">02</span>
+              <div>
+                <h3 class="entry-title">Hidden Tide</h3>
+                <p class="entry-description">A transparent wave crosses the silhouette, turning water into a memorable negative-space idea.</p>
+              </div>
+              <div class="entry-actions">
+                <button class="icon-button copy-logo" type="button" data-target="logo-02" aria-label="Copy Hidden Tide SVG" title="Copy SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button>
+                <button class="icon-button download-logo" type="button" data-target="logo-02" aria-label="Download Hidden Tide SVG" title="Download SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" aria-hidden="true" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="logo-entry is-visible" data-name="machli-luxury-gold" style="transition-delay: 0ms;">
+            <div class="logo-stage stage-luxury">
+              <svg class="logo-artwork" id="logo-03" viewBox="0 0 600 430" role="img" aria-labelledby="logo03-title logo03-desc">
+                <title id="logo03-title">Luxury black and gold fish logo</title>
+                <desc id="logo03-desc">An elegant gold line fish inside a black roundel.</desc>
+                <defs>
+                  <lineargradient id="luxuryGold" x1="112" y1="105" x2="493" y2="305" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#a97424"></stop>
+                    <stop offset="0.48" stop-color="#f2d584"></stop>
+                    <stop offset="1" stop-color="#b27b2c"></stop>
+                  </lineargradient>
+                  <radialgradient id="luxuryBlack" cx="0" cy="0" r="1" gradientTransform="translate(250 160) rotate(46) scale(290)" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#201d18"></stop>
+                    <stop offset="1" stop-color="#080706"></stop>
+                  </radialgradient>
+                </defs>
+                <circle cx="300" cy="215" r="173" fill="url(#luxuryBlack)" data-paint="fill" data-gradient="url(#luxuryBlack)" data-flat="#0a0908"></circle>
+                <path d="M157 219C226 121 399 116 489 208C407 306 234 310 157 219Z" fill="none" stroke="url(#luxuryGold)" stroke-width="13" stroke-linecap="round" stroke-linejoin="round" data-paint="stroke" data-gradient="url(#luxuryGold)" data-flat="#d5ae58"></path>
+                <path d="M173 218C134 175 111 139 112 111C159 132 191 166 207 211C188 259 157 294 112 316C111 288 136 253 173 218Z" fill="none" stroke="url(#luxuryGold)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" data-paint="stroke" data-gradient="url(#luxuryGold)" data-flat="#d5ae58"></path>
+                <path d="M232 257C294 285 383 273 438 231" fill="none" stroke="url(#luxuryGold)" stroke-width="4" stroke-linecap="round" data-paint="stroke" data-gradient="url(#luxuryGold)" data-flat="#d5ae58"></path>
+                <circle cx="423" cy="180" r="8" fill="url(#luxuryGold)" data-paint="fill" data-gradient="url(#luxuryGold)" data-flat="#d5ae58"></circle>
+              </svg>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-number">03</span>
+              <div>
+                <h3 class="entry-title">Aurum Fin</h3>
+                <p class="entry-description">Fine gold contours and deliberate restraint bring a premium hospitality and jewelry character.</p>
+              </div>
+              <div class="entry-actions">
+                <button class="icon-button copy-logo" type="button" data-target="logo-03" aria-label="Copy Aurum Fin SVG" title="Copy SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button>
+                <button class="icon-button download-logo" type="button" data-target="logo-03" aria-label="Download Aurum Fin SVG" title="Download SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" aria-hidden="true" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="logo-entry is-visible" data-name="machli-dynamic-motion" style="transition-delay: 110ms;">
+            <div class="logo-stage stage-motion">
+              <svg class="logo-artwork" id="logo-04" viewBox="0 0 600 430" role="img" aria-labelledby="logo04-title logo04-desc">
+                <title id="logo04-title">Dynamic swimming fish logo</title>
+                <desc id="logo04-desc">A blue fish with flowing aqua motion lines.</desc>
+                <defs>
+                  <lineargradient id="motionBody" x1="176" y1="130" x2="502" y2="295" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#2c80ed"></stop>
+                    <stop offset="1" stop-color="#134ab8"></stop>
+                  </lineargradient>
+                  <lineargradient id="motionFlow" x1="56" y1="130" x2="332" y2="302" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#19c8c0"></stop>
+                    <stop offset="1" stop-color="#2c80ed"></stop>
+                  </lineargradient>
+                </defs>
+                <path d="M184 215C263 120 420 128 505 201C439 294 284 311 184 215Z" fill="url(#motionBody)" data-paint="fill" data-gradient="url(#motionBody)" data-flat="#1d63d5"></path>
+                <path d="M194 214L105 134C135 184 130 242 97 299L194 250C178 238 177 227 194 214Z" fill="url(#motionFlow)" data-paint="fill" data-gradient="url(#motionFlow)" data-flat="#19aaa9"></path>
+                <path d="M63 159C111 136 150 140 188 162M48 218C100 193 142 196 178 214M69 281C118 250 148 253 184 267" fill="none" stroke="url(#motionFlow)" stroke-width="12" stroke-linecap="round" data-paint="stroke" data-gradient="url(#motionFlow)" data-flat="#19aaa9"></path>
+                <circle cx="435" cy="177" r="10" fill="#0a2f68"></circle>
+              </svg>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-number">04</span>
+              <div>
+                <h3 class="entry-title">Velocity Blue</h3>
+                <p class="entry-description">Tapered flow lines and a forward-leaning body give the mark speed without visual noise.</p>
+              </div>
+              <div class="entry-actions">
+                <button class="icon-button copy-logo" type="button" data-target="logo-04" aria-label="Copy Velocity Blue SVG" title="Copy SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button>
+                <button class="icon-button download-logo" type="button" data-target="logo-04" aria-label="Download Velocity Blue SVG" title="Download SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" aria-hidden="true" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="logo-entry is-visible" data-name="machli-letter-f" style="transition-delay: 0ms;">
+            <div class="logo-stage stage-letter">
+              <svg class="logo-artwork" id="logo-05" viewBox="0 0 600 430" role="img" aria-labelledby="logo05-title logo05-desc">
+                <title id="logo05-title">Fish and letter F combination logo</title>
+                <desc id="logo05-desc">A bold letter F transformed into a fish with a green tail.</desc>
+                <defs>
+                  <lineargradient id="letterMain" x1="150" y1="96" x2="515" y2="340" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#173d47"></stop>
+                    <stop offset="1" stop-color="#071f2a"></stop>
+                  </lineargradient>
+                  <lineargradient id="letterTail" x1="66" y1="111" x2="160" y2="326" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#61c78a"></stop>
+                    <stop offset="1" stop-color="#199b68"></stop>
+                  </lineargradient>
+                </defs>
+                <path d="M150 101H401C459 101 500 131 520 179C492 211 451 226 401 226H249V255H428V322H249V340H150Z" fill="url(#letterMain)" data-paint="fill" data-gradient="url(#letterMain)" data-flat="#0d2c37"></path>
+                <path d="M157 170L66 111L96 219L66 326L157 270Z" fill="url(#letterTail)" data-paint="fill" data-gradient="url(#letterTail)" data-flat="#2aaa72"></path>
+                <circle cx="456" cy="164" r="11" fill="#52bf82"></circle>
+              </svg>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-number">05</span>
+              <div>
+                <h3 class="entry-title">Fintech F</h3>
+                <p class="entry-description">The letter F becomes a streamlined fish form, built for memorable startup and app branding.</p>
+              </div>
+              <div class="entry-actions">
+                <button class="icon-button copy-logo" type="button" data-target="logo-05" aria-label="Copy Fintech F SVG" title="Copy SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button>
+                <button class="icon-button download-logo" type="button" data-target="logo-05" aria-label="Download Fintech F SVG" title="Download SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" aria-hidden="true" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="logo-entry is-visible" data-name="machli-abstract-future" style="transition-delay: 110ms;">
+            <div class="logo-stage stage-abstract">
+              <svg class="logo-artwork" id="logo-06" viewBox="0 0 600 430" role="img" aria-labelledby="logo06-title logo06-desc">
+                <title id="logo06-title">Abstract futuristic fish logo</title>
+                <desc id="logo06-desc">Interlocking violet and cyan shapes create a futuristic fish.</desc>
+                <defs>
+                  <lineargradient id="abstractTop" x1="92" y1="91" x2="514" y2="231" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#8d55e8"></stop>
+                    <stop offset="1" stop-color="#5530b9"></stop>
+                  </lineargradient>
+                  <lineargradient id="abstractBottom" x1="126" y1="214" x2="514" y2="345" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#29c3c4"></stop>
+                    <stop offset="1" stop-color="#1786a9"></stop>
+                  </lineargradient>
+                </defs>
+                <path d="M111 224C205 81 414 82 519 209C405 158 285 160 198 229Z" fill="url(#abstractTop)" data-paint="fill" data-gradient="url(#abstractTop)" data-flat="#6e42cb"></path>
+                <path d="M111 224C215 355 414 348 519 209C404 274 285 286 198 229Z" fill="url(#abstractBottom)" data-paint="fill" data-gradient="url(#abstractBottom)" data-flat="#1c9eae"></path>
+                <path d="M201 229L70 104L111 224L70 350Z" fill="url(#abstractTop)" data-paint="fill" data-gradient="url(#abstractTop)" data-flat="#6e42cb"></path>
+                <circle cx="440" cy="190" r="10" fill="#242039"></circle>
+              </svg>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-number">06</span>
+              <div>
+                <h3 class="entry-title">Neo Koi</h3>
+                <p class="entry-description">Interlocking crescents suggest fins, speed, and digital precision while keeping the fish instantly legible.</p>
+              </div>
+              <div class="entry-actions">
+                <button class="icon-button copy-logo" type="button" data-target="logo-06" aria-label="Copy Neo Koi SVG" title="Copy SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button>
+                <button class="icon-button download-logo" type="button" data-target="logo-06" aria-label="Download Neo Koi SVG" title="Download SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" aria-hidden="true" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="logo-entry is-visible" data-name="machli-seafood-emblem" style="transition-delay: 0ms;">
+            <div class="logo-stage stage-emblem">
+              <svg class="logo-artwork" id="logo-07" viewBox="0 0 600 430" role="img" aria-labelledby="logo07-title logo07-desc">
+                <title id="logo07-title">Bold seafood emblem fish logo</title>
+                <desc id="logo07-desc">A navy, cream, and rust circular fishing badge.</desc>
+                <defs>
+                  <lineargradient id="emblemNavy" x1="132" y1="47" x2="459" y2="389" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#1f4b59"></stop>
+                    <stop offset="1" stop-color="#0b2834"></stop>
+                  </lineargradient>
+                  <lineargradient id="emblemRust" x1="146" y1="90" x2="454" y2="340" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#d96f46"></stop>
+                    <stop offset="1" stop-color="#a94228"></stop>
+                  </lineargradient>
+                </defs>
+                <circle cx="300" cy="215" r="178" fill="url(#emblemNavy)" data-paint="fill" data-gradient="url(#emblemNavy)" data-flat="#123642"></circle>
+                <circle cx="300" cy="215" r="136" fill="#f1e4c8" stroke="url(#emblemRust)" stroke-width="9" data-paint="stroke" data-gradient="url(#emblemRust)" data-flat="#bd5032"></circle>
+                <path d="M194 221C246 158 361 155 431 218C362 281 247 281 194 221Z" fill="url(#emblemNavy)" data-paint="fill" data-gradient="url(#emblemNavy)" data-flat="#123642"></path>
+                <path d="M200 221L146 170L161 221L146 272Z" fill="url(#emblemRust)" data-paint="fill" data-gradient="url(#emblemRust)" data-flat="#bd5032"></path>
+                <circle cx="373" cy="197" r="8" fill="#f1e4c8"></circle>
+                <path d="M245 239C291 259 343 254 382 230" fill="none" stroke="#f1e4c8" stroke-width="7" stroke-linecap="round"></path>
+                <text x="300" y="102" fill="#f1e4c8" font-family="Arial, sans-serif" font-size="25" font-weight="700" letter-spacing="5" text-anchor="middle">SEA CO.</text>
+                <text x="300" y="348" fill="#f1e4c8" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="4" text-anchor="middle">FRESH CATCH</text>
+                <circle cx="151" cy="216" r="7" fill="#f1e4c8"></circle>
+                <circle cx="449" cy="216" r="7" fill="#f1e4c8"></circle>
+              </svg>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-number">07</span>
+              <div>
+                <h3 class="entry-title">Harbor Seal</h3>
+                <p class="entry-description">A sturdy badge system with strong ring geometry for restaurant, tackle, and dockside brands.</p>
+              </div>
+              <div class="entry-actions">
+                <button class="icon-button copy-logo" type="button" data-target="logo-07" aria-label="Copy Harbor Seal SVG" title="Copy SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button>
+                <button class="icon-button download-logo" type="button" data-target="logo-07" aria-label="Download Harbor Seal SVG" title="Download SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" aria-hidden="true" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg></button>
+              </div>
+            </div>
+          </article>
+
+          <article class="logo-entry is-visible" data-name="machli-cute-mascot" style="transition-delay: 110ms;">
+            <div class="logo-stage stage-mascot">
+              <svg class="logo-artwork" id="logo-08" viewBox="0 0 600 430" role="img" aria-labelledby="logo08-title logo08-desc">
+                <title id="logo08-title">Cute friendly fish mascot logo</title>
+                <desc id="logo08-desc">A rounded coral fish mascot with yellow fins and a navy smile.</desc>
+                <defs>
+                  <lineargradient id="mascotBody" x1="151" y1="124" x2="498" y2="306" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#ff8b70"></stop>
+                    <stop offset="1" stop-color="#ed5664"></stop>
+                  </lineargradient>
+                  <lineargradient id="mascotFin" x1="67" y1="116" x2="208" y2="320" gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#ffd15a"></stop>
+                    <stop offset="1" stop-color="#f3a928"></stop>
+                  </lineargradient>
+                </defs>
+                <path d="M161 214C219 116 391 111 493 194C519 215 519 234 493 254C391 331 218 318 161 214Z" fill="url(#mascotBody)" data-paint="fill" data-gradient="url(#mascotBody)" data-flat="#f36d68"></path>
+                <path d="M170 213C137 177 96 143 67 139C77 181 83 209 67 288C104 280 141 252 170 213Z" fill="url(#mascotFin)" data-paint="fill" data-gradient="url(#mascotFin)" data-flat="#f7b733"></path>
+                <path d="M270 135C306 91 355 88 382 119C344 126 310 143 285 165Z" fill="url(#mascotFin)" data-paint="fill" data-gradient="url(#mascotFin)" data-flat="#f7b733"></path>
+                <path d="M276 293C304 332 348 340 378 314C342 304 313 286 291 266Z" fill="url(#mascotFin)" data-paint="fill" data-gradient="url(#mascotFin)" data-flat="#f7b733"></path>
+                <circle cx="417" cy="190" r="24" fill="#f7b733"></circle>
+                <circle cx="423" cy="187" r="11" fill="#17384f"></circle>
+                <path d="M385 240C407 258 437 258 458 237" fill="none" stroke="#17384f" stroke-width="9" stroke-linecap="round"></path>
+                <circle cx="342" cy="236" r="9" fill="#f7b733" opacity="0.9"></circle>
+              </svg>
+            </div>
+            <div class="entry-meta">
+              <span class="entry-number">08</span>
+              <div>
+                <h3 class="entry-title">Bubbles</h3>
+                <p class="entry-description">Soft curves, a warm palette, and one friendly expression make a mascot ready for kids and pet brands.</p>
+              </div>
+              <div class="entry-actions">
+                <button class="icon-button copy-logo" type="button" data-target="logo-08" aria-label="Copy Bubbles SVG" title="Copy SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button>
+                <button class="icon-button download-logo" type="button" data-target="logo-08" aria-label="Download Bubbles SVG" title="Download SVG"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="download" aria-hidden="true" class="lucide lucide-download"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg></button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="collection-note">
+          <strong>Clean at favicon scale. Distinct at storefront scale.</strong>
+          <p>Every concept uses a compact construction, controlled color count, and native SVG geometry. Choose the flat treatment for broad compatibility or the subtle gradient treatment for presentation artwork.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <span>Machli Forms / Vector Logo Study</span>
+      <span>8 concepts / 2 treatments / SVG native</span>
+      <a href="https://s5hucczhzrozxjj.c.msft.feather-prod.azure.com/#top">Back to top</a>
+    </div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite">SVG copied</div>
+
+  <script>
+    const modeButtons = document.querySelectorAll('.mode-button');
+    const paintedElements = document.querySelectorAll('[data-gradient]');
+    const toast = document.querySelector('.toast');
+    let toastTimer;
+
+    function showToast(message) {
+      toast.textContent = message;
+      toast.classList.add('show');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => toast.classList.remove('show'), 1800);
+    }
+
+    function setColorMode(mode) {
+      paintedElements.forEach((element) => {
+        const paint = element.dataset.paint || 'fill';
+        element.setAttribute(paint, mode === 'flat' ? element.dataset.flat : element.dataset.gradient);
+      });
+
+      modeButtons.forEach((button) => {
+        button.setAttribute('aria-pressed', String(button.dataset.mode === mode));
+      });
+    }
+
+    modeButtons.forEach((button) => {
+      button.addEventListener('click', () => setColorMode(button.dataset.mode));
+    });
+
+    function cleanSvgClone(svg) {
+      const clone = svg.cloneNode(true);
+      clone.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
+      clone.setAttribute('width', '1200');
+      clone.setAttribute('height', '860');
+      clone.removeAttribute('class');
+      clone.removeAttribute('id');
+      clone.querySelectorAll('*').forEach((element) => {
+        [...element.attributes].forEach((attribute) => {
+          if (attribute.name.startsWith('data-')) element.removeAttribute(attribute.name);
+        });
+      });
+      return clone;
+    }
+
+    function serializeSvg(targetId) {
+      const svg = document.getElementById(targetId);
+      const clone = cleanSvgClone(svg);
+      return '<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(clone);
+    }
+
+    async function copyText(text) {
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(text);
+        return;
+      }
+      const textArea = document.createElement('textarea');
+      textArea.value = text;
+      textArea.style.position = 'fixed';
+      textArea.style.opacity = '0';
+      document.body.appendChild(textArea);
+      textArea.select();
+      document.execCommand('copy');
+      textArea.remove();
+    }
+
+    document.querySelectorAll('.copy-logo').forEach((button) => {
+      button.addEventListener('click', async () => {
+        try {
+          await copyText(serializeSvg(button.dataset.target));
+          showToast('SVG copied');
+        } catch (error) {
+          showToast('Copy unavailable');
+        }
+      });
+    });
+
+    document.querySelectorAll('.download-logo').forEach((button) => {
+      button.addEventListener('click', () => {
+        const article = button.closest('.logo-entry');
+        const svgText = serializeSvg(button.dataset.target);
+        const blob = new Blob([svgText], { type: 'image/svg+xml;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `${article.dataset.name}.svg`;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        showToast('SVG downloaded');
+      });
+    });
+
+    const logoEntries = document.querySelectorAll('.logo-entry');
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.14 });
+
+      logoEntries.forEach((entry, index) => {
+        entry.style.transitionDelay = `${(index % 2) * 110}ms`;
+        observer.observe(entry);
+      });
+    } else {
+      logoEntries.forEach((entry) => entry.classList.add('is-visible'));
+    }
+
+    if (window.lucide) lucide.createIcons();
+  </script>
+
+
+</body></html>

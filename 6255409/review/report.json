@@ -1,0 +1,1230 @@
+{
+  "a": {
+    "initial": {
+      "title": "iPhone 11 Pro | A Closer Look",
+      "text": "iPhone 11 Pro\nINTERACTIVE 360 VIEW\n\nA CLOSER LOOK\n\niPhone\n11 Pro.\n\nAn iconic design, from every angle. Drag to explore the details for yourself.\n\nCHOOSE A FINISH\nMidnight Green\nTuesday, September 10\n9:41\niPhone\nDRAG TO ROTATE\nFront\nBack",
+      "buttons": [
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "Front",
+          "id": "front-button",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "Back",
+          "id": "back-button",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "spin-button",
+          "label": "Pause automatic rotation",
+          "pressed": "true"
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "stage",
+      "canvas": [],
+      "finish": "Midnight Green",
+      "transform": "rotateX(-8deg) rotateY(193.418deg)"
+    },
+    "autoImage1": "a9a2c88cd3e4a674d971d81b7571b84df6b356b3a07e6a4c7ade52cf1e004c68",
+    "autoImage2": "3894c01042055220bcf037d1c4f174079a3962daafbf6ad31bdc99073774d822",
+    "pause": {
+      "title": "iPhone 11 Pro | A Closer Look",
+      "text": "iPhone 11 Pro\nINTERACTIVE 360 VIEW\n\nA CLOSER LOOK\n\niPhone\n11 Pro.\n\nAn iconic design, from every angle. Drag to explore the details for yourself.\n\nCHOOSE A FINISH\nMidnight Green\nTuesday, September 10\n9:41\niPhone\nDRAG TO ROTATE\nFront\nBack",
+      "buttons": [
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "Front",
+          "id": "front-button",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "Back",
+          "id": "back-button",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "spin-button",
+          "label": "Play automatic rotation",
+          "pressed": "false"
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "stage",
+      "canvas": [],
+      "finish": "Midnight Green",
+      "transform": "rotateX(-8deg) rotateY(227.892deg)"
+    },
+    "pauseStable": true,
+    "front": {
+      "title": "iPhone 11 Pro | A Closer Look",
+      "text": "iPhone 11 Pro\nINTERACTIVE 360 VIEW\n\nA CLOSER LOOK\n\niPhone\n11 Pro.\n\nAn iconic design, from every angle. Drag to explore the details for yourself.\n\nCHOOSE A FINISH\nMidnight Green\nTuesday, September 10\n9:41\niPhone\nDRAG TO ROTATE\nFront\nBack",
+      "buttons": [
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "Front",
+          "id": "front-button",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "Back",
+          "id": "back-button",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "spin-button",
+          "label": "Play automatic rotation",
+          "pressed": "false"
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "stage",
+      "canvas": [],
+      "finish": "Midnight Green",
+      "transform": "rotateX(-8deg) rotateY(360deg)"
+    },
+    "gold": {
+      "title": "iPhone 11 Pro | A Closer Look",
+      "text": "iPhone 11 Pro\nINTERACTIVE 360 VIEW\n\nA CLOSER LOOK\n\niPhone\n11 Pro.\n\nAn iconic design, from every angle. Drag to explore the details for yourself.\n\nCHOOSE A FINISH\nGold\nTuesday, September 10\n9:41\niPhone\nDRAG TO ROTATE\nFront\nBack",
+      "buttons": [
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "true"
+        },
+        {
+          "text": "Front",
+          "id": "front-button",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "Back",
+          "id": "back-button",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "spin-button",
+          "label": "Play automatic rotation",
+          "pressed": "false"
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "stage",
+      "canvas": [],
+      "finish": "Gold",
+      "transform": "rotateX(-8deg) rotateY(540deg)"
+    },
+    "drag": {
+      "title": "iPhone 11 Pro | A Closer Look",
+      "text": "iPhone 11 Pro\nINTERACTIVE 360 VIEW\n\nA CLOSER LOOK\n\niPhone\n11 Pro.\n\nAn iconic design, from every angle. Drag to explore the details for yourself.\n\nCHOOSE A FINISH\nGold\nTuesday, September 10\n9:41\niPhone\nDRAG TO ROTATE\nFront\nBack",
+      "buttons": [
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "true"
+        },
+        {
+          "text": "Front",
+          "id": "front-button",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "Back",
+          "id": "back-button",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "spin-button",
+          "label": "Play automatic rotation",
+          "pressed": "false"
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "stage",
+      "canvas": [],
+      "finish": "Gold",
+      "transform": "rotateX(1deg) rotateY(605deg)"
+    },
+    "mobile": {
+      "title": "iPhone 11 Pro | A Closer Look",
+      "text": "iPhone 11 Pro\nINTERACTIVE 360 VIEW\n\nA CLOSER LOOK\n\niPhone\n11 Pro.\n\nAn iconic design, from every angle. Drag to explore the details for yourself.\n\nCHOOSE A FINISH\nMidnight Green\nTuesday, September 10\n9:41\niPhone\nDRAG TO ROTATE\nFront\nBack",
+      "buttons": [
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "Front",
+          "id": "front-button",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "Back",
+          "id": "back-button",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "spin-button",
+          "label": "Play automatic rotation",
+          "pressed": "false"
+        }
+      ],
+      "width": 390,
+      "scrollWidth": 390,
+      "stage": "stage",
+      "canvas": [],
+      "finish": "Midnight Green",
+      "transform": "rotateX(-7.9894deg) rotateY(540deg)"
+    }
+  },
+  "b": {
+    "initial": {
+      "title": "iPhone 11 Pro - Product Explorer",
+      "text": "PRODUCT EXPLORER\nSpecs & details\nTuesday, September 10\n9:41\n\nDrag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.\n\nInteractive 3D model ready. Drag to rotate, or use the arrow keys.\n\nTHE ORIGINAL PRO\n\niPhone\n11 Pro\n\nAn icon. From every angle.\n\nDrag to rotate\nScroll to zoom\n\nFINISH\n\nMidnight Green\n\nAuto-rotate\nBack\nFront",
+      "buttons": [
+        {
+          "text": "Specs & details",
+          "id": "open-details",
+          "label": null,
+          "pressed": null
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "Auto-rotate",
+          "id": "auto-toggle",
+          "label": "Auto-rotate",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "reset-view",
+          "label": "Reset view",
+          "pressed": null
+        },
+        {
+          "text": "Back",
+          "id": "back-view",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "Front",
+          "id": "front-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "fullscreen",
+          "label": "Enter fullscreen",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "close-details",
+          "label": "Close details",
+          "pressed": null
+        },
+        {
+          "text": "Back to exploring",
+          "id": "return-to-view",
+          "label": null,
+          "pressed": null
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "scene is-ready",
+      "canvas": [
+        {
+          "width": 1349,
+          "height": 798
+        },
+        {
+          "width": 1440,
+          "height": 900
+        }
+      ],
+      "status": "Interactive 3D model ready. Drag to rotate, or use the arrow keys.",
+      "finish": "Midnight Green",
+      "transform": "rotateX(-0.025rad) rotateY(-0.602915rad) scale(1)"
+    },
+    "autoImage1": "fe5078b8254b07c6c31fda85eac8171989d3d63907d823f579923a2295021d39",
+    "autoImage2": "1771375bc9730881b931e9f496ce3a0e1d75ca5c3a97457a94b0c5f71358fa49",
+    "pause": {
+      "title": "iPhone 11 Pro - Product Explorer",
+      "text": "PRODUCT EXPLORER\nSpecs & details\nTuesday, September 10\n9:41\n\nDrag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.\n\nInteractive 3D model ready. Drag to rotate, or use the arrow keys.\n\nTHE ORIGINAL PRO\n\niPhone\n11 Pro\n\nAn icon. From every angle.\n\nDrag to rotate\nScroll to zoom\n\nFINISH\n\nMidnight Green\n\nAuto-rotate\nBack\nFront",
+      "buttons": [
+        {
+          "text": "Specs & details",
+          "id": "open-details",
+          "label": null,
+          "pressed": null
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "Auto-rotate",
+          "id": "auto-toggle",
+          "label": "Auto-rotate",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "reset-view",
+          "label": "Reset view",
+          "pressed": null
+        },
+        {
+          "text": "Back",
+          "id": "back-view",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "Front",
+          "id": "front-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "fullscreen",
+          "label": "Enter fullscreen",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "close-details",
+          "label": "Close details",
+          "pressed": null
+        },
+        {
+          "text": "Back to exploring",
+          "id": "return-to-view",
+          "label": null,
+          "pressed": null
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "scene is-ready",
+      "canvas": [
+        {
+          "width": 1349,
+          "height": 798
+        },
+        {
+          "width": 1440,
+          "height": 900
+        }
+      ],
+      "status": "Interactive 3D model ready. Drag to rotate, or use the arrow keys.",
+      "finish": "Midnight Green",
+      "transform": "rotateX(-0.025rad) rotateY(-0.602915rad) scale(1)"
+    },
+    "front": {
+      "title": "iPhone 11 Pro - Product Explorer",
+      "text": "PRODUCT EXPLORER\nSpecs & details\nTuesday, September 10\n9:41\n\nDrag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.\n\nFront view. Midnight Green finish.\n\nTHE ORIGINAL PRO\n\niPhone\n11 Pro\n\nAn icon. From every angle.\n\nDrag to rotate\nScroll to zoom\n\nFINISH\n\nMidnight Green\n\nAuto-rotate\nBack\nFront",
+      "buttons": [
+        {
+          "text": "Specs & details",
+          "id": "open-details",
+          "label": null,
+          "pressed": null
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "Auto-rotate",
+          "id": "auto-toggle",
+          "label": "Auto-rotate",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "reset-view",
+          "label": "Reset view",
+          "pressed": null
+        },
+        {
+          "text": "Back",
+          "id": "back-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "Front",
+          "id": "front-view",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "fullscreen",
+          "label": "Enter fullscreen",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "close-details",
+          "label": "Close details",
+          "pressed": null
+        },
+        {
+          "text": "Back to exploring",
+          "id": "return-to-view",
+          "label": null,
+          "pressed": null
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "scene is-ready",
+      "canvas": [
+        {
+          "width": 1349,
+          "height": 798
+        },
+        {
+          "width": 1440,
+          "height": 900
+        }
+      ],
+      "status": "Front view. Midnight Green finish.",
+      "finish": "Midnight Green",
+      "transform": "rotateX(-0.025rad) rotateY(-0.602915rad) scale(1)"
+    },
+    "gold": {
+      "title": "iPhone 11 Pro - Product Explorer",
+      "text": "PRODUCT EXPLORER\nSpecs & details\nTuesday, September 10\n9:41\n\nDrag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.\n\nBack view. Gold finish.\n\nTHE ORIGINAL PRO\n\niPhone\n11 Pro\n\nAn icon. From every angle.\n\nDrag to rotate\nScroll to zoom\n\nFINISH\n\nGold\n\nAuto-rotate\nBack\nFront",
+      "buttons": [
+        {
+          "text": "Specs & details",
+          "id": "open-details",
+          "label": null,
+          "pressed": null
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "true"
+        },
+        {
+          "text": "Auto-rotate",
+          "id": "auto-toggle",
+          "label": "Auto-rotate",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "reset-view",
+          "label": "Reset view",
+          "pressed": null
+        },
+        {
+          "text": "Back",
+          "id": "back-view",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "Front",
+          "id": "front-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "fullscreen",
+          "label": "Enter fullscreen",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "close-details",
+          "label": "Close details",
+          "pressed": null
+        },
+        {
+          "text": "Back to exploring",
+          "id": "return-to-view",
+          "label": null,
+          "pressed": null
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "scene is-ready",
+      "canvas": [
+        {
+          "width": 1349,
+          "height": 798
+        },
+        {
+          "width": 1440,
+          "height": 900
+        }
+      ],
+      "status": "Back view. Gold finish.",
+      "finish": "Gold",
+      "transform": "rotateX(-0.025rad) rotateY(-0.602915rad) scale(1)"
+    },
+    "drag": {
+      "title": "iPhone 11 Pro - Product Explorer",
+      "text": "PRODUCT EXPLORER\nSpecs & details\nTuesday, September 10\n9:41\n\nDrag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.\n\nBack view. Gold finish.\n\nTHE ORIGINAL PRO\n\niPhone\n11 Pro\n\nAn icon. From every angle.\n\nDrag to rotate\nScroll to zoom\n\nFINISH\n\nGold\n\nAuto-rotate\nBack\nFront",
+      "buttons": [
+        {
+          "text": "Specs & details",
+          "id": "open-details",
+          "label": null,
+          "pressed": null
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "true"
+        },
+        {
+          "text": "Auto-rotate",
+          "id": "auto-toggle",
+          "label": "Auto-rotate",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "reset-view",
+          "label": "Reset view",
+          "pressed": null
+        },
+        {
+          "text": "Back",
+          "id": "back-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "Front",
+          "id": "front-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "fullscreen",
+          "label": "Enter fullscreen",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "close-details",
+          "label": "Close details",
+          "pressed": null
+        },
+        {
+          "text": "Back to exploring",
+          "id": "return-to-view",
+          "label": null,
+          "pressed": null
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "scene is-ready",
+      "canvas": [
+        {
+          "width": 1349,
+          "height": 798
+        },
+        {
+          "width": 1440,
+          "height": 900
+        }
+      ],
+      "status": "Back view. Gold finish.",
+      "finish": "Gold",
+      "transform": "rotateX(-0.025rad) rotateY(-0.602915rad) scale(1)"
+    },
+    "zoom": {
+      "title": "iPhone 11 Pro - Product Explorer",
+      "text": "PRODUCT EXPLORER\nSpecs & details\nTuesday, September 10\n9:41\n\nDrag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.\n\nBack view. Gold finish.\n\nTHE ORIGINAL PRO\n\niPhone\n11 Pro\n\nAn icon. From every angle.\n\nDrag to rotate\nScroll to zoom\n\nFINISH\n\nGold\n\nAuto-rotate\nBack\nFront",
+      "buttons": [
+        {
+          "text": "Specs & details",
+          "id": "open-details",
+          "label": null,
+          "pressed": null
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "true"
+        },
+        {
+          "text": "Auto-rotate",
+          "id": "auto-toggle",
+          "label": "Auto-rotate",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "reset-view",
+          "label": "Reset view",
+          "pressed": null
+        },
+        {
+          "text": "Back",
+          "id": "back-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "Front",
+          "id": "front-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "fullscreen",
+          "label": "Enter fullscreen",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "close-details",
+          "label": "Close details",
+          "pressed": null
+        },
+        {
+          "text": "Back to exploring",
+          "id": "return-to-view",
+          "label": null,
+          "pressed": null
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "scene is-ready",
+      "canvas": [
+        {
+          "width": 1349,
+          "height": 798
+        },
+        {
+          "width": 1440,
+          "height": 900
+        }
+      ],
+      "status": "Back view. Gold finish.",
+      "finish": "Gold",
+      "transform": "rotateX(-0.025rad) rotateY(-0.602915rad) scale(1)"
+    },
+    "details": {
+      "open": true,
+      "text": "A CLOSER LOOK\niPhone 11 Pro.\nEvery detail matters.\n\nA precision-crafted stainless steel design. A remarkably capable triple-camera system. A true original.\n\nDisplay\n5.8-inch Super Retina XDR\nCameras\n12MP Ultra Wide, Wide & Telephoto\nChip\nA13 Bionic\nMaterials\nTextured matte glass & stainless steel\nDimensions\n144 x 71.4 x 8.1 mm\nWeight\n188 grams\nFinish\nGold\n\nMake it your perspective. Focus the viewer, then use arrow keys to rotate, + / - to zoom, Space to pause, and R to reset.\n\nBack to exploring\n\nAn independent, interactive product study. Not affiliated with or endorsed by Apple. iPhone is a trademark of Apple Inc. The model is a visual interpretation; dimensions and proportions are approximate."
+    },
+    "detailsClosed": true,
+    "fullscreen": {
+      "pressed": "true",
+      "element": "showroom",
+      "fallback": false
+    },
+    "reset": {
+      "title": "iPhone 11 Pro - Product Explorer",
+      "text": "PRODUCT EXPLORER\nSpecs & details\nTuesday, September 10\n9:41\n\nDrag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.\n\nView reset. Midnight Green finish.\n\nTHE ORIGINAL PRO\n\niPhone\n11 Pro\n\nAn icon. From every angle.\n\nDrag to rotate\nScroll to zoom\n\nFINISH\n\nMidnight Green\n\nAuto-rotate\nBack\nFront",
+      "buttons": [
+        {
+          "text": "Specs & details",
+          "id": "open-details",
+          "label": null,
+          "pressed": null
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "Auto-rotate",
+          "id": "auto-toggle",
+          "label": "Auto-rotate",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "reset-view",
+          "label": "Reset view",
+          "pressed": null
+        },
+        {
+          "text": "Back",
+          "id": "back-view",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "Front",
+          "id": "front-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "fullscreen",
+          "label": "Enter fullscreen",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "close-details",
+          "label": "Close details",
+          "pressed": null
+        },
+        {
+          "text": "Back to exploring",
+          "id": "return-to-view",
+          "label": null,
+          "pressed": null
+        }
+      ],
+      "width": 1440,
+      "scrollWidth": 1440,
+      "stage": "scene is-ready",
+      "canvas": [
+        {
+          "width": 1349,
+          "height": 798
+        },
+        {
+          "width": 1440,
+          "height": 900
+        }
+      ],
+      "status": "View reset. Midnight Green finish.",
+      "finish": "Midnight Green",
+      "transform": "rotateX(-0.025rad) rotateY(-0.602915rad) scale(1)"
+    },
+    "mobile": {
+      "title": "iPhone 11 Pro - Product Explorer",
+      "text": "PRODUCT EXPLORER\nSpecs & details\nTuesday, September 10\n9:41\n\nDrag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.\n\nView reset. Midnight Green finish.\n\niPhone11 Pro\n\nAn icon. From every angle.\n\nDrag to rotate\n\nMidnight Green\n\nBack\nFront",
+      "buttons": [
+        {
+          "text": "Specs & details",
+          "id": "open-details",
+          "label": null,
+          "pressed": null
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Midnight Green",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Space Gray",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Silver",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "",
+          "label": "Gold",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "auto-toggle",
+          "label": "Auto-rotate",
+          "pressed": "true"
+        },
+        {
+          "text": "",
+          "id": "reset-view",
+          "label": "Reset view",
+          "pressed": null
+        },
+        {
+          "text": "Back",
+          "id": "back-view",
+          "label": null,
+          "pressed": "true"
+        },
+        {
+          "text": "Front",
+          "id": "front-view",
+          "label": null,
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "fullscreen",
+          "label": "Enter fullscreen",
+          "pressed": "false"
+        },
+        {
+          "text": "",
+          "id": "close-details",
+          "label": "Close details",
+          "pressed": null
+        },
+        {
+          "text": "Back to exploring",
+          "id": "return-to-view",
+          "label": null,
+          "pressed": null
+        }
+      ],
+      "width": 390,
+      "scrollWidth": 390,
+      "stage": "scene is-ready",
+      "canvas": [
+        {
+          "width": 1349,
+          "height": 798
+        },
+        {
+          "width": 390,
+          "height": 844
+        }
+      ],
+      "status": "View reset. Midnight Green finish.",
+      "finish": "Midnight Green",
+      "transform": "rotateX(-0.025rad) rotateY(-0.602915rad) scale(1)"
+    }
+  },
+  "events": [
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "warning",
+        "args": [
+          {
+            "type": "string",
+            "value": "WARNING: Multiple instances of Three.js being imported."
+          }
+        ],
+        "executionContextId": 3,
+        "timestamp": 1791816733297.439,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 556141
+            },
+            {
+              "functionName": "",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 139
+            },
+            {
+              "functionName": "",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 205
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "warning",
+        "args": [
+          {
+            "type": "string",
+            "value": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+          }
+        ],
+        "executionContextId": 3,
+        "timestamp": 1791816733730.481,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "_halfBlur",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 589868
+            },
+            {
+              "functionName": "_blur",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 589461
+            },
+            {
+              "functionName": "fromScene",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 586806
+            },
+            {
+              "functionName": "startThree",
+              "scriptId": "11",
+              "url": "file:///C:/Workspace/linkedin-ai-trainer/Tasks/6255409/Aesthetics_Functionality_Overall%20Website%20Preference%20-%20051_files/saved_resource(1).html",
+              "lineNumber": 841,
+              "columnNumber": 42
+            }
+          ]
+        }
+      }
+    },
+    {
+      "method": "Runtime.consoleAPICalled",
+      "params": {
+        "type": "warning",
+        "args": [
+          {
+            "type": "string",
+            "value": "sigmaRadians, 0.08, is too large and will clip, as it requested 39 samples when the maximum is set to 20"
+          }
+        ],
+        "executionContextId": 3,
+        "timestamp": 1791816733731.894,
+        "stackTrace": {
+          "callFrames": [
+            {
+              "functionName": "_halfBlur",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 589868
+            },
+            {
+              "functionName": "_blur",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 589503
+            },
+            {
+              "functionName": "fromScene",
+              "scriptId": "13",
+              "url": "https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js",
+              "lineNumber": 5,
+              "columnNumber": 586806
+            },
+            {
+              "functionName": "startThree",
+              "scriptId": "11",
+              "url": "file:///C:/Workspace/linkedin-ai-trainer/Tasks/6255409/Aesthetics_Functionality_Overall%20Website%20Preference%20-%20051_files/saved_resource(1).html",
+              "lineNumber": 841,
+              "columnNumber": 42
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

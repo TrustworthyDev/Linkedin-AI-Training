@@ -1,0 +1,434 @@
+{
+  "a": {
+    "initial": {
+      "title": "Black Pine | We Endure",
+      "text": "BLACK PINE\nWHISKEY & FIELD SUPPLY\nTHE MARK\nIN THE FIELD\nFIELD KIT\n00\nWHISKEY COUNTRY / EST. 1981\nBLACK\nPINE\n\nWhiskey and wilderness, cut into one trail-tested mark. Made for the long way home.\n\nGET THE DIE-CUT\nCYCLE INK\nFIELD MARK 001\nBLACK PINE\nWHISKEY + WILDERNESS\nBP\nWE ENDURE\nBOTTLED FOR THE LONG WAY\nDOWNLOAD SVG\nFOLLOW THE RIDGE\n01 / THE MARK\nNO GLOSS. NO NOISE.\nONE MARK.\nHARD MILES.\n\nA whiskey bottle rises through the ridge line. Pine silhouettes hold the flanks. The rest is negative space, built to read through dust, rain, and distance.\n\nGET THE VECTOR ARTWORK\nWE ENDURE\nWE ENDURE\nBUILT TO LEAVE CAMP\nMARK YOUR GEAR.\n\nOne-color vinyl. Strong silhouette. At home on whatever gets you there and back.\n\nCOOLER / CAMP 04\nBLACK PINE\nWHISKEY + WILDERNESS\nBP\nWE ENDURE\nBOTTLED FOR THE LONG WAY\nBOTTLE / RIDGE 11\nBLACK PINE\nWHISKEY + WILDERNESS\nBP\nWE ENDURE\nBOTTLED FOR THE LONG WAY\nTAILGATE / MILE 217\nBLACK PINE\nWHISKEY + WILDERNESS\nBP\nWE ENDURE\nBOTTLED FOR THE LONG WAY\n4 x 4\nBLACK PINE FIELD SUPPLY\nKEEP THE FIRE.\nTAKE THE MARK.\nGET THE STICKER\nBLACK PINE\nWHISKEY & FIELD SUPPLY\n\nONE-COLOR GOODS FOR WHISKEY WEATHER.\n\nWE ENDURE. SINCE 1981.",
+      "buttons": [
+        {
+          "text": "Field kit 00",
+          "label": null
+        },
+        {
+          "text": "Get the die-cut",
+          "label": null
+        },
+        {
+          "text": "Cycle ink",
+          "label": null
+        },
+        {
+          "text": "Download SVG",
+          "label": null
+        },
+        {
+          "text": "Get the vector artwork",
+          "label": null
+        },
+        {
+          "text": "Get the sticker",
+          "label": null
+        }
+      ],
+      "links": [
+        {
+          "text": "BLACK PINEWhiskey & Field Supply",
+          "href": "#top"
+        },
+        {
+          "text": "The mark",
+          "href": "#ethos"
+        },
+        {
+          "text": "In the field",
+          "href": "#field"
+        },
+        {
+          "text": "Follow the ridge",
+          "href": "#ethos"
+        },
+        {
+          "text": "BLACK PINEWhiskey & Field Supply",
+          "href": "#top"
+        }
+      ],
+      "stickerOpacity": "1"
+    },
+    "inkBefore": "color: rgb(23, 32, 24);",
+    "cycle": {
+      "clicked": "Cycle ink"
+    },
+    "inkAfter": "color: rgb(111, 48, 34);",
+    "drawerOpen": {
+      "clicked": "Get the die-cut"
+    },
+    "drawer": {
+      "text": "FIELD GOODS / 001\nCARRY THE MARK.\nBLACK PINE\nWHISKEY + WILDERNESS\nBP\nWE ENDURE\nBOTTLED FOR THE LONG WAY\nALL-WEATHER DIE-CUT\n4.5 IN / MATTE VINYL\n$6\nCHOOSE ONE-COLOR INK\nPINE BLACK\nThe original field mark\nBURNT OAK\nWarm, weathered, and loud\nRIVER SLATE\nCold water and steel\nQUANTITY\n-\n2\n+\nADD 2 TO FIELD KIT\n$12",
+      "buttons": [
+        {
+          "text": "",
+          "label": "Close order panel"
+        },
+        {
+          "text": "Pine BlackThe original field mark",
+          "label": null
+        },
+        {
+          "text": "Burnt OakWarm, weathered, and loud",
+          "label": null
+        },
+        {
+          "text": "River SlateCold water and steel",
+          "label": null
+        },
+        {
+          "text": "-",
+          "label": "Decrease quantity"
+        },
+        {
+          "text": "+",
+          "label": "Increase quantity"
+        },
+        {
+          "text": "Add 2 to field kit$12",
+          "label": null
+        }
+      ]
+    },
+    "quantity": "-\n4\n+",
+    "add": "Add 4 to field kit$24",
+    "addResult": {
+      "dialog": "FIELD GOODS / 001\nCARRY THE MARK.\nBLACK PINE\nWHISKEY + WILDERNESS\nBP\nWE ENDURE\nBOTTLED FOR THE LONG WAY\nALL-WEATHER DIE-CUT\n4.5 IN / MATTE VINYL\n$6\nCHOOSE ONE-COLOR INK\nPINE BLACK\nThe original field mark\nBURNT OAK\nWarm, weathered, and loud\nRIVER SLATE\nCold water and steel\nQUANTITY\n-\n4\n+\nADDED TO FIELD KIT\nREADY",
+      "header": "BLACK PINE\nWHISKEY & FIELD SUPPLY\nTHE MARK\nIN THE FIELD\nFIELD KIT\n04"
+    },
+    "escapeClosed": true,
+    "download": {
+      "clicked": "Download SVG"
+    },
+    "nav": {
+      "clicked": "In the field"
+    },
+    "navResult": {
+      "hash": "#field",
+      "y": 1860
+    },
+    "mobile": {
+      "width": 390,
+      "bodyWidth": 390
+    }
+  },
+  "b": {
+    "initial": {
+      "title": "Ridge & Rye | We Endure",
+      "text": "R\n/\nR\nRIDGE & RYE\nTHE MARK\nMAKE IT YOURS\nGET THE SVG\nRIDGE\n& RYE.\n\nFOR THE LONG WAY AROUND.\n\nWhiskey, wilderness, and a little grit. A one-color field mark made to go wherever you do.\n\nDOWNLOAD THE MARK\nCHOOSE YOUR INK\nRIDGE & RYE\nWE ENDURE\nWHISKEY / WILDERNESS\n01 / THE FIELD MARK\nONE COLOR. ALL TERRAIN.\nMAKE IT\nYOURS.\n\nOne bold impression, cut to the contour. Pick your ink and put it on the gear that goes with you.\n\nSELECT A COLORWAY\n01 - 03\n\n01\nBlack on bone\nThe original field issue\n02\nBone on black\nMade for darker gear\n03\nRust on bone\nA little campfire character\nDOWNLOAD SVG\nDOWNLOAD PNG\n\nTransparent outside the cutline. No gradients, no fuss.\n\nLIVE PREVIEW\nR/R - 001\nRIDGE & RYE\nWE ENDURE\nWHISKEY / WILDERNESS\nBLACK ON BONE\nRIDGE & RYE.\n\nGOOD WHISKEY. HARD MILES.\n\nBACK TO THE TOP",
+      "buttons": [
+        {
+          "text": "GET THE SVG",
+          "label": "Download sticker SVG"
+        },
+        {
+          "text": "DOWNLOAD THE MARK",
+          "label": null
+        },
+        {
+          "text": "01Black on boneThe original field issue",
+          "label": null
+        },
+        {
+          "text": "02Bone on blackMade for darker gear",
+          "label": null
+        },
+        {
+          "text": "03Rust on boneA little campfire character",
+          "label": null
+        },
+        {
+          "text": "DOWNLOAD SVG",
+          "label": null
+        },
+        {
+          "text": "DOWNLOAD PNG",
+          "label": null
+        }
+      ],
+      "links": [
+        {
+          "text": "R/RRIDGE & RYE",
+          "href": "#top"
+        },
+        {
+          "text": "THE MARK",
+          "href": "#mark"
+        },
+        {
+          "text": "MAKE IT YOURS",
+          "href": "#customize"
+        },
+        {
+          "text": "CHOOSE YOUR INK",
+          "href": "#customize"
+        },
+        {
+          "text": "RIDGE & RYE.",
+          "href": "#top"
+        },
+        {
+          "text": "BACK TO THE TOP",
+          "href": "#top"
+        }
+      ],
+      "stickerOpacity": null
+    },
+    "nav": {
+      "clicked": "CHOOSE YOUR INK"
+    },
+    "navResult": {
+      "hash": "#customize",
+      "y": 1000
+    },
+    "colorways": [
+      {
+        "name": "Bone on black",
+        "pressed": "false",
+        "label": "BLACK ON BONE",
+        "fill": "#F0ECDD"
+      },
+      {
+        "name": "Rust on bone",
+        "pressed": "false",
+        "label": "BONE ON BLACK",
+        "fill": "#1D2720"
+      },
+      {
+        "name": "Black on bone",
+        "pressed": "false",
+        "label": "RUST ON BONE",
+        "fill": "#F0ECDD"
+      }
+    ],
+    "svg": {
+      "clicked": "DOWNLOAD SVG"
+    },
+    "png": {
+      "clicked": "DOWNLOAD PNG"
+    },
+    "status": "High-resolution PNG downloaded.",
+    "top": "#top",
+    "topY": 0,
+    "mobile": {
+      "width": 390,
+      "bodyWidth": 390
+    }
+  },
+  "downloads": [
+    {
+      "name": "black-pine-burnt-oak.svg",
+      "bytes": 2329
+    },
+    {
+      "name": "downloads.htm",
+      "bytes": 33619428
+    },
+    {
+      "name": "ridge-and-rye-we-endure-black-on-bone.png",
+      "bytes": 316272
+    },
+    {
+      "name": "ridge-and-rye-we-endure-black-on-bone.svg",
+      "bytes": 31529
+    }
+  ],
+  "downloadEvents": [
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "8C8890E341074259781FC8CAEB6AE662",
+        "guid": "7e0c515b-b4f1-4159-834c-9066d707a47c",
+        "url": "blob:http://127.0.0.1:8767/8cf4565e-64d6-4f33-be74-069a0a4d2c67",
+        "suggestedFilename": "black-pine-burnt-oak.svg"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "7e0c515b-b4f1-4159-834c-9066d707a47c",
+        "totalBytes": 2329,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "7e0c515b-b4f1-4159-834c-9066d707a47c",
+        "totalBytes": 2329,
+        "receivedBytes": 2329,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "7e0c515b-b4f1-4159-834c-9066d707a47c",
+        "totalBytes": 2329,
+        "receivedBytes": 2329,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "7e0c515b-b4f1-4159-834c-9066d707a47c",
+        "totalBytes": 2329,
+        "receivedBytes": 2329,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "7e0c515b-b4f1-4159-834c-9066d707a47c",
+        "totalBytes": 2329,
+        "receivedBytes": 2329,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "7e0c515b-b4f1-4159-834c-9066d707a47c",
+        "totalBytes": 2329,
+        "receivedBytes": 2329,
+        "state": "completed",
+        "filePath": "C:\\Workspace\\linkedin-ai-trainer\\Tasks\\6243305\\review\\downloads\\black-pine-burnt-oak.svg"
+      }
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "8C8890E341074259781FC8CAEB6AE662",
+        "guid": "73c32a12-3fad-4c6f-90c4-3ded53e4e1e3",
+        "url": "blob:http://127.0.0.1:8767/0de08d9d-3879-441c-95f8-2639af9668ea",
+        "suggestedFilename": "ridge-and-rye-we-endure-black-on-bone.svg"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "73c32a12-3fad-4c6f-90c4-3ded53e4e1e3",
+        "totalBytes": 31529,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "73c32a12-3fad-4c6f-90c4-3ded53e4e1e3",
+        "totalBytes": 31529,
+        "receivedBytes": 31529,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "73c32a12-3fad-4c6f-90c4-3ded53e4e1e3",
+        "totalBytes": 31529,
+        "receivedBytes": 31529,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "73c32a12-3fad-4c6f-90c4-3ded53e4e1e3",
+        "totalBytes": 31529,
+        "receivedBytes": 31529,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "73c32a12-3fad-4c6f-90c4-3ded53e4e1e3",
+        "totalBytes": 31529,
+        "receivedBytes": 31529,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "73c32a12-3fad-4c6f-90c4-3ded53e4e1e3",
+        "totalBytes": 31529,
+        "receivedBytes": 31529,
+        "state": "completed",
+        "filePath": "C:\\Workspace\\linkedin-ai-trainer\\Tasks\\6243305\\review\\downloads\\ridge-and-rye-we-endure-black-on-bone.svg"
+      }
+    },
+    {
+      "method": "Browser.downloadWillBegin",
+      "params": {
+        "frameId": "8C8890E341074259781FC8CAEB6AE662",
+        "guid": "ff11cee5-95ee-44db-8c2d-fc31a1720128",
+        "url": "blob:http://127.0.0.1:8767/f3e1b9ed-44a6-4799-9710-c5ae5a27a55b",
+        "suggestedFilename": "ridge-and-rye-we-endure-black-on-bone.png"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "ff11cee5-95ee-44db-8c2d-fc31a1720128",
+        "totalBytes": 316272,
+        "receivedBytes": 0,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "ff11cee5-95ee-44db-8c2d-fc31a1720128",
+        "totalBytes": 316272,
+        "receivedBytes": 316272,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "ff11cee5-95ee-44db-8c2d-fc31a1720128",
+        "totalBytes": 316272,
+        "receivedBytes": 316272,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "ff11cee5-95ee-44db-8c2d-fc31a1720128",
+        "totalBytes": 316272,
+        "receivedBytes": 316272,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "ff11cee5-95ee-44db-8c2d-fc31a1720128",
+        "totalBytes": 316272,
+        "receivedBytes": 316272,
+        "state": "inProgress"
+      }
+    },
+    {
+      "method": "Browser.downloadProgress",
+      "params": {
+        "guid": "ff11cee5-95ee-44db-8c2d-fc31a1720128",
+        "totalBytes": 316272,
+        "receivedBytes": 316272,
+        "state": "completed",
+        "filePath": "C:\\Workspace\\linkedin-ai-trainer\\Tasks\\6243305\\review\\downloads\\ridge-and-rye-we-endure-black-on-bone.png"
+      }
+    }
+  ]
+}

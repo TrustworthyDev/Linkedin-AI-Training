@@ -1,0 +1,67 @@
+[
+  {
+    "test": "Website A ready",
+    "title": "Overview | Yatra Economics Lab"
+  },
+  {
+    "test": "Website A export dialog",
+    "text": "Take your research with you.\n\nExport a complete dossier, or select only the studies you need.\n\nAll seven studies\n01\nGDP contribution\nFive-year GDP table & chart\n02\nDomestic & international\nEconomic channels & cohort comparison\n03\nSeasonality & pricing\nMonthly pricing report\n04\nDestination cost-benefit\nCVP, infrastructure, jobs & NPV\n05\nTourist spending survey\nSpending charts & survey findings\n06\nPolicy & economic impact\nPolicy evaluation & scenario\n07\nDemand-supply model\nDemand, supply & price elasticity\n\nHTML reports preserve charts and warnings and open in any browser. For PDF, choose Print and select Save as PDF. The model includes one demand-supply chart and three detailed pages.\n\nPrint / save PDF\nDownload HTML"
+  },
+  {
+    "test": "Website A complete research export",
+    "filename": "yatra-india-tourism-research.html",
+    "bytes": 78223,
+    "sections": 9
+  },
+  {
+    "test": "Website A GDP download",
+    "filename": "yatra-illustrative-gdp.csv",
+    "rows": 5
+  },
+  {
+    "test": "Website A GDP import",
+    "latestValue": "6.0%"
+  },
+  {
+    "test": "Website A destination choice",
+    "destination": "Manali"
+  },
+  {
+    "test": "Website A model",
+    "updates": true,
+    "reset": true,
+    "briefPages": 3
+  },
+  {
+    "test": "Website A survey",
+    "importedResponses": 2,
+    "filteredResponses": 1
+  },
+  {
+    "test": "Website A mobile",
+    "width": 390
+  },
+  {
+    "test": "Website B survey template",
+    "filename": "tourist-spending-survey-template.csv",
+    "lines": 1
+  },
+  {
+    "test": "Website B survey",
+    "count": "2 / 20 RESPONSE TARGET"
+  },
+  {
+    "test": "Website B model",
+    "updates": true,
+    "reset": true
+  },
+  {
+    "test": "Website B mobile",
+    "width": 390,
+    "unrevealed": 0
+  },
+  {
+    "test": "Runtime errors",
+    "errors": []
+  }
+]

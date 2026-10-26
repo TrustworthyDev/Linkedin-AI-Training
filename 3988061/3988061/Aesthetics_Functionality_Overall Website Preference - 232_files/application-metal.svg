@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 550" fill="none">
+  <defs>
+    <radialGradient id="bg" cx="0" cy="0" r="1" gradientTransform="translate(405 215) rotate(123) scale(495 560)" gradientUnits="userSpaceOnUse"><stop stop-color="#353731"/><stop offset=".54" stop-color="#1a1e1a"/><stop offset="1" stop-color="#080b09"/></radialGradient>
+    <linearGradient id="side" x1="350" y1="190" x2="352" y2="357" gradientUnits="userSpaceOnUse"><stop stop-color="#323732"/><stop offset=".12" stop-color="#232923"/><stop offset=".5" stop-color="#1c211e"/><stop offset=".82" stop-color="#111613"/><stop offset="1" stop-color="#292d25"/></linearGradient>
+    <linearGradient id="top" x1="300" y1="144" x2="310" y2="224" gradientUnits="userSpaceOnUse"><stop stop-color="#141915"/><stop offset=".66" stop-color="#43483c"/><stop offset="1" stop-color="#151a15"/></linearGradient>
+    <linearGradient id="lower" x1="320" y1="336" x2="360" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#1e241e"/><stop offset=".4" stop-color="#0a0e0c"/><stop offset="1" stop-color="#161a15"/></linearGradient>
+    <radialGradient id="vignette" cx="0" cy="0" r="1" gradientTransform="translate(360 275) rotate(90) scale(360 480)" gradientUnits="userSpaceOnUse"><stop offset=".48" stop-color="#050705" stop-opacity="0"/><stop offset="1" stop-color="#030604" stop-opacity=".73"/></radialGradient>
+    <filter id="noise" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+    <filter id="brush" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".02 .5" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter>
+    <filter id="shadow"><feGaussianBlur stdDeviation="17"/></filter>
+    <clipPath id="object"><path d="M65 209 98 176h504l48 24v136l-28 21H71l-13-14V228z"/></clipPath>
+    <pattern id="grip" width="6" height="6" patternUnits="userSpaceOnUse"><path d="M0 0l6 6m0-6L0 6" stroke="#6e7259" stroke-width=".32" opacity=".45"/></pattern>
+    <g id="groove"><path d="m0 0-13 78q-1 5 3 5h8q4 0 5-5L16 0z" fill="#0b100d" stroke="#363b2e" stroke-width=".75"/><path d="m3 2-13 76" stroke="#535642" stroke-width=".65" opacity=".65"/></g>
+  </defs>
+  <path fill="url(#bg)" d="M0 0h700v550H0z"/>
+  <path fill="#8a8268" filter="url(#noise)" style="mix-blend-mode:soft-light" opacity=".38" d="M0 0h700v550H0z"/>
+  <path d="M0 445c160-32 230-7 342 36 121 47 230 32 358-8v77H0z" fill="#080c09" opacity=".38"/>
+  <g transform="rotate(-9 350 275)">
+    <path d="M65 363h564l57 33-29 83-533 19-74-74z" fill="#030504" opacity=".8" filter="url(#shadow)"/>
+    <path d="M108 320h508l-22 71-128 12-38 92-108 20-30-104-99-4-15 28H94l-27-53z" fill="url(#lower)" stroke="#242a21" stroke-width="2"/>
+    <path d="M107 381h75l-9 20h-64zm196 8 50 4 15 98-37 10zm170-10h81l-12 14h-77z" fill="#070b08" stroke="#30352a" stroke-width=".7"/>
+    <path d="m349 411 46-7 22 67-39 16z" fill="url(#grip)" opacity=".6"/>
+    <path d="M75 209 98 176h504l48 24v29H59z" fill="url(#top)" stroke="#505142" stroke-width="1"/>
+    <path d="M95 177h505l42 21-14 5H76z" fill="#34392e" opacity=".7"/><path d="M116 181h475l29 13H99z" fill="#252b23" stroke="#51523f" stroke-width=".55"/>
+    <path d="M75 209h552l23-9v136l-28 21H71l-13-14V228z" fill="url(#side)" stroke="#0a0d0a" stroke-width="2"/>
+    <path d="M76 214h543l20-8m-576 34v99l12 11h543l25-18" stroke="#6d6b50" stroke-width=".75" opacity=".7"/>
+    <path d="M67 331h554l22-12v13l-25 18H76z" fill="#0b100d" opacity=".65"/>
+    <path d="M81 224h470m-469 5h287m-285 97h474m-470 5h220" stroke="#81806a" stroke-width=".3" opacity=".32" stroke-dasharray="71 5 8 4 2 4"/>
+    <g clip-path="url(#object)"><path fill="#999275" filter="url(#brush)" style="mix-blend-mode:soft-light" opacity=".42" d="M0 0h700v550H0z"/><path fill="#8a8268" filter="url(#noise)" style="mix-blend-mode:soft-light" opacity=".45" d="M0 0h700v550H0z"/></g>
+    <path d="M475 234h145v86H465z" fill="#131913" opacity=".45"/>
+    <g transform="translate(487 238)"><use href="#groove"/><use href="#groove" x="23"/><use href="#groove" x="46"/><use href="#groove" x="69"/><use href="#groove" x="92"/><use href="#groove" x="115"/></g>
+    <path d="M77 234h80l-8 75H74z" fill="#121913" stroke="#434534" stroke-width=".65"/>
+    <path d="M78 240h69l-7 62H77z" fill="url(#grip)" opacity=".48"/>
+    <circle cx="124" cy="272" r="15" fill="#0c110d" stroke="#555541" stroke-width="1"/><circle cx="124" cy="272" r="10" fill="#20261d" stroke="#333a2a" stroke-width=".8"/><path d="m118 277 12-10" stroke="#080c08" stroke-width="2"/><path d="m118 278 13-10" stroke="#747054" stroke-width=".5"/>
+    <path d="M222 178v-10l5-3h43l4 3v10m250 0v-9h36l7 7" fill="#0a0f0b" stroke="#414233" stroke-width=".8"/>
+    <path d="M167 238h49m-50 2h21m260 61h16m-58 4h57m-272 12h38m-18 2h29" stroke="#858164" stroke-width=".4" opacity=".55"/>
+    <path d="M164 255c20-14 36-9 40 2 3 9-5 16-11 12-4-3-2-8 1-8m-30-6c8-12 20-14 28-10m-28 45c20 14 36 9 40-2 3-9-5-16-11-12-4 3-2 8 1 8m-30 6c8 12 20 14 28 10m247-45c-15-9-26-5-29 3-2 6 3 11 7 8m22-11c-6-9-15-10-21-8m21 42c-15 9-26 5-29-3-2-6 3-11 7-8m22 11c-6 9-15 10-21 8" stroke="#85704b" stroke-width=".65" opacity=".6" stroke-linecap="round"/>
+  </g>
+  <path fill="url(#vignette)" d="M0 0h700v550H0z"/>
+</svg>

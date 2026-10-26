@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://5f6vd5vrapzia6q.c.msft.feather-prod.azure.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141814">
+  <meta name="description" content="Explore the iPhone 11 Pro in an interactive 3D product studio. Rotate, zoom, and discover every finish.">
+  <title>iPhone 11 Pro - Product Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./css2" rel="stylesheet">
+  <style>
+    :root { color-scheme: dark; --bg: #141814; --ink: #f0f2e9; --muted: #929b8e; --accent: #c5d2b3; --rule: rgba(215, 227, 200, .14); }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--bg); }
+    body { margin: 0; color: var(--ink); font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; -webkit-font-smoothing: antialiased; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    button { font: inherit; color: inherit; cursor: pointer; }
+    button:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
+    button { border: 0; background: none; }
+    button:disabled { cursor: default; }
+    .icon { display: block; width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+    .showroom { position: relative; width: 100%; height: 100svh; min-height: 700px; overflow: hidden; isolation: isolate; background: radial-gradient(ellipse at 69% 42%, #252d23 0%, #1b211a 25%, #141814 64%); }
+    .showroom::after { content: ""; position: absolute; inset: 0; z-index: 3; pointer-events: none; opacity: .035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23ffffff' filter='url(%23n)' opacity='.8' d='M0 0h180v180H0z'/%3E%3C/svg%3E"); }
+    .site-header { position: relative; z-index: 5; height: 100px; margin: 0 6.2%; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--rule); }
+    .wordmark { display: flex; align-items: center; gap: 22px; }
+    .apple-icon { width: 22px; height: 26px; fill: currentColor; color: #e5eadd; }
+    .wordmark-divider { height: 18px; width: 1px; background: var(--rule); }
+    .wordmark-label { font-size: 10px; font-weight: 500; letter-spacing: 2px; }
+    .details-link { display: inline-flex; align-items: center; gap: 15px; padding: 12px 0 12px 12px; font-size: 12px; color: #c2c9bc; transition: color .2s; }
+    .details-link .icon { width: 16px; height: 16px; transition: transform .25s; }
+    .details-link:hover { color: var(--ink); }
+    .details-link:hover .icon { transform: translate(2px, -2px); }
+    .hero-copy { position: absolute; z-index: 4; left: 6.2%; top: 29%; pointer-events: none; }
+    .eyebrow { margin: 0 0 26px; color: #9da994; font-size: 10px; line-height: 1.4; font-weight: 500; letter-spacing: 2.5px; animation: reveal .9s .08s both; }
+    h1 { margin: 0; font-size: clamp(76px, 7.45vw, 112px); line-height: .985; font-weight: 500; letter-spacing: -.072em; }
+    h1 span { display: block; animation: reveal .95s .17s both; }
+    h1 span + span { animation-delay: .26s; }
+    .hero-description { margin: 28px 0 0 3px; font-size: 16px; line-height: 1.7; letter-spacing: -.25px; color: var(--muted); animation: reveal .9s .39s both; }
+    .scene { position: absolute; inset: 0; z-index: 2; cursor: grab; touch-action: none; outline: none; }
+    .scene:focus-visible { outline: 1px solid rgba(197, 210, 179, .5); outline-offset: -9px; }
+    .scene.is-dragging { cursor: grabbing; }
+    .scene canvas { position: absolute; inset: 0; display: block; width: 100%; height: 100%; opacity: 0; transition: opacity .9s ease; }
+    .scene.is-ready canvas { opacity: 1; }
+    .ambient-shadow { position: absolute; z-index: 0; left: 69.5%; top: 82%; width: 270px; height: 25px; background: radial-gradient(ellipse, rgba(0, 0, 0, .5), transparent 70%); filter: blur(9px); transform: translate(-50%, -50%); pointer-events: none; transition: opacity .5s; }
+    .gesture-hint { position: absolute; z-index: 4; left: 69.5%; bottom: 112px; display: flex; gap: 10px; align-items: center; transform: translateX(-50%); white-space: nowrap; color: #919b8b; pointer-events: none; font-size: 11px; letter-spacing: .15px; animation: hint-reveal 1s .9s both; }
+    .gesture-hint .icon { width: 17px; height: 17px; color: #a8b49b; animation: gesture 3.6s 1.5s both; }
+    .hint-divider { width: 2px; height: 2px; margin: 0 2px; border-radius: 50%; background: #687160; }
+    .scroll-hint { color: #87937d; }
+    .control-bar { position: absolute; z-index: 5; left: 6.2%; right: 6.2%; bottom: 32px; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 24px; border-top: 1px solid var(--rule); padding-top: 25px; animation: reveal 1s .45s both; }
+    .finish-control { display: flex; align-items: center; gap: 24px; }
+    .finish-meta { min-width: 100px; }
+    .control-label { margin: 0 0 6px; font-size: 9px; line-height: 1; font-weight: 500; color: #7d8976; letter-spacing: 1.8px; text-transform: uppercase; }
+    .finish-name { margin: 0; font-size: 12px; line-height: 1.4; color: #c9d0c1; white-space: nowrap; }
+    .swatches { display: flex; align-items: center; gap: 14px; }
+    .swatch { position: relative; flex-shrink: 0; width: 23px; height: 23px; padding: 0; border: 1px solid rgba(245, 250, 235, .15); border-radius: 50%; background: var(--swatch); transition: transform .25s, box-shadow .25s; }
+    .swatch::after { content: ""; position: absolute; inset: -5px; border: 1px solid var(--accent); border-radius: 50%; opacity: 0; transform: scale(.8); transition: opacity .25s, transform .3s; }
+    .swatch[aria-pressed="true"]::after { opacity: .8; transform: scale(1); }
+    .swatch:hover { transform: scale(1.12); }
+    .swatch[aria-pressed="true"]:hover { transform: scale(1.04); }
+    .rotation-controls { display: flex; align-items: center; gap: 17px; }
+    .auto-toggle { display: flex; align-items: center; gap: 11px; padding: 0; font-size: 12px; color: #b7c1ad; transition: color .2s; }
+    .auto-symbol { display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid #69785b; border-radius: 50%; color: var(--accent); transition: border-color .25s, background .25s, transform .25s; }
+    .auto-symbol .icon { width: 13px; height: 13px; stroke-width: 2; }
+    .auto-toggle:hover .auto-symbol { background: rgba(197, 210, 179, .08); border-color: #b6c6a3; transform: scale(1.05); }
+    .auto-toggle[aria-pressed="false"] .auto-symbol { border-color: #414c39; color: #97a18f; }
+    .auto-label { min-width: 70px; text-align: left; }
+    .icon-button { display: grid; place-items: center; width: 32px; height: 32px; padding: 0; color: #9aa78f; transition: color .2s, transform .3s; }
+    .icon-button:hover { color: var(--ink); }
+    .reset-button .icon { width: 16px; height: 16px; }
+    .reset-button:hover { transform: rotate(-30deg); }
+    .view-controls { display: flex; align-items: center; justify-content: flex-end; gap: 24px; }
+    .angle-tabs { display: flex; align-items: center; gap: 22px; }
+    .angle-tab { position: relative; padding: 9px 0; color: #8b977f; font-size: 11px; transition: color .2s; }
+    .angle-tab::after { content: ""; position: absolute; height: 1px; bottom: 2px; left: 0; right: 0; background: var(--accent); transform: scaleX(0); transition: transform .3s; }
+    .angle-tab[aria-pressed="true"] { color: #d3ddc8; }
+    .angle-tab[aria-pressed="true"]::after { transform: scaleX(1); }
+    .angle-tab:hover { color: var(--ink); }
+    .control-divider { width: 1px; height: 18px; background: var(--rule); }
+    .fullscreen-button .icon { width: 17px; height: 17px; }
+    .fullscreen-button .collapse-icon { display: none; }
+    .fullscreen-button[aria-pressed="true"] .expand-icon { display: none; }
+    .fullscreen-button[aria-pressed="true"] .collapse-icon { display: block; }
+    .showroom:fullscreen, .showroom.is-fullscreen { width: 100%; height: 100dvh; min-height: 0; }
+    .showroom.is-fullscreen { position: fixed; inset: 0; z-index: 100; }
+    body.has-fullscreen-fallback { overflow: hidden; }
+    .no-script { position: absolute; z-index: 6; left: 6.2%; bottom: 140px; color: var(--muted); font-size: 12px; }
+    .details-dialog { position: fixed; inset: 0 0 0 auto; width: 470px; max-width: 100%; height: 100dvh; max-height: 100dvh; margin: 0; padding: 43px 40px 36px; border: 0; border-left: 1px solid #3a4432; background: #1b211a; color: var(--ink); box-shadow: -30px 0 80px rgba(0, 0, 0, .25); overflow: auto; }
+    .details-dialog:not([open]) { display: none; }
+    .details-dialog[open] { animation: sheet-in .4s cubic-bezier(.2, .75, .25, 1) both; }
+    .details-dialog::backdrop { background: rgba(6, 9, 6, .6); backdrop-filter: blur(7px); }
+    .dialog-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 55px; }
+    .dialog-kicker { font-size: 9px; letter-spacing: 2px; color: #9daa90; }
+    .close-button { margin-right: -7px; }
+    .dialog-title { margin: 0; font-size: 47px; font-weight: 500; letter-spacing: -2.7px; line-height: 1.08; }
+    .dialog-intro { margin: 20px 0 34px; max-width: 300px; font-size: 13px; color: #94a08a; line-height: 1.8; }
+    .spec-list { margin: 0; }
+    .spec-row { display: grid; grid-template-columns: 90px 1fr; gap: 18px; padding: 17px 0; border-bottom: 1px solid var(--rule); font-size: 12px; line-height: 1.6; }
+    .spec-row dt { color: #7d8b74; }
+    .spec-row dd { margin: 0; color: #cbd4c3; }
+    .keyboard-note { margin: 26px 0; font-size: 10px; line-height: 1.9; color: #87967d; }
+    .keyboard-note kbd { font: inherit; color: #bdcbb2; }
+    .return-button { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 17px 18px; border: 1px solid #566348; color: #cedac2; font-size: 12px; transition: background .2s, border-color .2s; }
+    .return-button:hover { background: #2a3425; border-color: #94a87d; }
+    .return-button .icon { width: 16px; height: 16px; }
+    .disclaimer { margin: 22px 0 0; font-size: 9px; color: #829076; line-height: 1.8; }
+    body.dialog-is-open { overflow: hidden; }
+
+    /* The CSS model also keeps the experience usable without WebGL. */
+    .phone-fallback { position: absolute; left: 69.5%; top: 48%; width: 270px; height: 560px; transform: translate(-50%, -50%) rotate(-7deg); perspective: 1400px; transition: opacity .7s; }
+    .fallback-phone { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transform: rotateY(-.6rad) rotateX(-.03rad); }
+    .fallback-face { position: absolute; inset: 0; border: 2px solid var(--frame-color, #83917d); border-radius: 14.5% / 7.2%; overflow: hidden; backface-visibility: hidden; }
+    .fallback-back { transform: translateZ(10px); background-color: var(--back-color, #4b594b); background-image: radial-gradient(ellipse at 22% 15%, rgba(255,255,255,.06), transparent 65%); transition: background-color .5s; box-shadow: inset 0 0 0 2px rgba(0,0,0,.12), inset -3px -4px 8px rgba(0,0,0,.2); }
+    .fallback-front { transform: rotateY(180deg) translateZ(10px); background: #020402; padding: 10px; }
+    .fallback-edge { position: absolute; background: linear-gradient(90deg, #273122, var(--frame-color, #83917d) 40%, #5e6e54 65%, #273122); border: 1px solid #59654f; }
+    .fallback-edge.left, .fallback-edge.right { top: 0; bottom: 0; width: 20px; transform: rotateY(90deg); }
+    .fallback-edge.left { left: -10px; }
+    .fallback-edge.right { right: -10px; }
+    .fallback-edge.top, .fallback-edge.bottom { left: 0; right: 0; height: 20px; transform: rotateX(90deg); }
+    .fallback-edge.top { top: -10px; }
+    .fallback-edge.bottom { bottom: -10px; }
+    .fallback-camera { position: absolute; top: 3%; left: 6.3%; width: 50.8%; height: 25.9%; border: 1px solid rgba(255,255,255,.12); border-radius: 20.4% / 19.3%; background: var(--camera-color, #56644f); box-shadow: 2px 3px 4px rgba(0,0,0,.2), inset 0 0 0 1px rgba(255,255,255,.06); }
+    .fallback-lens { position: absolute; width: 35%; height: 33%; border-radius: 50%; border: 3px solid #323b2d; background: radial-gradient(circle at 43% 43%, #0c1d29 0%, #05080d 16%, #182a40 20%, #04070c 32%, #152235 38%, #080e17 50%, #020504 65%, #151d17 70%); box-shadow: 0 0 0 1px #101b10, 1px 2px 3px rgba(0,0,0,.6), inset 0 1px 2px rgba(216,233,208,.28); }
+    .fallback-lens::after { content: ""; position: absolute; top: 6px; left: 8px; width: 11px; height: 6px; background: #91a9ba; opacity: .22; border-radius: 50%; transform: rotate(-35deg); filter: blur(1px); }
+    .fallback-lens.one { top: 11%; left: 11%; }
+    .fallback-lens.two { bottom: 11%; left: 11%; }
+    .fallback-lens.three { top: 33%; right: 10%; }
+    .fallback-flash { position: absolute; right: 23%; top: 11%; width: 12.4%; height: 11.7%; border-radius: 50%; background: #ebe6cd; box-shadow: inset 0 0 5px #b1aa90; }
+    .fallback-mic { position: absolute; right: 28%; bottom: 10%; width: 3.7%; height: 3.5%; border-radius: 50%; background: #263024; }
+    .fallback-apple { position: absolute; width: 18%; height: 8.6%; left: 50%; top: 48%; color: var(--logo-color, #bdc9b0); transform: translate(-50%, -50%); fill: currentColor; opacity: .8; }
+    .fallback-screen { position: relative; height: 100%; overflow: hidden; border-radius: 28px; background: radial-gradient(ellipse at 65% 70%, #4f7754 0%, #263e2d 24%, #0a130f 43%, #020503 65%); }
+    .fallback-screen::before { content: ""; position: absolute; width: 260px; height: 340px; top: 170px; left: -85px; border-radius: 50%; border: 30px solid rgba(127,159,106,.14); box-shadow: 0 0 35px #788e5244, inset 0 0 45px #8b9c6744; transform: rotate(-30deg); }
+    .fallback-notch { position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 140px; height: 26px; background: #020402; border-radius: 0 0 16px 16px; }
+    .fallback-clock { position: absolute; top: 75px; left: 0; width: 100%; text-align: center; font-size: 65px; font-weight: 400; letter-spacing: -4px; }
+    .fallback-clock small { display: block; margin-bottom: 6px; font-size: 10px; font-weight: 400; letter-spacing: 0; }
+    .fallback-home { position: absolute; width: 80px; height: 4px; border-radius: 3px; background: #d8e0d2; left: 50%; bottom: 9px; transform: translateX(-50%); }
+    .scene.is-ready .phone-fallback { opacity: 0; pointer-events: none; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes hint-reveal { from { opacity: 0; transform: translate(-50%, 8px); } to { opacity: 1; transform: translate(-50%, 0); } }
+    @keyframes gesture { 0% { transform: rotate(-18deg); } 18% { transform: rotate(12deg); } 35% { transform: rotate(0); } 100% { transform: rotate(0); } }
+    @keyframes sheet-in { from { opacity: 0; transform: translateX(35px); } to { opacity: 1; transform: translateX(0); } }
+    @media (min-width: 901px) and (max-height: 800px) { .hero-copy { top: 27%; } .hero-description { margin-top: 24px; } .site-header { height: 87px; } .control-bar { bottom: 28px; padding-top: 22px; } .gesture-hint { bottom: 104px; } }
+    @media (min-width: 901px) and (min-width: 1600px) { .hero-copy { left: 8%; } .site-header, .control-bar { left: 8%; right: 8%; } .hero-description { font-size: 18px; } }
+    @media (max-width: 1100px) and (min-width: 901px) { .finish-control { gap: 18px; } .finish-meta { min-width: 86px; } .swatches { gap: 12px; } .swatch { width: 21px; height: 21px; } .control-bar { gap: 18px; } .view-controls { gap: 15px; } .rotation-controls { gap: 10px; } .angle-tabs { gap: 17px; } }
+    @media (max-width: 900px) {
+      .showroom { min-height: 640px; }
+      .site-header { height: 77px; margin: 0 28px; }
+      .wordmark { gap: 17px; }
+      .apple-icon { width: 19px; height: 23px; }
+      .wordmark-label { font-size: 9px; letter-spacing: 1.65px; }
+      .details-link { font-size: 11px; gap: 9px; }
+      .details-link .icon { width: 14px; height: 14px; }
+      .hero-copy { top: 104px; left: 28px; right: 28px; }
+      .eyebrow { display: none; }
+      h1 { font-size: clamp(40px, 11.8vw, 62px); line-height: 1.08; letter-spacing: -.065em; }
+      h1 span { display: inline; }
+      h1 span + span::before { content: " "; white-space: pre; }
+      .hero-description { margin: 12px 0 0 1px; font-size: 13px; line-height: 1.6; }
+      .ambient-shadow { left: 50%; top: 76%; width: 200px; height: 22px; }
+      .phone-fallback { width: 204px; height: 423px; left: 50%; top: 51%; }
+      .fallback-clock { top: 55px; font-size: 52px; }
+      .fallback-clock small { font-size: 8px; }
+      .gesture-hint { bottom: 159px; left: 50%; gap: 8px; font-size: 10px; }
+      .gesture-hint .icon { width: 15px; height: 15px; }
+      .scroll-hint, .hint-divider { display: none; }
+      .control-bar { left: 28px; right: 28px; bottom: 28px; grid-template-columns: minmax(0, 1fr) auto auto; gap: 16px; padding-top: 22px; }
+      .finish-control { flex-direction: column; align-items: flex-start; gap: 13px; }
+      .finish-meta .control-label { display: none; }
+      .finish-name { font-size: 11px; }
+      .swatches { gap: 13px; }
+      .swatch { width: 23px; height: 23px; }
+      .rotation-controls { gap: 6px; }
+      .auto-label { display: none; }
+      .auto-symbol { width: 35px; height: 35px; }
+      .reset-button { width: 28px; }
+      .view-controls { gap: 0; }
+      .control-divider { display: none; }
+      .angle-tabs { position: absolute; left: 50%; bottom: 95px; transform: translateX(-50%); gap: 25px; }
+      .angle-tab { font-size: 10px; }
+      .fullscreen-button { width: 28px; }
+      .details-dialog { width: 440px; padding: 30px; }
+      .dialog-header { margin-bottom: 40px; }
+    }
+    @media (max-width: 370px) { .site-header { margin: 0 22px; } .wordmark { gap: 13px; } .wordmark-label { letter-spacing: 1.1px; } .hero-copy { left: 22px; right: 22px; } .control-bar { left: 22px; right: 22px; gap: 10px; } .details-link { font-size: 10px; gap: 5px; } .swatches { gap: 12px; } .swatch { width: 21px; height: 21px; } }
+    @media (max-width: 600px) { .details-dialog { inset: auto 0 0; width: 100%; height: auto; max-height: 91dvh; padding: 26px 26px 30px; border: 0; border-top: 1px solid #3a4432; border-radius: 18px 18px 0 0; } .details-dialog[open] { animation-name: reveal; } .dialog-header { margin-bottom: 25px; } .dialog-title { font-size: 38px; } .dialog-intro { margin: 16px 0 23px; } .spec-row { padding: 13px 0; } .keyboard-note { margin: 20px 0; } }
+    @media (max-height: 540px) and (orientation: landscape) {
+      .showroom { min-height: 360px; }
+      .site-header { height: 68px; }
+      .hero-copy { top: 100px; }
+      h1 { font-size: clamp(44px, 6.4vw, 62px); line-height: .99; }
+      h1 span { display: block; }
+      h1 span + span::before { content: none; }
+      .hero-description { margin-top: 14px; font-size: 12px; }
+      .gesture-hint { display: none; }
+      .control-bar { bottom: 20px; padding-top: 18px; grid-template-columns: 1fr auto 1fr; gap: 16px; }
+      .finish-control { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .finish-meta .control-label { display: none; }
+      .auto-label { display: none; }
+      .rotation-controls { gap: 10px; }
+      .view-controls { gap: 16px; }
+      .angle-tabs { position: static; transform: none; gap: 22px; }
+      .swatches { gap: 13px; }
+    }
+    @media (max-height: 540px) and (max-width: 900px) and (orientation: portrait) {
+      .showroom { min-height: 360px; }
+      .site-header { height: 68px; }
+      .hero-copy { top: 88px; }
+      h1 { font-size: 36px; }
+      .hero-description, .gesture-hint { display: none; }
+      .angle-tabs { left: 0; transform: none; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }
+  </style>
+<script src="./three.min.js.download" async=""></script></head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true">
+    <defs>
+      <symbol id="apple-mark" viewBox="0 0 24 24"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.6 7.59 9.13 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.62 4.1zM12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25z" fill="currentColor"></path></symbol>
+      <symbol id="arrow-up-right" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12"></path></symbol>
+      <symbol id="arrow-left" viewBox="0 0 24 24"><path d="M20 12H4m6-6-6 6 6 6"></path></symbol>
+      <symbol id="reset-icon" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2.6 8.4M3 4v6h6"></path></symbol>
+      <symbol id="expand-icon" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M21 16v5h-5M8 21H3v-5"></path></symbol>
+      <symbol id="collapse-icon" viewBox="0 0 24 24"><path d="M3 9h6V3m6 0v6h6m-6 12v-6h6M3 15h6v6"></path></symbol>
+      <symbol id="pause-icon" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"></path></symbol>
+      <symbol id="play-icon" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z" fill="currentColor" stroke="none"></path></symbol>
+      <symbol id="close-icon" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
+      <symbol id="drag-icon" viewBox="0 0 24 24"><path d="M4 9a8.3 8.3 0 0 1 14-3l2 2M20 3v5h-5M20 15a8.3 8.3 0 0 1-14 3l-2-2M4 21v-5h5"></path></symbol>
+    </defs>
+  </svg>
+
+  <main class="showroom" id="showroom">
+    <header class="site-header">
+      <div class="wordmark" aria-label="Apple product explorer">
+        <svg class="apple-icon" aria-hidden="true"><use href="#apple-mark"></use></svg>
+        <span class="wordmark-divider" aria-hidden="true"></span>
+        <span class="wordmark-label">PRODUCT EXPLORER</span>
+      </div>
+      <button class="details-link" id="open-details" aria-haspopup="dialog" aria-controls="details-dialog">
+        <span>Specs &amp; details</span>
+        <svg class="icon" aria-hidden="true"><use href="#arrow-up-right"></use></svg>
+      </button>
+    </header>
+
+    <div class="ambient-shadow" id="ambient-shadow" aria-hidden="true" style="left: 69.5%; top: 82%;"></div>
+    <div class="scene is-ready" id="scene" tabindex="0" role="region" aria-label="Interactive iPhone 11 Pro viewer" aria-describedby="viewer-help">
+      <div class="phone-fallback" id="phone-fallback" aria-hidden="true" style="width: 253.771px; height: 526.34px; left: 69.5%; top: 47.8723%;">
+        <div class="fallback-phone" id="fallback-phone">
+          <div class="fallback-edge left"></div><div class="fallback-edge right"></div>
+          <div class="fallback-edge top"></div><div class="fallback-edge bottom"></div>
+          <div class="fallback-face fallback-back">
+            <div class="fallback-camera"><i class="fallback-lens one"></i><i class="fallback-lens two"></i><i class="fallback-lens three"></i><i class="fallback-flash"></i><i class="fallback-mic"></i></div>
+            <svg class="fallback-apple"><use href="#apple-mark"></use></svg>
+          </div>
+          <div class="fallback-face fallback-front">
+            <div class="fallback-screen"><div class="fallback-notch"></div><div class="fallback-clock"><small>Tuesday, September 10</small>9:41</div><div class="fallback-home"></div></div>
+          </div>
+        </div>
+      </div>
+    <canvas width="1349" height="798" aria-hidden="true" style="display: block;"></canvas></div>
+    <p class="sr-only" id="viewer-help">Drag to rotate the phone. Scroll or pinch to zoom. When the viewer is focused, use the arrow keys to rotate, plus and minus to zoom, Space to toggle automatic rotation, R to reset, or F for fullscreen.</p>
+    <p class="sr-only" id="model-status" role="status" aria-live="polite">Interactive 3D model ready. Drag to rotate, or use the arrow keys.</p>
+
+    <section class="hero-copy" aria-labelledby="product-title">
+      <p class="eyebrow">THE ORIGINAL PRO</p>
+      <h1 id="product-title"><span>iPhone</span><span>11 Pro</span></h1>
+      <p class="hero-description">An icon. From every angle.</p>
+    </section>
+
+    <div class="gesture-hint" aria-hidden="true">
+      <svg class="icon"><use href="#drag-icon"></use></svg>
+      <span>Drag to rotate</span><i class="hint-divider"></i><span class="scroll-hint">Scroll to zoom</span>
+    </div>
+
+    <footer class="control-bar" aria-label="Product viewer controls">
+      <div class="finish-control" role="group" aria-label="Phone finish">
+        <div class="finish-meta"><p class="control-label">Finish</p><p class="finish-name" id="finish-name">Midnight Green</p></div>
+        <div class="swatches">
+          <button class="swatch" style="--swatch:#53634c" data-finish="midnight" aria-label="Midnight Green" aria-pressed="true" title="Midnight Green"></button>
+          <button class="swatch" style="--swatch:#373c38" data-finish="space" aria-label="Space Gray" aria-pressed="false" title="Space Gray"></button>
+          <button class="swatch" style="--swatch:#d6d9d2" data-finish="silver" aria-label="Silver" aria-pressed="false" title="Silver"></button>
+          <button class="swatch" style="--swatch:#d4c3a0" data-finish="gold" aria-label="Gold" aria-pressed="false" title="Gold"></button>
+        </div>
+      </div>
+      <div class="rotation-controls">
+        <button class="auto-toggle" id="auto-toggle" aria-label="Auto-rotate" aria-pressed="true" title="Pause automatic rotation (Space)">
+          <span class="auto-symbol"><svg class="icon" aria-hidden="true"><use id="auto-icon" href="#pause-icon"></use></svg></span>
+          <span class="auto-label">Auto-rotate</span>
+        </button>
+        <button class="icon-button reset-button" id="reset-view" aria-label="Reset view" title="Reset view (R)"><svg class="icon" aria-hidden="true"><use href="#reset-icon"></use></svg></button>
+      </div>
+      <div class="view-controls">
+        <div class="angle-tabs" role="group" aria-label="Choose a view">
+          <button class="angle-tab" id="back-view" aria-pressed="true" title="View the back">Back</button>
+          <button class="angle-tab" id="front-view" aria-pressed="false" title="View the front">Front</button>
+        </div>
+        <span class="control-divider" aria-hidden="true"></span>
+        <button class="icon-button fullscreen-button" id="fullscreen" aria-label="Enter fullscreen" aria-pressed="false" title="Fullscreen (F)">
+          <svg class="icon expand-icon" aria-hidden="true"><use href="#expand-icon"></use></svg>
+          <svg class="icon collapse-icon" aria-hidden="true"><use href="#collapse-icon"></use></svg>
+        </button>
+      </div>
+    </footer>
+    <noscript><p class="no-script">Enable JavaScript to rotate the phone and explore its finishes.</p></noscript>
+
+    <dialog class="details-dialog" id="details-dialog" aria-labelledby="details-title" aria-describedby="details-intro">
+      <div class="dialog-header"><span class="dialog-kicker">A CLOSER LOOK</span><button class="icon-button close-button" id="close-details" aria-label="Close details" autofocus=""><svg class="icon" aria-hidden="true"><use href="#close-icon"></use></svg></button></div>
+      <h2 class="dialog-title" id="details-title">iPhone 11 Pro.<br>Every detail matters.</h2>
+      <p class="dialog-intro" id="details-intro">A precision-crafted stainless steel design. A remarkably capable triple-camera system. A true original.</p>
+      <dl class="spec-list">
+        <div class="spec-row"><dt>Display</dt><dd>5.8-inch Super Retina XDR</dd></div>
+        <div class="spec-row"><dt>Cameras</dt><dd>12MP Ultra Wide, Wide &amp; Telephoto</dd></div>
+        <div class="spec-row"><dt>Chip</dt><dd>A13 Bionic</dd></div>
+        <div class="spec-row"><dt>Materials</dt><dd>Textured matte glass &amp; stainless steel</dd></div>
+        <div class="spec-row"><dt>Dimensions</dt><dd>144 x 71.4 x 8.1 mm</dd></div>
+        <div class="spec-row"><dt>Weight</dt><dd>188 grams</dd></div>
+        <div class="spec-row"><dt>Finish</dt><dd id="details-finish">Midnight Green</dd></div>
+      </dl>
+      <p class="keyboard-note">Make it your perspective. Focus the viewer, then use <kbd>arrow keys</kbd> to rotate, <kbd>+ / -</kbd> to zoom, <kbd>Space</kbd> to pause, and <kbd>R</kbd> to reset.</p>
+      <button class="return-button" id="return-to-view"><span>Back to exploring</span><svg class="icon" aria-hidden="true"><use href="#arrow-left"></use></svg></button>
+      <p class="disclaimer">An independent, interactive product study. Not affiliated with or endorsed by Apple. iPhone is a trademark of Apple Inc. The model is a visual interpretation; dimensions and proportions are approximate.</p>
+    </dialog>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+      const $ = (id) => document.getElementById(id);
+      const showroom = $('showroom');
+      const stage = $('scene');
+      const fallback = $('phone-fallback');
+      const fallbackPhone = $('fallback-phone');
+      const autoButton = $('auto-toggle');
+      const frontButton = $('front-view');
+      const backButton = $('back-view');
+      const dialog = $('details-dialog');
+      const fullscreenButton = $('fullscreen');
+      const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const TAU = Math.PI * 2;
+      const clamp = (n, low, high) => Math.max(low, Math.min(high, n));
+      function viewHeightFor(height, narrow) {
+        if (!narrow) return height <= 540 ? 12.4 : height < 800 ? 9.4 : 9.1;
+        const availableHeight = height <= 540 ? Math.max(80, Math.min(height * .52, height - 300)) : Math.max(130, Math.min(height * .52, height - 395));
+        return 6.2 * height / availableHeight;
+      }
+      const finishes = {
+        midnight: { name: 'Midnight Green', back: '#4b594b', frame: '#87917f', module: '#52604e', logo: '#b7c2aa', fallback: '#4b594b' },
+        space: { name: 'Space Gray', back: '#353b39', frame: '#818782', module: '#3a403d', logo: '#aeb6ae', fallback: '#353b39' },
+        silver: { name: 'Silver', back: '#d4d8cf', frame: '#c5cac1', module: '#dce0d6', logo: '#a0a99a', fallback: '#d4d8cf' },
+        gold: { name: 'Gold', back: '#caba9d', frame: '#c9b995', module: '#d3c2a4', logo: '#a39372', fallback: '#caba9d' }
+      };
+      const state = { yaw: -.62, targetYaw: -.62, pitch: -.025, targetPitch: -.025, zoom: 1, targetZoom: 1, auto: !motionPreference.matches, finish: 'midnight', inertia: 0, dragging: false };
+      const pointers = new Map();
+      let model = null;
+      let lastTime = performance.now();
+      let lastMoveTime = 0;
+      let lastPinchDistance = 0;
+      let lastFace = 'back';
+      let resizeNeeded = true;
+      let fullscreenFallback = false;
+      let isSmall = window.innerWidth <= 900;
+      const applePath = 'M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.6 7.59 9.13 7.31c1.35.07 2.29.74 3.08.79 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.62 4.1zM12.03 7.25C11.88 5.02 13.69 3.18 15.77 3c.29 2.58-2.34 4.5-3.74 4.25z';
+
+      function updateAutoUI() {
+        autoButton.setAttribute('aria-pressed', String(state.auto));
+        autoButton.title = state.auto ? 'Pause automatic rotation (Space)' : 'Start automatic rotation (Space)';
+        $('auto-icon').setAttribute('href', state.auto ? '#pause-icon' : '#play-icon');
+      }
+
+      function setAuto(value) {
+        state.auto = value;
+        state.inertia = 0;
+        updateAutoUI();
+      }
+
+      function nearestAngle(angle) {
+        return angle + Math.round((state.targetYaw - angle) / TAU) * TAU;
+      }
+
+      function chooseView(face) {
+        setAuto(false);
+        state.targetYaw = nearestAngle(face === 'front' ? Math.PI : 0);
+        state.targetPitch = -.025;
+        state.inertia = 0;
+        $('model-status').textContent = (face === 'front' ? 'Front' : 'Back') + ' view. ' + finishes[state.finish].name + ' finish.';
+      }
+
+      function resetView() {
+        state.targetYaw = nearestAngle(-.62);
+        state.targetPitch = -.025;
+        state.targetZoom = 1;
+        state.inertia = 0;
+        setAuto(!motionPreference.matches);
+        $('model-status').textContent = 'View reset. ' + finishes[state.finish].name + ' finish.';
+      }
+
+      function selectFinish(key) {
+        if (!finishes[key]) return;
+        state.finish = key;
+        const finish = finishes[key];
+        document.querySelectorAll('[data-finish]').forEach((button) => button.setAttribute('aria-pressed', String(button.dataset.finish === key)));
+        $('finish-name').textContent = finish.name;
+        $('details-finish').textContent = finish.name;
+        $('model-status').textContent = finish.name + ' finish selected.';
+        stage.style.setProperty('--back-color', finish.fallback);
+        stage.style.setProperty('--frame-color', finish.frame);
+        stage.style.setProperty('--camera-color', finish.module);
+        stage.style.setProperty('--logo-color', finish.logo);
+        if (!motionPreference.matches && $('finish-name').animate) $('finish-name').animate([{ opacity: .25, transform: 'translateY(3px)' }, { opacity: 1, transform: 'translateY(0)' }], { duration: 250, easing: 'ease-out' });
+      }
+
+      function syncFullscreenUI() {
+        const active = document.fullscreenElement === showroom || fullscreenFallback;
+        fullscreenButton.setAttribute('aria-pressed', String(active));
+        fullscreenButton.setAttribute('aria-label', active ? 'Exit fullscreen' : 'Enter fullscreen');
+        fullscreenButton.title = active ? 'Exit fullscreen (F or Escape)' : 'Fullscreen (F)';
+        resizeNeeded = true;
+      }
+
+      function setFullscreenFallback(active) {
+        fullscreenFallback = active;
+        showroom.classList.toggle('is-fullscreen', active);
+        document.body.classList.toggle('has-fullscreen-fallback', active);
+        syncFullscreenUI();
+      }
+
+      async function toggleFullscreen() {
+        if (fullscreenFallback) { setFullscreenFallback(false); return; }
+        if (document.fullscreenElement) {
+          try { await document.exitFullscreen(); } catch (_) { setFullscreenFallback(false); }
+        } else {
+          try {
+            if (!showroom.requestFullscreen) throw new Error('Fullscreen is unavailable');
+            await showroom.requestFullscreen();
+          } catch (_) { setFullscreenFallback(true); }
+        }
+        syncFullscreenUI();
+      }
+
+      function openDetails() {
+        if (typeof dialog.showModal === 'function') dialog.showModal();
+        else dialog.setAttribute('open', '');
+        document.body.classList.add('dialog-is-open');
+      }
+
+      function closeDetails() {
+        if (typeof dialog.close === 'function') dialog.close();
+        else { dialog.removeAttribute('open'); document.body.classList.remove('dialog-is-open'); }
+      }
+
+      $('open-details').addEventListener('click', openDetails);
+      $('close-details').addEventListener('click', closeDetails);
+      $('return-to-view').addEventListener('click', closeDetails);
+      dialog.addEventListener('close', () => document.body.classList.remove('dialog-is-open'));
+      dialog.addEventListener('click', (event) => {
+        const rect = dialog.getBoundingClientRect();
+        if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) closeDetails();
+      });
+      autoButton.addEventListener('click', () => setAuto(!state.auto));
+      $('reset-view').addEventListener('click', resetView);
+      backButton.addEventListener('click', () => chooseView('back'));
+      frontButton.addEventListener('click', () => chooseView('front'));
+      document.querySelectorAll('[data-finish]').forEach((button) => button.addEventListener('click', () => selectFinish(button.dataset.finish)));
+      fullscreenButton.addEventListener('click', toggleFullscreen);
+      document.addEventListener('fullscreenchange', syncFullscreenUI);
+
+      stage.addEventListener('pointerdown', (event) => {
+        if (event.button !== 0 && event.pointerType === 'mouse') return;
+        event.preventDefault();
+        stage.focus({ preventScroll: true });
+        stage.setPointerCapture(event.pointerId);
+        pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        state.dragging = true;
+        state.inertia = 0;
+        setAuto(false);
+        stage.classList.add('is-dragging');
+        if (pointers.size === 2) {
+          const points = [...pointers.values()];
+          lastPinchDistance = Math.hypot(points[0].x - points[1].x, points[0].y - points[1].y);
+        }
+      });
+
+      stage.addEventListener('pointermove', (event) => {
+        if (!pointers.has(event.pointerId)) return;
+        const previous = pointers.get(event.pointerId);
+        pointers.set(event.pointerId, { x: event.clientX, y: event.clientY });
+        if (pointers.size > 1) {
+          const points = [...pointers.values()];
+          const distance = Math.hypot(points[0].x - points[1].x, points[0].y - points[1].y);
+          if (lastPinchDistance > 0) state.targetZoom = clamp(state.targetZoom * distance / lastPinchDistance, .78, 1.3);
+          lastPinchDistance = distance;
+          return;
+        }
+        const dx = event.clientX - previous.x;
+        const dy = event.clientY - previous.y;
+        state.targetYaw += dx * .009;
+        state.targetPitch = clamp(state.targetPitch + dy * .004, -.38, .38);
+        state.inertia = clamp(dx * .007, -.13, .13);
+        lastMoveTime = performance.now();
+      });
+
+      function endPointer(event) {
+        if (!pointers.has(event.pointerId)) return;
+        pointers.delete(event.pointerId);
+        if (stage.hasPointerCapture(event.pointerId)) stage.releasePointerCapture(event.pointerId);
+        if (pointers.size === 0) {
+          state.dragging = false;
+          stage.classList.remove('is-dragging');
+          if (event.type === 'pointercancel' || motionPreference.matches || performance.now() - lastMoveTime > 90) state.inertia = 0;
+        } else { state.inertia = 0; lastPinchDistance = 0; }
+      }
+      stage.addEventListener('pointerup', endPointer);
+      stage.addEventListener('pointercancel', endPointer);
+      stage.addEventListener('lostpointercapture', endPointer);
+      stage.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        state.targetZoom = clamp(state.targetZoom * Math.exp(-event.deltaY * .0012), .78, 1.3);
+      }, { passive: false });
+      stage.addEventListener('dblclick', resetView);
+      stage.addEventListener('keydown', (event) => {
+        if (event.altKey || event.metaKey || event.ctrlKey) return;
+        let handled = true;
+        switch (event.key) {
+          case 'ArrowLeft': setAuto(false); state.targetYaw -= .22; break;
+          case 'ArrowRight': setAuto(false); state.targetYaw += .22; break;
+          case 'ArrowUp': setAuto(false); state.targetPitch = clamp(state.targetPitch - .08, -.38, .38); break;
+          case 'ArrowDown': setAuto(false); state.targetPitch = clamp(state.targetPitch + .08, -.38, .38); break;
+          case '+': case '=': state.targetZoom = clamp(state.targetZoom + .08, .78, 1.3); break;
+          case '-': case '_': state.targetZoom = clamp(state.targetZoom - .08, .78, 1.3); break;
+          case ' ': setAuto(!state.auto); break;
+          case 'r': case 'R': resetView(); break;
+          case 'f': case 'F': toggleFullscreen(); break;
+          default: handled = false;
+        }
+        if (handled) event.preventDefault();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && fullscreenFallback && !dialog.open) setFullscreenFallback(false);
+      });
+      function onMotionChange() { if (motionPreference.matches) setAuto(false); }
+      if (motionPreference.addEventListener) motionPreference.addEventListener('change', onMotionChange);
+      else if (motionPreference.addListener) motionPreference.addListener(onMotionChange);
+
+      // The geometry is built from the real proportions, with a separate glass back,
+      // stainless frame, raised camera island, and a working lock-screen display.
+      function createProductModel(THREE, scene, renderer, camera) {
+        const W = 3.08, H = 6.2, D = .35;
+        const pose = new THREE.Group();
+        const phone = new THREE.Group();
+        pose.add(phone);
+        pose.rotation.z = -.105;
+        scene.add(pose);
+
+        function roundedShape(width, height, radius) {
+          const shape = new THREE.Shape();
+          const x = -width / 2, y = -height / 2, r = radius;
+          shape.moveTo(x + r, y);
+          shape.lineTo(x + width - r, y);
+          shape.quadraticCurveTo(x + width, y, x + width, y + r);
+          shape.lineTo(x + width, y + height - r);
+          shape.quadraticCurveTo(x + width, y + height, x + width - r, y + height);
+          shape.lineTo(x + r, y + height);
+          shape.quadraticCurveTo(x, y + height, x, y + height - r);
+          shape.lineTo(x, y + r);
+          shape.quadraticCurveTo(x, y, x + r, y);
+          return shape;
+        }
+
+        function roundedPlate(width, height, depth, radius, material, bevel = .008) {
+          const shape = roundedShape(width - bevel * 2, height - bevel * 2, Math.max(.01, radius - bevel));
+          const geometry = new THREE.ExtrudeGeometry(shape, { depth: Math.max(.001, depth - bevel * 2), bevelEnabled: true, bevelSegments: 3, steps: 1, bevelSize: bevel, bevelThickness: bevel, curveSegments: 24 });
+          geometry.translate(0, 0, -depth / 2 + bevel);
+          const mesh = new THREE.Mesh(geometry, material);
+          return mesh;
+        }
+
+        function standard(color, options = {}) {
+          return new THREE.MeshStandardMaterial(Object.assign({ color, roughness: .4, metalness: .1 }, options));
+        }
+        const physical = (color, options = {}) => new THREE.MeshPhysicalMaterial(Object.assign({ color, roughness: .4, metalness: .1, clearcoat: .14, clearcoatRoughness: .32 }, options));
+        const materials = {
+          back: physical(finishes.midnight.back, { roughness: .47, metalness: .13, clearcoat: .23 }),
+          frame: physical(finishes.midnight.frame, { roughness: .21, metalness: .98, clearcoat: .7, clearcoatRoughness: .12 }),
+          module: physical(finishes.midnight.module, { roughness: .32, metalness: .12, clearcoat: .5 }),
+          bezel: standard('#050706', { roughness: .22, metalness: .18 }),
+          dark: standard('#090c0a', { roughness: .3, metalness: .8 }),
+          seam: standard('#273022', { roughness: .8, metalness: .2 }),
+          antenna: standard('#b2baa8', { roughness: .7, metalness: .2 })
+        };
+        const frame = roundedPlate(W, H, D, .42, materials.frame, .018);
+        phone.add(frame);
+        const back = roundedPlate(W - .065, H - .065, .026, .4, materials.back, .006);
+        back.position.z = D / 2 - .002;
+        phone.add(back);
+        const cameraIsland = roundedPlate(1.46, 1.57, .065, .3, materials.module, .018);
+        cameraIsland.position.set(-.69, 2.145, .215);
+        phone.add(cameraIsland);
+
+        const logoCanvas = document.createElement('canvas');
+        logoCanvas.width = logoCanvas.height = 512;
+        const logoContext = logoCanvas.getContext('2d');
+        logoContext.fillStyle = '#ffffff';
+        logoContext.translate(52, 24);
+        logoContext.scale(20, 20);
+        logoContext.fill(new Path2D(applePath));
+        const logoTexture = new THREE.CanvasTexture(logoCanvas);
+        logoTexture.encoding = THREE.sRGBEncoding;
+        logoTexture.anisotropy = Math.min(renderer.capabilities.getMaxAnisotropy(), 8);
+        const logoMaterial = new THREE.MeshStandardMaterial({ map: logoTexture, color: finishes.midnight.logo, metalness: .6, roughness: .4, transparent: true, depthWrite: false, polygonOffset: true, polygonOffsetFactor: -1 });
+        materials.logo = logoMaterial;
+        const logo = new THREE.Mesh(new THREE.PlaneGeometry(.86, .86), logoMaterial);
+        logo.position.set(0, .14, .19);
+        phone.add(logo);
+
+        function cylinder(radius, depth, material, x, y, z) {
+          const object = new THREE.Mesh(new THREE.CylinderGeometry(radius, radius, depth, 64), material);
+          object.rotation.x = Math.PI / 2;
+          object.position.set(x, y, z);
+          phone.add(object);
+          return object;
+        }
+
+        function makeLensTexture() {
+          const canvas = document.createElement('canvas');
+          canvas.width = canvas.height = 256;
+          const c = canvas.getContext('2d');
+          const gradient = c.createRadialGradient(120, 116, 2, 128, 128, 128);
+          gradient.addColorStop(0, '#030709');
+          gradient.addColorStop(.15, '#102334');
+          gradient.addColorStop(.23, '#173044');
+          gradient.addColorStop(.27, '#0b1721');
+          gradient.addColorStop(.38, '#172b3c');
+          gradient.addColorStop(.44, '#050b11');
+          gradient.addColorStop(.62, '#0c1822');
+          gradient.addColorStop(.72, '#030609');
+          gradient.addColorStop(.86, '#11191d');
+          gradient.addColorStop(1, '#050807');
+          c.fillStyle = gradient; c.fillRect(0, 0, 256, 256);
+          c.strokeStyle = '#4c6474'; c.lineWidth = 2; c.globalAlpha = .38;
+          c.beginPath(); c.arc(128, 128, 73, 0, TAU); c.stroke();
+          c.globalAlpha = .23; c.lineWidth = 4; c.strokeStyle = '#8da4ab';
+          c.beginPath(); c.arc(128, 128, 108, 3.3, 5.4); c.stroke();
+          c.globalAlpha = .3; c.fillStyle = '#a2bbc8';
+          c.save(); c.translate(100, 88); c.rotate(-.65); c.filter = 'blur(5px)';
+          c.beginPath(); c.ellipse(0, 0, 12, 5, 0, 0, TAU); c.fill(); c.restore();
+          c.globalAlpha = .4; c.fillStyle = '#687a97';
+          c.beginPath(); c.arc(149, 148, 9, 0, TAU); c.fill();
+          const texture = new THREE.CanvasTexture(canvas);
+          texture.encoding = THREE.sRGBEncoding;
+          return texture;
+        }
+        const lensTexture = makeLensTexture();
+        const lensMaterial = new THREE.MeshPhysicalMaterial({ map: lensTexture, color: '#b9c2c4', roughness: .1, metalness: .35, clearcoat: 1, clearcoatRoughness: .06 });
+        const blackRing = standard('#090d0a', { roughness: .25, metalness: .65 });
+        const lensRim = physical('#485344', { roughness: .22, metalness: .9 });
+        const lensPositions = [[-1.04, 2.52], [-1.04, 1.78], [-.33, 2.15]];
+        for (const [x, y] of lensPositions) {
+          cylinder(.278, .035, lensRim, x, y, .262);
+          cylinder(.25, .044, blackRing, x, y, .285);
+          const ring = new THREE.Mesh(new THREE.TorusGeometry(.226, .018, 10, 64), lensRim);
+          ring.position.set(x, y, .31); phone.add(ring);
+          const lens = new THREE.Mesh(new THREE.CircleGeometry(.218, 64), lensMaterial);
+          lens.position.set(x, y, .314); phone.add(lens);
+          const innerRing = new THREE.Mesh(new THREE.TorusGeometry(.201, .004, 8, 64), blackRing);
+          innerRing.position.set(x, y, .316); phone.add(innerRing);
+        }
+        const flash = cylinder(.092, .008, new THREE.MeshStandardMaterial({ color: '#eae6cf', roughness: .5, emissive: '#625d3c', emissiveIntensity: .09 }), -.33, 2.61, .253);
+        flash.rotation.x = Math.PI / 2;
+        cylinder(.027, .008, materials.dark, -.33, 1.69, .253);
+
+        function sideButton(x, y, height) {
+          const inset = roundedPlate(.12, height + .06, .023, .05, materials.seam, .004);
+          inset.rotation.y = Math.PI / 2;
+          inset.position.set(x, y, 0);
+          phone.add(inset);
+          const button = roundedPlate(.115, height, .055, .05, materials.frame, .008);
+          button.rotation.y = Math.PI / 2;
+          button.position.set(x + Math.sign(x) * .016, y, 0);
+          phone.add(button);
+        }
+        sideButton(1.55, 1.16, .72);
+        sideButton(-1.55, 1.92, .27);
+        sideButton(-1.55, 1.2, .56);
+        sideButton(-1.55, .48, .56);
+        for (const x of [-1.548, 1.548]) for (const y of [-2.56, 2.56]) {
+          const band = new THREE.Mesh(new THREE.BoxGeometry(.014, .045, .349), materials.antenna);
+          band.position.set(x, y, 0); phone.add(band);
+        }
+        const bottomPort = new THREE.Mesh(new THREE.BoxGeometry(.43, .012, .14), materials.dark);
+        bottomPort.position.set(0, -3.099, 0); phone.add(bottomPort);
+        const portRim = new THREE.Mesh(new THREE.BoxGeometry(.45, .015, .15), materials.frame);
+        portRim.position.set(0, -3.087, 0); phone.add(portRim);
+        for (const x of [-1.04, -.9, -.76, .76, .9, 1.04]) {
+          const hole = new THREE.Mesh(new THREE.CircleGeometry(.035, 16), materials.dark);
+          hole.rotation.x = Math.PI / 2;
+          hole.position.set(x, -3.102, 0); phone.add(hole);
+        }
+        for (const x of [-1.3, 1.3]) {
+          const screw = new THREE.Mesh(new THREE.CircleGeometry(.025, 16), materials.dark);
+          screw.rotation.x = Math.PI / 2;
+          screw.position.set(x, -3.102, 0); phone.add(screw);
+        }
+
+        // Front-facing elements use their own local axis, so the rear remains +Z.
+        const front = new THREE.Group();
+        front.rotation.y = Math.PI;
+        front.position.z = -D / 2 - .004;
+        phone.add(front);
+        const bezel = roundedPlate(W - .035, H - .035, .02, .405, materials.bezel, .004);
+        front.add(bezel);
+        const screen = roundedPlate(2.835, 5.86, .006, .33, standard('#050905'), .002);
+        screen.position.z = .013;
+        front.add(screen);
+
+        const screenCanvas = document.createElement('canvas');
+        screenCanvas.width = 768; screenCanvas.height = 1536;
+        const context = screenCanvas.getContext('2d');
+        function drawWallpaper() {
+          const c = context;
+          c.fillStyle = '#030705'; c.fillRect(0, 0, 768, 1536);
+          const base = c.createRadialGradient(435, 1100, 20, 420, 1000, 750);
+          base.addColorStop(0, '#142f22'); base.addColorStop(.5, '#10221b'); base.addColorStop(1, '#020604');
+          c.fillStyle = base; c.fillRect(0, 0, 768, 1536);
+          c.save(); c.translate(510, 1180); c.rotate(-.55);
+          for (let i = 110; i > 0; i--) {
+            const r = i / 110;
+            const light = 12 + Math.pow(Math.sin(r * Math.PI), 2) * 28;
+            c.strokeStyle = `rgba(${Math.round(70 + light)},${Math.round(100 + light)},${Math.round(57 + light)},${.18 + .35 * r})`;
+            c.lineWidth = 10;
+            c.shadowColor = '#5a815b'; c.shadowBlur = 14;
+            c.beginPath(); c.ellipse(0, 0, 65 + 410 * r, 45 + 350 * r, 0, 0, TAU); c.stroke();
+          }
+          c.fillStyle = '#07110c'; c.shadowColor = '#09130c'; c.shadowBlur = 70;
+          c.beginPath(); c.ellipse(0, 0, 59, 43, 0, 0, TAU); c.fill(); c.restore();
+          const vignette = c.createLinearGradient(0, 0, 0, 1536);
+          vignette.addColorStop(0, 'rgba(0,0,0,.82)'); vignette.addColorStop(.28, 'rgba(0,0,0,.55)'); vignette.addColorStop(.58, 'rgba(0,0,0,0)'); vignette.addColorStop(1, 'rgba(0,0,0,.3)');
+          c.fillStyle = vignette; c.fillRect(0, 0, 768, 1536);
+          c.fillStyle = '#edf2e8'; c.textAlign = 'center';
+          c.font = '400 32px Inter, sans-serif'; c.fillText('Tuesday, September 10', 384, 295);
+          c.font = '400 174px Inter, sans-serif'; c.fillText('9:41', 384, 465);
+          c.textAlign = 'left'; c.font = '500 24px Inter, sans-serif'; c.fillText('9:41', 58, 67);
+          c.strokeStyle = '#edf2e8'; c.lineWidth = 3;
+          for (let i = 0; i < 4; i++) { c.beginPath(); c.moveTo(598 + i * 7, 60 - i * 4); c.lineTo(598 + i * 7, 60); c.stroke(); }
+          c.lineWidth = 3; c.strokeRect(676, 44, 35, 16); c.fillRect(714, 49, 3, 6);
+          c.fillStyle = '#edf2e8'; c.fillRect(681, 48, 25, 8);
+          c.fillStyle = 'rgba(160,175,151,.22)';
+          c.beginPath(); c.arc(100, 1384, 46, 0, TAU); c.arc(668, 1384, 46, 0, TAU); c.fill();
+          c.strokeStyle = '#edf2e8'; c.lineWidth = 4; c.lineCap = 'round';
+          c.beginPath(); c.moveTo(94, 1366); c.lineTo(107, 1392); c.lineTo(103, 1399); c.lineTo(83, 1370); c.closePath(); c.stroke();
+          c.beginPath(); c.moveTo(80, 1365); c.lineTo(100, 1355); c.lineTo(119, 1366); c.lineTo(107, 1372); c.stroke();
+          c.strokeRect(649, 1372, 40, 27); c.beginPath(); c.arc(669, 1385, 7, 0, TAU); c.stroke();
+          c.fillStyle = '#edf2e8'; c.beginPath(); c.rect(274, 1508, 220, 8); c.fill();
+        }
+        drawWallpaper();
+        const wallpaperTexture = new THREE.CanvasTexture(screenCanvas);
+        wallpaperTexture.encoding = THREE.sRGBEncoding;
+        wallpaperTexture.anisotropy = Math.min(renderer.capabilities.getMaxAnisotropy(), 8);
+        const displayMaterial = new THREE.MeshBasicMaterial({ map: wallpaperTexture, toneMapped: false });
+        const displayGeometry = new THREE.ShapeGeometry(roundedShape(2.815, 5.84, .326), 32);
+        const screenVertices = displayGeometry.attributes.position;
+        const screenUVs = displayGeometry.attributes.uv;
+        for (let i = 0; i < screenVertices.count; i++) screenUVs.setXY(i, (screenVertices.getX(i) + 1.4075) / 2.815, (screenVertices.getY(i) + 2.92) / 5.84);
+        screenUVs.needsUpdate = true;
+        const display = new THREE.Mesh(displayGeometry, displayMaterial);
+        display.position.z = .022;
+        front.add(display);
+        const notch = new THREE.Shape();
+        notch.moveTo(-.72, .18); notch.lineTo(.72, .18); notch.lineTo(.72, -.025);
+        notch.quadraticCurveTo(.72, -.18, .55, -.18); notch.lineTo(-.55, -.18);
+        notch.quadraticCurveTo(-.72, -.18, -.72, -.025); notch.closePath();
+        const notchMesh = new THREE.Mesh(new THREE.ShapeGeometry(notch), materials.bezel);
+        notchMesh.position.set(0, 2.74, .026);
+        front.add(notchMesh);
+        const speaker = roundedPlate(.45, .038, .006, .018, standard('#232b25', { roughness: .95 }), .001);
+        speaker.position.set(0, 2.801, .029); front.add(speaker);
+        const sensor = new THREE.Mesh(new THREE.CircleGeometry(.039, 24), standard('#0d1b20', { metalness: .65, roughness: .16 }));
+        sensor.position.set(.44, 2.8, .029);
+        front.add(sensor);
+
+        const targetColors = {};
+        for (const name of ['back', 'frame', 'module', 'logo']) targetColors[name] = new THREE.Color(finishes.midnight[name]);
+        if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { drawWallpaper(); wallpaperTexture.needsUpdate = true; });
+
+        return {
+          pose, phone,
+          update(dt, state, isSmall) {
+            pose.position.y = isSmall ? -.05 : .2;
+            pose.scale.setScalar(state.zoom);
+            pose.rotation.z = -.105;
+            phone.rotation.set(state.pitch, state.yaw, 0, 'YXZ');
+            const finish = finishes[state.finish];
+            const blend = Math.min(1, dt * 7);
+            for (const key of ['back', 'frame', 'module', 'logo']) {
+              targetColors[key].set(finish[key]);
+              materials[key].color.lerp(targetColors[key], blend);
+            }
+          },
+          resize(width, height) {
+            const viewHeight = viewHeightFor(height, isSmall);
+            const viewWidth = viewHeight * width / height;
+            camera.left = -viewWidth / 2;
+            camera.right = viewWidth / 2;
+            camera.top = viewHeight / 2;
+            camera.bottom = -viewHeight / 2;
+            camera.updateProjectionMatrix();
+            pose.position.x = isSmall ? 0 : viewWidth * .195;
+            pose.position.y = isSmall ? -.05 : .2;
+            renderer.setSize(width, height, false);
+          }
+        };
+      }
+
+      function startThree() {
+        if (!window.THREE) return;
+        try {
+          const THREE = window.THREE;
+          const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'high-performance' });
+          renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+          renderer.setClearColor(0x000000, 0);
+          renderer.outputEncoding = THREE.sRGBEncoding;
+          renderer.toneMapping = THREE.ACESFilmicToneMapping;
+          renderer.toneMappingExposure = 1.05;
+          renderer.domElement.setAttribute('aria-hidden', 'true');
+          const scene = new THREE.Scene();
+          const camera = new THREE.OrthographicCamera(-6, 6, 4.55, -4.55, .1, 100);
+          camera.position.set(0, 0, 18);
+          camera.lookAt(0, 0, 0);
+
+          const environment = new THREE.Scene();
+          environment.background = new THREE.Color('#384032');
+          function softbox(w, h, position, color) {
+            const mesh = new THREE.Mesh(new THREE.PlaneGeometry(w, h), new THREE.MeshBasicMaterial({ color, side: THREE.DoubleSide }));
+            mesh.position.set(...position);
+            mesh.lookAt(0, 0, 0);
+            environment.add(mesh);
+          }
+          softbox(9, 14, [-6, 3, 7], '#eef2e3');
+          softbox(5, 11, [6, 1, 4], '#c7cfc0');
+          softbox(8, 4, [0, 7, 1], '#e7efdc');
+          softbox(4, 8, [-3, 0, -7], '#889a7d');
+          const pmrem = new THREE.PMREMGenerator(renderer);
+          const environmentTarget = pmrem.fromScene(environment, .08);
+          scene.environment = environmentTarget.texture;
+          pmrem.dispose();
+          scene.add(new THREE.HemisphereLight('#eff5e6', '#263220', .65));
+          const keyLight = new THREE.DirectionalLight('#f4f5e8', 2.0);
+          keyLight.position.set(-4, 7, 8); scene.add(keyLight);
+          const fillLight = new THREE.DirectionalLight('#b9cbb0', .7);
+          fillLight.position.set(5, 1, 3); scene.add(fillLight);
+          const rimLight = new THREE.DirectionalLight('#e4ecda', 1.1);
+          rimLight.position.set(4, 4, -5); scene.add(rimLight);
+          model = createProductModel(THREE, scene, renderer, camera);
+          model.camera = camera;
+          model.renderer = renderer;
+          model.scene = scene;
+          stage.appendChild(renderer.domElement);
+          renderer.domElement.addEventListener('webglcontextlost', (event) => {
+            event.preventDefault();
+            stage.classList.remove('is-ready');
+            model = null;
+          });
+          renderer.domElement.addEventListener('webglcontextrestored', () => window.location.reload());
+          resizeNeeded = true;
+          stage.classList.add('is-ready');
+          $('model-status').textContent = 'Interactive 3D model ready. Drag to rotate, or use the arrow keys.';
+        } catch (error) {
+          console.warn('Using the interactive CSS product preview.', error);
+          stage.classList.remove('is-ready');
+          model = null;
+        }
+      }
+
+      function updateLayout() {
+        const width = showroom.clientWidth;
+        const height = showroom.clientHeight;
+        isSmall = width <= 900 && !(height <= 540 && width > height);
+        if (!width || !height) return;
+        if (model) model.resize(width, height);
+        const viewHeight = viewHeightFor(height, isSmall);
+        const scale = (6.2 * height / viewHeight) / 560;
+        fallback.style.width = (270 * scale) + 'px';
+        fallback.style.height = (560 * scale) + 'px';
+        fallback.style.left = isSmall ? '50%' : '69.5%';
+        fallback.style.top = (50 + (isSmall ? .05 : -.2) / viewHeight * 100) + '%';
+        $('ambient-shadow').style.left = isSmall ? '50%' : '69.5%';
+        $('ambient-shadow').style.top = isSmall ? (50.4 + 3.1 / viewHeight * 100) + '%' : height <= 540 ? '78%' : '82%';
+        resizeNeeded = false;
+      }
+
+      function animate(now) {
+        const dt = Math.min((now - lastTime) / 1000, .05);
+        lastTime = now;
+        if (resizeNeeded) updateLayout();
+        if (!state.dragging && state.auto) state.targetYaw += dt * .14;
+        if (!state.dragging && !state.auto && Math.abs(state.inertia) > .0001) {
+          state.targetYaw += state.inertia * dt * 60;
+          state.inertia *= Math.exp(-6 * dt);
+        }
+        const blend = motionPreference.matches ? 1 : 1 - Math.exp(-13 * dt);
+        state.yaw += (state.targetYaw - state.yaw) * blend;
+        state.pitch += (state.targetPitch - state.pitch) * blend;
+        state.zoom += (state.targetZoom - state.zoom) * blend;
+        const backVisible = Math.cos(state.yaw) > .75;
+        const frontVisible = Math.cos(state.yaw) < -.75;
+        const face = backVisible ? 'back' : frontVisible ? 'front' : 'none';
+        if (face !== lastFace) {
+          backButton.setAttribute('aria-pressed', String(face === 'back'));
+          frontButton.setAttribute('aria-pressed', String(face === 'front'));
+          lastFace = face;
+        }
+        if (model) {
+          model.update(dt, state, isSmall);
+          model.renderer.render(model.scene, model.camera);
+        } else {
+          fallbackPhone.style.transform = `rotateX(${state.pitch}rad) rotateY(${state.yaw}rad) scale(${state.zoom})`;
+        }
+        requestAnimationFrame(animate);
+      }
+
+      if ('ResizeObserver' in window) new ResizeObserver(() => { resizeNeeded = true; }).observe(showroom);
+      window.addEventListener('resize', () => { resizeNeeded = true; });
+      window.addEventListener('orientationchange', () => { resizeNeeded = true; });
+      updateAutoUI();
+      updateLayout();
+      requestAnimationFrame(animate);
+      const threeScript = document.createElement('script');
+      threeScript.src = 'https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js';
+      threeScript.async = true;
+      threeScript.onload = startThree;
+      threeScript.onerror = () => { $('model-status').textContent = 'Interactive preview ready. Drag to rotate and choose a finish.'; };
+      document.head.appendChild(threeScript);
+    })();
+  </script>
+
+
+</body></html>
